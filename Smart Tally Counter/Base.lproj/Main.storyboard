@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="TallyCounter-Regular.ttf">
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+            <string>TallyCounter-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Smart_Tally_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC" customClass="BackgroundPattern" customModule="Smart_Tally_Counter" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAc-w0-Bf4" userLabel="LensGroup">
+                                <rect key="frame" x="150" y="-20" width="300" height="300"/>
+                                <subviews>
+                                    <view tag="100" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6y1-Ot-vPQ" userLabel="LenseView" customClass="UniLensView" customModule="Smart_Tally_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkC-hL-JXS" userLabel="Lever">
+                                                <rect key="frame" x="25" y="25" width="250" height="250"/>
+                                                <connections>
+                                                    <action selector="AddCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQy-YU-fxN"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TAP ME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbk-4F-ycg" userLabel="Numbcounter">
+                                                <rect key="frame" x="33" y="110" width="248" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="260" id="AMo-cB-YmA"/>
+                                                    <constraint firstAttribute="height" constant="60" id="ihq-W4-bpC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="65"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="bbk-4F-ycg" firstAttribute="centerY" secondItem="6y1-Ot-vPQ" secondAttribute="centerY" constant="-10" id="AT1-Lu-aB7"/>
+                                            <constraint firstItem="bbk-4F-ycg" firstAttribute="centerX" secondItem="6y1-Ot-vPQ" secondAttribute="centerX" id="sxG-BT-Luk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lensfillColor">
+                                                <color key="value" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lensstrokeColor">
+                                                <color key="value" red="0.44666230369999999" green="0.082882337809999998" blue="0.33949620190000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-VV-Hcb" userLabel="graphView" customClass="GraphView" customModule="Smart_Tally_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="301"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HFj-w7-TkF" userLabel="Dataview">
+                                                <rect key="frame" x="0.0" y="37" width="299" height="227"/>
+                                                <subviews>
+                                                    <view contentMode="bottom" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2UI-9A-O3q" userLabel="Datarow6">
+                                                        <rect key="frame" x="50" y="0.0" width="200" height="200"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQV-Hk-u37" userLabel="left">
+                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="200"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="200" id="nq8-V5-xJt"/>
+                                                                    <constraint firstAttribute="width" constant="65" id="zji-is-wYY"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="16"/>
+                                                                <color key="textColor" red="1" green="0.99143752770000004" blue="0.99628986340000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtg-Qj-cHA" userLabel="mid">
+                                                                <rect key="frame" x="67" y="0.0" width="65" height="200"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="200" id="Soc-nz-KDy"/>
+                                                                    <constraint firstAttribute="width" constant="65" id="x9z-Mu-UJE"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="16"/>
+                                                                <color key="textColor" red="1" green="0.99143752770000004" blue="0.99628986340000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-vJ-F9G" userLabel="right">
+                                                                <rect key="frame" x="120" y="0.0" width="65" height="200"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="65" id="WcL-Mu-DW1"/>
+                                                                    <constraint firstAttribute="height" constant="200" id="ih1-CT-iJn"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="16"/>
+                                                                <color key="textColor" red="1" green="0.99143752770000004" blue="0.99628986340000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Rtg-Qj-cHA" firstAttribute="centerY" secondItem="2UI-9A-O3q" secondAttribute="centerY" id="4eV-As-T3D"/>
+                                                            <constraint firstItem="YyV-vJ-F9G" firstAttribute="centerX" secondItem="2UI-9A-O3q" secondAttribute="centerX" constant="70" id="Htk-GM-Y3R"/>
+                                                            <constraint firstItem="Rtg-Qj-cHA" firstAttribute="centerX" secondItem="2UI-9A-O3q" secondAttribute="centerX" id="OYI-cn-1ew"/>
+                                                            <constraint firstItem="hQV-Hk-u37" firstAttribute="centerY" secondItem="2UI-9A-O3q" secondAttribute="centerY" id="gOl-mf-9oq"/>
+                                                            <constraint firstItem="hQV-Hk-u37" firstAttribute="centerX" secondItem="2UI-9A-O3q" secondAttribute="centerX" constant="-70" id="iCl-bj-wVP"/>
+                                                            <constraint firstAttribute="height" constant="200" id="lZZ-qQ-7vO"/>
+                                                            <constraint firstAttribute="width" constant="200" id="rIr-Gg-S1Y"/>
+                                                            <constraint firstItem="YyV-vJ-F9G" firstAttribute="centerY" secondItem="2UI-9A-O3q" secondAttribute="centerY" id="sVD-2n-cUB"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="bottom" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNd-kR-Px9" userLabel="LegendGraph">
+                                                        <rect key="frame" x="0.0" y="190" width="299" height="20"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="COUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlg-OV-7Pz">
+                                                                <rect key="frame" x="30" y="0.0" width="53" height="15"/>
+                                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="16"/>
+                                                                <color key="textColor" red="0.64706154249021153" green="0.94734859420732986" blue="0.68893031176390951" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SEC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkE-mY-Qfe">
+                                                                <rect key="frame" x="110" y="0.0" width="50" height="15"/>
+                                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="16"/>
+                                                                <color key="textColor" red="0.64706154250000003" green="0.94734859419999995" blue="0.68893031179999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="/MIN " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiP-1F-qXG" userLabel="Permin">
+                                                                <rect key="frame" x="200" y="0.0" width="50" height="15"/>
+                                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="16"/>
+                                                                <color key="textColor" red="0.64706154250000003" green="0.94734859419999995" blue="0.68893031179999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="fiP-1F-qXG" firstAttribute="trailing" secondItem="tNd-kR-Px9" secondAttribute="trailing" constant="-15" id="Bw4-LA-gqB"/>
+                                                            <constraint firstItem="dlg-OV-7Pz" firstAttribute="leading" secondItem="tNd-kR-Px9" secondAttribute="leading" constant="15" id="IEe-dR-OqE"/>
+                                                            <constraint firstItem="VkE-mY-Qfe" firstAttribute="centerX" secondItem="tNd-kR-Px9" secondAttribute="centerX" id="K7g-Xi-LZi"/>
+                                                            <constraint firstItem="fiP-1F-qXG" firstAttribute="centerY" secondItem="tNd-kR-Px9" secondAttribute="centerY" id="jlr-6O-Os3"/>
+                                                            <constraint firstItem="VkE-mY-Qfe" firstAttribute="centerY" secondItem="tNd-kR-Px9" secondAttribute="centerY" id="mFF-ON-jtZ"/>
+                                                            <constraint firstItem="dlg-OV-7Pz" firstAttribute="centerY" secondItem="tNd-kR-Px9" secondAttribute="centerY" id="sEd-kx-6sZ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzQ-8Z-GtW" userLabel="count">
+                                                        <rect key="frame" x="8" y="8" width="194" height="227"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="240" id="5r1-2Q-mt0"/>
+                                                            <constraint firstAttribute="height" constant="140" id="nda-Gc-Ox6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="tNd-kR-Px9" secondAttribute="trailing" id="EKr-KF-1yT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2UI-9A-O3q" secondAttribute="trailing" constant="50" id="Nce-01-slj"/>
+                                                    <constraint firstItem="2UI-9A-O3q" firstAttribute="top" secondItem="HFj-w7-TkF" secondAttribute="top" constant="50" id="Quj-xT-yI7"/>
+                                                    <constraint firstItem="2UI-9A-O3q" firstAttribute="leading" secondItem="HFj-w7-TkF" secondAttribute="leading" constant="50" id="azS-dP-d1b"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tNd-kR-Px9" secondAttribute="bottom" constant="5" id="oBb-Wx-iq7"/>
+                                                    <constraint firstItem="tNd-kR-Px9" firstAttribute="leading" secondItem="HFj-w7-TkF" secondAttribute="leading" id="pkz-eE-7cQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2UI-9A-O3q" secondAttribute="bottom" constant="50" id="zUy-Fl-W32"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.90667354292454849" blue="0.95172601546589264" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="HFj-w7-TkF" firstAttribute="leading" secondItem="iPl-VV-Hcb" secondAttribute="leading" constant="40" id="3ke-EF-kY5"/>
+                                            <constraint firstAttribute="bottom" secondItem="HFj-w7-TkF" secondAttribute="bottom" constant="40" id="8U5-G3-GZ9"/>
+                                            <constraint firstItem="HFj-w7-TkF" firstAttribute="centerY" secondItem="iPl-VV-Hcb" secondAttribute="centerY" id="Rkc-mR-E1u"/>
+                                            <constraint firstItem="HFj-w7-TkF" firstAttribute="centerX" secondItem="iPl-VV-Hcb" secondAttribute="centerX" id="YFr-wI-Tc1"/>
+                                            <constraint firstAttribute="height" constant="300" id="g8c-15-xE0"/>
+                                            <constraint firstAttribute="width" constant="300" id="hJf-GZ-IH2"/>
+                                            <constraint firstAttribute="trailing" secondItem="HFj-w7-TkF" secondAttribute="trailing" constant="40" id="oAk-kT-myM"/>
+                                            <constraint firstItem="HFj-w7-TkF" firstAttribute="top" secondItem="iPl-VV-Hcb" secondAttribute="top" constant="45" id="t4C-ZQ-OJb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="graphColor">
+                                                <color key="value" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="graphstrokeColor">
+                                                <color key="value" red="1" green="0.96983449915331343" blue="0.9510851870437772" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="0bG-rX-uqm"/>
+                                    <constraint firstAttribute="width" constant="300" id="4HG-5u-emy"/>
+                                    <constraint firstAttribute="bottom" secondItem="iPl-VV-Hcb" secondAttribute="bottom" id="RD2-Mu-nxl"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="c6a-1u-hcb" appends="YES" id="jvv-A5-d2i"/>
+                                    <outletCollection property="gestureRecognizers" destination="Zf4-w1-OiT" appends="YES" id="qU6-8O-XFo"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksg-1a-s3t" userLabel="HighierButtonView">
+                                <rect key="frame" x="0.0" y="300" width="600" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6G-a9-FPK" userLabel="Minus" customClass="UniButtonView" customModule="Smart_Tally_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="255" y="60" width="90" height="90"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="IOw-hE-Dex"/>
+                                            <constraint firstAttribute="height" constant="90" id="rIh-fE-Udu"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.77254901960784317" green="0.14509803921568626" blue="0.58823529411764708" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="MinusCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKX-bF-9P0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7Z-dS-Qfq" userLabel="Reset" customClass="UniButtonView" customModule="Smart_Tally_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="375" y="60" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="3ed-3N-M7p"/>
+                                            <constraint firstAttribute="height" constant="90" id="bry-BJ-uR3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ResetCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EjK-uZ-Z6l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv9-zR-eu8" userLabel="Export" customClass="UniButtonView" customModule="Smart_Tally_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="135" y="60" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="9e5-Eu-q6K"/>
+                                            <constraint firstAttribute="width" constant="90" id="koE-Hk-fUv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showAlertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6J-CG-X5d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s7Z-dS-Qfq" firstAttribute="leading" secondItem="A6G-a9-FPK" secondAttribute="trailing" constant="30" id="7ee-em-P55"/>
+                                    <constraint firstItem="A6G-a9-FPK" firstAttribute="centerX" secondItem="ksg-1a-s3t" secondAttribute="centerX" id="C4H-bY-uWJ"/>
+                                    <constraint firstItem="A6G-a9-FPK" firstAttribute="centerY" secondItem="ksg-1a-s3t" secondAttribute="centerY" id="OfN-2Q-wm7"/>
+                                    <constraint firstItem="s7Z-dS-Qfq" firstAttribute="centerY" secondItem="ksg-1a-s3t" secondAttribute="centerY" id="b1i-kf-rdx"/>
+                                    <constraint firstItem="Bv9-zR-eu8" firstAttribute="centerY" secondItem="ksg-1a-s3t" secondAttribute="centerY" id="uLr-kP-sXK"/>
+                                    <constraint firstItem="A6G-a9-FPK" firstAttribute="leading" secondItem="Bv9-zR-eu8" secondAttribute="trailing" constant="30" id="xCD-vJ-qsf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YB6-f6-69P" userLabel="LowerButtonView">
+                                <rect key="frame" x="0.0" y="530" width="600" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxK-yb-Ugf" userLabel="Voice" customClass="UniButtonView" customModule="Smart_Tally_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="265" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="EHo-GW-O5z"/>
+                                            <constraint firstAttribute="width" constant="70" id="Eez-xX-v0z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="19"/>
+                                        <state key="normal" title="VOICE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="VoiceOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHs-1b-RwO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pxK-yb-Ugf" firstAttribute="centerY" secondItem="YB6-f6-69P" secondAttribute="centerY" id="95r-vM-nog"/>
+                                    <constraint firstAttribute="height" constant="70" id="ibZ-8g-aXH"/>
+                                    <constraint firstItem="pxK-yb-Ugf" firstAttribute="centerX" secondItem="YB6-f6-69P" secondAttribute="centerX" id="nub-nR-IHd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YB6-f6-69P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6IL-md-eKb"/>
+                            <constraint firstItem="ksg-1a-s3t" firstAttribute="top" secondItem="FAc-w0-Bf4" secondAttribute="bottom" constant="20" id="7hU-lV-lA9"/>
+                            <constraint firstItem="FAc-w0-Bf4" firstAttribute="bottom" secondItem="ksg-1a-s3t" secondAttribute="top" constant="-20" id="Adp-f8-d88"/>
+                            <constraint firstItem="FAc-w0-Bf4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ENZ-lH-M8M"/>
+                            <constraint firstItem="YB6-f6-69P" firstAttribute="top" secondItem="ksg-1a-s3t" secondAttribute="bottom" constant="20" id="TJv-i4-Q2T"/>
+                            <constraint firstAttribute="trailing" secondItem="ksg-1a-s3t" secondAttribute="trailing" id="bNc-m0-pIA"/>
+                            <constraint firstItem="ksg-1a-s3t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d0L-nE-ffL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YB6-f6-69P" secondAttribute="bottom" constant="50" id="gjo-o4-k6o"/>
+                            <constraint firstItem="FAc-w0-Bf4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-170" id="iWW-V5-HIm"/>
+                            <constraint firstAttribute="trailing" secondItem="YB6-f6-69P" secondAttribute="trailing" id="jGp-lp-4ZW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
+                                <color key="value" red="0.74215938969201956" green="0.42529598898260779" blue="0.95621318717277481" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="darkColor">
+                                <color key="value" red="0.31962761356794539" green="0.46701846734701186" blue="0.90590232329842935" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="patternSize">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="medColor">
+                                <color key="value" red="0.99484080076217651" green="0.30112874507904053" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backColor">
+                                <color key="value" red="0.96866590627200944" green="0.7766948675529296" blue="0.47181755461730157" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="drawScale">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="Abouttext" destination="KzQ-8Z-GtW" id="acY-me-NlI"/>
+                        <outlet property="CurrentCount" destination="bbk-4F-ycg" id="upV-z8-Got"/>
+                        <outlet property="LenseView" destination="6y1-Ot-vPQ" id="NeH-ko-ceK"/>
+                        <outlet property="countdata62" destination="hQV-Hk-u37" id="Cny-9C-vTt"/>
+                        <outlet property="countdataMid" destination="Rtg-Qj-cHA" id="Oze-DF-DRj"/>
+                        <outlet property="countdatarRight" destination="YyV-vJ-F9G" id="1SS-Kp-bf8"/>
+                        <outlet property="graphView" destination="iPl-VV-Hcb" id="fEv-Wq-MWn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="c6a-1u-hcb">
+                    <connections>
+                        <action selector="counterViewSwipe:" destination="BYZ-38-t0r" id="Zzd-Fh-Wwy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Zf4-w1-OiT">
+                    <connections>
+                        <action selector="counterViewSwipeleft:" destination="BYZ-38-t0r" id="XzK-dt-p2s"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="245" y="316"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FD2E919E1CF755AB00246004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2E91811CF755AB00246004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD2E91881CF755AB00246004;
+			remoteInfo = "Smart Tally Counter";
+		};
+		FD2E91A91CF755AB00246004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2E91811CF755AB00246004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD2E91881CF755AB00246004;
+			remoteInfo = "Smart Tally Counter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD96E2D71D16E9AF00F0C02B /* FiksuCouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiksuCouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD96E2D81D16E9AF00F0C02B /* FiksuCouter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiksuCouter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD96E2D91D16E9AF00F0C02B /* FiksuCouter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiksuCouter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD2E91861CF755AB00246004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2E919A1CF755AB00246004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2E91A51CF755AB00246004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD2E91801CF755AB00246004 = {
+			isa = PBXGroup;
+			children = (
+				FD96E2D71D16E9AF00F0C02B /* FiksuCouter.app */,
+				FD96E2D81D16E9AF00F0C02B /* FiksuCouter.xctest */,
+				FD96E2D91D16E9AF00F0C02B /* FiksuCouter.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD2E91881CF755AB00246004 /* FiksuCouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2E91B11CF755AB00246004 /* Build configuration list for PBXNativeTarget "FiksuCouter" */;
+			buildPhases = (
+				FD2E91851CF755AB00246004 /* Sources */,
+				FD2E91861CF755AB00246004 /* Frameworks */,
+				FD2E91871CF755AB00246004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiksuCouter;
+			productName = "Smart Tally Counter";
+			productReference = FD96E2D71D16E9AF00F0C02B /* FiksuCouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD2E919C1CF755AB00246004 /* FiksuCouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2E91B41CF755AB00246004 /* Build configuration list for PBXNativeTarget "FiksuCouterTests" */;
+			buildPhases = (
+				FD2E91991CF755AB00246004 /* Sources */,
+				FD2E919A1CF755AB00246004 /* Frameworks */,
+				FD2E919B1CF755AB00246004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD2E919F1CF755AB00246004 /* PBXTargetDependency */,
+			);
+			name = FiksuCouterTests;
+			productName = "Smart Tally CounterTests";
+			productReference = FD96E2D81D16E9AF00F0C02B /* FiksuCouter.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD2E91A71CF755AB00246004 /* FiksuCouterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2E91B71CF755AB00246004 /* Build configuration list for PBXNativeTarget "FiksuCouterUITests" */;
+			buildPhases = (
+				FD2E91A41CF755AB00246004 /* Sources */,
+				FD2E91A51CF755AB00246004 /* Frameworks */,
+				FD2E91A61CF755AB00246004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD2E91AA1CF755AB00246004 /* PBXTargetDependency */,
+			);
+			name = FiksuCouterUITests;
+			productName = "Smart Tally CounterUITests";
+			productReference = FD96E2D91D16E9AF00F0C02B /* FiksuCouter.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD2E91811CF755AB00246004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Forethink;
+				TargetAttributes = {
+					FD2E91881CF755AB00246004 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8JVR9SET2E;
+					};
+					FD2E919C1CF755AB00246004 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD2E91881CF755AB00246004;
+					};
+					FD2E91A71CF755AB00246004 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD2E91881CF755AB00246004;
+					};
+				};
+			};
+			buildConfigurationList = FD2E91841CF755AB00246004 /* Build configuration list for PBXProject "FiksuCouter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD2E91801CF755AB00246004;
+			productRefGroup = FD2E91801CF755AB00246004;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD2E91881CF755AB00246004 /* FiksuCouter */,
+				FD2E919C1CF755AB00246004 /* FiksuCouterTests */,
+				FD2E91A71CF755AB00246004 /* FiksuCouterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD2E91871CF755AB00246004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2E919B1CF755AB00246004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2E91A61CF755AB00246004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD2E91851CF755AB00246004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2E91991CF755AB00246004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2E91A41CF755AB00246004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD2E919F1CF755AB00246004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD2E91881CF755AB00246004 /* FiksuCouter */;
+			targetProxy = FD2E919E1CF755AB00246004 /* PBXContainerItemProxy */;
+		};
+		FD2E91AA1CF755AB00246004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD2E91881CF755AB00246004 /* FiksuCouter */;
+			targetProxy = FD2E91A91CF755AB00246004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD2E91AF1CF755AB00246004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FD2E91B01CF755AB00246004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD2E91B21CF755AB00246004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Smart Tally Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-Counter";
+				PRODUCT_NAME = FiksuCouter;
+			};
+			name = Debug;
+		};
+		FD2E91B31CF755AB00246004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Smart Tally Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-Counter";
+				PRODUCT_NAME = FiksuCouter;
+			};
+			name = Release;
+		};
+		FD2E91B51CF755AB00246004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart Tally CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterTests";
+				PRODUCT_NAME = FiksuCouter;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiksuCouter.app/FiksuCouter";
+			};
+			name = Debug;
+		};
+		FD2E91B61CF755AB00246004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart Tally CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterTests";
+				PRODUCT_NAME = FiksuCouter;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiksuCouter.app/FiksuCouter";
+			};
+			name = Release;
+		};
+		FD2E91B81CF755AB00246004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart Tally CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterUITests";
+				PRODUCT_NAME = FiksuCouter;
+				TEST_TARGET_NAME = "Smart Tally Counter";
+			};
+			name = Debug;
+		};
+		FD2E91B91CF755AB00246004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart Tally CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterUITests";
+				PRODUCT_NAME = FiksuCouter;
+				TEST_TARGET_NAME = "Smart Tally Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD2E91841CF755AB00246004 /* Build configuration list for PBXProject "FiksuCouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2E91AF1CF755AB00246004 /* Debug */,
+				FD2E91B01CF755AB00246004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2E91B11CF755AB00246004 /* Build configuration list for PBXNativeTarget "FiksuCouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2E91B21CF755AB00246004 /* Debug */,
+				FD2E91B31CF755AB00246004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2E91B41CF755AB00246004 /* Build configuration list for PBXNativeTarget "FiksuCouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2E91B51CF755AB00246004 /* Debug */,
+				FD2E91B61CF755AB00246004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2E91B71CF755AB00246004 /* Build configuration list for PBXNativeTarget "FiksuCouterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2E91B81CF755AB00246004 /* Debug */,
+				FD2E91B91CF755AB00246004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD2E91811CF755AB00246004 /* Project object */;
+}

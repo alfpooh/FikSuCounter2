@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzO-b1-zJq">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiksu Counter" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="818-S3-5Mk" userLabel="apptitle">
+                                        <rect key="frame" x="50" y="50" width="100" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="gfV-OK-8RH"/>
+                                            <constraint firstAttribute="width" constant="100" id="mcj-85-Kqf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coungtinghand" translatesAutoresizingMaskIntoConstraints="NO" id="1a9-1O-2Oo">
+                                        <rect key="frame" x="130" y="143" width="260" height="293"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="Gn3-8U-3wc"/>
+                                            <constraint firstAttribute="height" constant="293" id="lcp-c7-7JO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpZ-OH-hhg" userLabel="Thanks">
+                                        <rect key="frame" x="100" y="471.5" width="400" height="83.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="83.5" id="jhi-gT-4DW"/>
+                                            <constraint firstAttribute="width" constant="400" id="p0V-cL-RUP"/>
+                                        </constraints>
+                                        <string key="text">Thanks for using the Fiksu Counter.  "Fiksu" means "Smart" in Finnish. All app design including graphic, font, background, sound, and coding by Dr. Alf. All Right Reserved. Forethink. 2016
+support@forethink.nu 
+</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" red="0.7725490196" green="0.1450980392" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zpZ-OH-hhg" firstAttribute="leading" secondItem="zzO-b1-zJq" secondAttribute="leading" constant="50" id="0mL-XY-VlZ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="zpZ-OH-hhg" secondAttribute="trailing" constant="10" id="2dw-bv-K69"/>
+                                    <constraint firstItem="zpZ-OH-hhg" firstAttribute="leading" secondItem="zzO-b1-zJq" secondAttribute="leading" constant="10" id="Bea-Y0-skJ"/>
+                                    <constraint firstItem="1a9-1O-2Oo" firstAttribute="centerY" secondItem="zzO-b1-zJq" secondAttribute="centerY" id="HZZ-NZ-yZt"/>
+                                    <constraint firstItem="818-S3-5Mk" firstAttribute="leading" secondItem="zzO-b1-zJq" secondAttribute="leading" constant="50" id="OcV-8V-Feb"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="1a9-1O-2Oo" secondAttribute="trailing" constant="30" id="aFy-gm-R8B"/>
+                                    <constraint firstAttribute="bottom" secondItem="zpZ-OH-hhg" secondAttribute="bottom" constant="25" id="f9X-sx-kiy"/>
+                                    <constraint firstItem="1a9-1O-2Oo" firstAttribute="centerX" secondItem="zzO-b1-zJq" secondAttribute="centerX" id="fNG-ZE-DEW"/>
+                                    <constraint firstItem="zpZ-OH-hhg" firstAttribute="leading" secondItem="zzO-b1-zJq" secondAttribute="leadingMargin" constant="10" id="g21-aR-vI8"/>
+                                    <constraint firstItem="zpZ-OH-hhg" firstAttribute="centerX" secondItem="zzO-b1-zJq" secondAttribute="centerX" id="i1g-Bo-iBm"/>
+                                    <constraint firstItem="818-S3-5Mk" firstAttribute="top" secondItem="zzO-b1-zJq" secondAttribute="top" constant="50" id="lJl-Ew-Kzh"/>
+                                    <constraint firstAttribute="bottom" secondItem="zpZ-OH-hhg" secondAttribute="bottom" constant="25" id="xLa-Lw-NR3"/>
+                                    <constraint firstItem="1a9-1O-2Oo" firstAttribute="leading" secondItem="zzO-b1-zJq" secondAttribute="leading" constant="60" id="z9M-Ss-Q5P"/>
+                                    <constraint firstItem="1a9-1O-2Oo" firstAttribute="leading" secondItem="zzO-b1-zJq" secondAttribute="leading" constant="130" id="zB7-uD-DgY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aFy-gm-R8B"/>
+                                        <exclude reference="fNG-ZE-DEW"/>
+                                        <exclude reference="z9M-Ss-Q5P"/>
+                                        <exclude reference="0mL-XY-VlZ"/>
+                                        <exclude reference="2dw-bv-K69"/>
+                                        <exclude reference="Bea-Y0-skJ"/>
+                                        <exclude reference="f9X-sx-kiy"/>
+                                        <exclude reference="g21-aR-vI8"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zzO-b1-zJq" secondAttribute="trailing" id="OKb-UL-fk6"/>
+                            <constraint firstItem="zzO-b1-zJq" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="bBQ-4l-bPb"/>
+                            <constraint firstItem="zzO-b1-zJq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="c5C-hh-OvY"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="zzO-b1-zJq" secondAttribute="bottom" id="ivh-9b-GNF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="263"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Coungtinghand" width="310" height="431"/>
+    </resources>
+</document>
