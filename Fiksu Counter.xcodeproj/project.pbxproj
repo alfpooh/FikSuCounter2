@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD2836361CF5CA94002AE3A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2836351CF5CA94002AE3A5 /* ViewController.swift */; };
+		FD2836391CF5CA94002AE3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2836371CF5CA94002AE3A5 /* Main.storyboard */; };
+		FD28363B1CF5CA94002AE3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD28363A1CF5CA94002AE3A5 /* Assets.xcassets */; };
+		FD28363E1CF5CA94002AE3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD28363C1CF5CA94002AE3A5 /* LaunchScreen.storyboard */; };
+		FD36C7121D042A830085B62F /* TallyCounter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD36C7111D0428D30085B62F /* TallyCounter-Regular.ttf */; };
+		FD3BBAFF1D0989FB00C0A441 /* TabLens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3BBAFE1D0989FB00C0A441 /* TabLens.swift */; };
+		FD6260321D186ACC0012036D /* LaunchScreen.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = FD6260311D186ACC0012036D /* LaunchScreen.storyboardc */; };
+		FD6F86961D06FAA000060DDB /* TallyCounterLoading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD6F86951D06FAA000060DDB /* TallyCounterLoading.jpg */; };
+		FD6F86981D07522F00060DDB /* counterclick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FD6F86971D07502F00060DDB /* counterclick.m4a */; };
+		FD7C35181D06B40E0079E6D4 /* UniButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C35171D06B40E0079E6D4 /* UniButton.swift */; };
+		FD7C351D1D06ED8A0079E6D4 /* BackgroundPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C351C1D06ED8A0079E6D4 /* BackgroundPattern.swift */; };
+		FDC633901D0816C90031CAEA /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6338F1D0816C90031CAEA /* GraphView.swift */; };
+		FDC633D41D08A2FD0031CAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2836331CF5CA94002AE3A5 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD2836451CF5CA94002AE3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2836281CF5CA94002AE3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD28362F1CF5CA94002AE3A5;
+			remoteInfo = "Smart Tally Counter";
+		};
+		FD2836501CF5CA94002AE3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2836281CF5CA94002AE3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD28362F1CF5CA94002AE3A5;
+			remoteInfo = "Smart Tally Counter";
+		};
+		FD62602B1D18531D0012036D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2E91BA1CF755AB00246004 /* FiksuCouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD96E2D71D16E9AF00F0C02B;
+			remoteInfo = FiksuCouter;
+		};
+		FD62602D1D18531D0012036D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2E91BA1CF755AB00246004 /* FiksuCouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD96E2D81D16E9AF00F0C02B;
+			remoteInfo = FiksuCouterTests;
+		};
+		FD62602F1D18531D0012036D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2E91BA1CF755AB00246004 /* FiksuCouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD96E2D91D16E9AF00F0C02B;
+			remoteInfo = FiksuCouterUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD2836331CF5CA94002AE3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD2836351CF5CA94002AE3A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD2836381CF5CA94002AE3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD28363A1CF5CA94002AE3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD28363D1CF5CA94002AE3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD28363F1CF5CA94002AE3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2CB34F1CFD76CA0060D7B5 /* Smart Tally Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Tally Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2CB3501CFD76CA0060D7B5 /* Smart Tally CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Tally CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2CB3511CFD76CA0060D7B5 /* Smart Tally CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Tally CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2E91BA1CF755AB00246004 /* FiksuCouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FiksuCouter.xcodeproj; path = "Smart Tally Counter/FiksuCouter.xcodeproj"; sourceTree = "<group>"; };
+		FD36C7111D0428D30085B62F /* TallyCounter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TallyCounter-Regular.ttf"; sourceTree = "<group>"; };
+		FD3BBAFE1D0989FB00C0A441 /* TabLens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabLens.swift; path = ../TabLens.swift; sourceTree = "<group>"; };
+		FD6260311D186ACC0012036D /* LaunchScreen.storyboardc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.storyboardc; name = LaunchScreen.storyboardc; path = "../../../../Users/AlfBae/Documents/Dr. Alf Bae/LaunchScreen.storyboardc"; sourceTree = "<group>"; };
+		FD6F86951D06FAA000060DDB /* TallyCounterLoading.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TallyCounterLoading.jpg; sourceTree = "<group>"; };
+		FD6F86971D07502F00060DDB /* counterclick.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = counterclick.m4a; sourceTree = "<group>"; };
+		FD7C35171D06B40E0079E6D4 /* UniButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniButton.swift; sourceTree = "<group>"; };
+		FD7C351C1D06ED8A0079E6D4 /* BackgroundPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundPattern.swift; path = ../BackgroundPattern.swift; sourceTree = "<group>"; };
+		FDC6338F1D0816C90031CAEA /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD28362D1CF5CA94002AE3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2836411CF5CA94002AE3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD28364C1CF5CA94002AE3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD2836271CF5CA94002AE3A5 = {
+			isa = PBXGroup;
+			children = (
+				FD6260311D186ACC0012036D /* LaunchScreen.storyboardc */,
+				FD2836321CF5CA94002AE3A5 /* Fiksu Counter */,
+				FD2CB34F1CFD76CA0060D7B5 /* Smart Tally Counter.app */,
+				FD2CB3501CFD76CA0060D7B5 /* Smart Tally CounterTests.xctest */,
+				FD2CB3511CFD76CA0060D7B5 /* Smart Tally CounterUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		FD2836321CF5CA94002AE3A5 /* Fiksu Counter */ = {
+			isa = PBXGroup;
+			children = (
+				FD6F868F1D06FA3000060DDB /* assets */,
+				FD2E91BA1CF755AB00246004 /* FiksuCouter.xcodeproj */,
+				FD2836331CF5CA94002AE3A5 /* AppDelegate.swift */,
+				FD2836351CF5CA94002AE3A5 /* ViewController.swift */,
+				FD7C351C1D06ED8A0079E6D4 /* BackgroundPattern.swift */,
+				FDC6338F1D0816C90031CAEA /* GraphView.swift */,
+				FD3BBAFE1D0989FB00C0A441 /* TabLens.swift */,
+				FD7C35171D06B40E0079E6D4 /* UniButton.swift */,
+				FD2836371CF5CA94002AE3A5 /* Main.storyboard */,
+				FD28363A1CF5CA94002AE3A5 /* Assets.xcassets */,
+				FD28363C1CF5CA94002AE3A5 /* LaunchScreen.storyboard */,
+				FD28363F1CF5CA94002AE3A5 /* Info.plist */,
+			);
+			name = "Fiksu Counter";
+			path = "Smart Tally Counter";
+			sourceTree = "<group>";
+		};
+		FD6260261D1853150012036D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD62602C1D18531D0012036D /* FiksuCouter.app */,
+				FD62602E1D18531D0012036D /* FiksuCouter.xctest */,
+				FD6260301D18531D0012036D /* FiksuCouter.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD6F868F1D06FA3000060DDB /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				FD36C7111D0428D30085B62F /* TallyCounter-Regular.ttf */,
+				FD6F86951D06FAA000060DDB /* TallyCounterLoading.jpg */,
+				FD6F86971D07502F00060DDB /* counterclick.m4a */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD28362F1CF5CA94002AE3A5 /* Smart Tally Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2836581CF5CA94002AE3A5 /* Build configuration list for PBXNativeTarget "Smart Tally Counter" */;
+			buildPhases = (
+				FD28362C1CF5CA94002AE3A5 /* Sources */,
+				FD28362D1CF5CA94002AE3A5 /* Frameworks */,
+				FD28362E1CF5CA94002AE3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Tally Counter";
+			productName = "Smart Tally Counter";
+			productReference = FD2CB34F1CFD76CA0060D7B5 /* Smart Tally Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD2836431CF5CA94002AE3A5 /* Smart Tally CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD28365B1CF5CA94002AE3A5 /* Build configuration list for PBXNativeTarget "Smart Tally CounterTests" */;
+			buildPhases = (
+				FD2836401CF5CA94002AE3A5 /* Sources */,
+				FD2836411CF5CA94002AE3A5 /* Frameworks */,
+				FD2836421CF5CA94002AE3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD2836461CF5CA94002AE3A5 /* PBXTargetDependency */,
+			);
+			name = "Smart Tally CounterTests";
+			productName = "Smart Tally CounterTests";
+			productReference = FD2CB3501CFD76CA0060D7B5 /* Smart Tally CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD28364E1CF5CA94002AE3A5 /* Smart Tally CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD28365E1CF5CA94002AE3A5 /* Build configuration list for PBXNativeTarget "Smart Tally CounterUITests" */;
+			buildPhases = (
+				FD28364B1CF5CA94002AE3A5 /* Sources */,
+				FD28364C1CF5CA94002AE3A5 /* Frameworks */,
+				FD28364D1CF5CA94002AE3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD2836511CF5CA94002AE3A5 /* PBXTargetDependency */,
+			);
+			name = "Smart Tally CounterUITests";
+			productName = "Smart Tally CounterUITests";
+			productReference = FD2CB3511CFD76CA0060D7B5 /* Smart Tally CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD2836281CF5CA94002AE3A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Forethink;
+				TargetAttributes = {
+					FD28362F1CF5CA94002AE3A5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P7MAV8Y585;
+					};
+					FD2836431CF5CA94002AE3A5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD28362F1CF5CA94002AE3A5;
+					};
+					FD28364E1CF5CA94002AE3A5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD28362F1CF5CA94002AE3A5;
+					};
+				};
+			};
+			buildConfigurationList = FD28362B1CF5CA94002AE3A5 /* Build configuration list for PBXProject "Fiksu Counter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD2836271CF5CA94002AE3A5;
+			productRefGroup = FD2836271CF5CA94002AE3A5;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FD6260261D1853150012036D /* Products */;
+					ProjectRef = FD2E91BA1CF755AB00246004 /* FiksuCouter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FD28362F1CF5CA94002AE3A5 /* Smart Tally Counter */,
+				FD2836431CF5CA94002AE3A5 /* Smart Tally CounterTests */,
+				FD28364E1CF5CA94002AE3A5 /* Smart Tally CounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FD62602C1D18531D0012036D /* FiksuCouter.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = FiksuCouter.app;
+			remoteRef = FD62602B1D18531D0012036D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD62602E1D18531D0012036D /* FiksuCouter.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FiksuCouter.xctest;
+			remoteRef = FD62602D1D18531D0012036D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD6260301D18531D0012036D /* FiksuCouter.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FiksuCouter.xctest;
+			remoteRef = FD62602F1D18531D0012036D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD28362E1CF5CA94002AE3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6F86981D07522F00060DDB /* counterclick.m4a in Resources */,
+				FD6F86961D06FAA000060DDB /* TallyCounterLoading.jpg in Resources */,
+				FD36C7121D042A830085B62F /* TallyCounter-Regular.ttf in Resources */,
+				FD6260321D186ACC0012036D /* LaunchScreen.storyboardc in Resources */,
+				FD28363E1CF5CA94002AE3A5 /* LaunchScreen.storyboard in Resources */,
+				FD28363B1CF5CA94002AE3A5 /* Assets.xcassets in Resources */,
+				FD2836391CF5CA94002AE3A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2836421CF5CA94002AE3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD28364D1CF5CA94002AE3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD28362C1CF5CA94002AE3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC633901D0816C90031CAEA /* GraphView.swift in Sources */,
+				FD7C351D1D06ED8A0079E6D4 /* BackgroundPattern.swift in Sources */,
+				FD2836361CF5CA94002AE3A5 /* ViewController.swift in Sources */,
+				FD3BBAFF1D0989FB00C0A441 /* TabLens.swift in Sources */,
+				FDC633D41D08A2FD0031CAEA /* AppDelegate.swift in Sources */,
+				FD7C35181D06B40E0079E6D4 /* UniButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2836401CF5CA94002AE3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD28364B1CF5CA94002AE3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD2836461CF5CA94002AE3A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD28362F1CF5CA94002AE3A5 /* Smart Tally Counter */;
+			targetProxy = FD2836451CF5CA94002AE3A5 /* PBXContainerItemProxy */;
+		};
+		FD2836511CF5CA94002AE3A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD28362F1CF5CA94002AE3A5 /* Smart Tally Counter */;
+			targetProxy = FD2836501CF5CA94002AE3A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD2836371CF5CA94002AE3A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD2836381CF5CA94002AE3A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD28363C1CF5CA94002AE3A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD28363D1CF5CA94002AE3A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD2836561CF5CA94002AE3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD2836571CF5CA94002AE3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD2836591CF5CA94002AE3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Smart Tally Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = forethink.fiksucounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD28365A1CF5CA94002AE3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Smart Tally Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = forethink.fiksucounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD28365C1CF5CA94002AE3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart Tally CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Tally Counter.app/Smart Tally Counter";
+			};
+			name = Debug;
+		};
+		FD28365D1CF5CA94002AE3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart Tally CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Tally Counter.app/Smart Tally Counter";
+			};
+			name = Release;
+		};
+		FD28365F1CF5CA94002AE3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart Tally CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Tally Counter";
+			};
+			name = Debug;
+		};
+		FD2836601CF5CA94002AE3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart Tally CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Smart-Tally-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Tally Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD28362B1CF5CA94002AE3A5 /* Build configuration list for PBXProject "Fiksu Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2836561CF5CA94002AE3A5 /* Debug */,
+				FD2836571CF5CA94002AE3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2836581CF5CA94002AE3A5 /* Build configuration list for PBXNativeTarget "Smart Tally Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2836591CF5CA94002AE3A5 /* Debug */,
+				FD28365A1CF5CA94002AE3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD28365B1CF5CA94002AE3A5 /* Build configuration list for PBXNativeTarget "Smart Tally CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD28365C1CF5CA94002AE3A5 /* Debug */,
+				FD28365D1CF5CA94002AE3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD28365E1CF5CA94002AE3A5 /* Build configuration list for PBXNativeTarget "Smart Tally CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD28365F1CF5CA94002AE3A5 /* Debug */,
+				FD2836601CF5CA94002AE3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD2836281CF5CA94002AE3A5 /* Project object */;
+}
