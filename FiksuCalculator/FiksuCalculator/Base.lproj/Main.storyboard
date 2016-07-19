@@ -93,6 +93,7 @@
                                                                             <constraint firstAttribute="width" secondItem="fVy-yH-P7H" secondAttribute="height" multiplier="1:1" id="oKa-MP-G3j"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                                         <state key="normal" title="+">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -169,6 +170,7 @@
                                                                             <constraint firstAttribute="width" secondItem="grc-A9-J78" secondAttribute="height" multiplier="1:1" id="Z34-r9-feS"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="19"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                                         <state key="normal" title="±">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -220,6 +222,7 @@
                                                                             <constraint firstAttribute="width" secondItem="sgT-oc-ag2" secondAttribute="height" multiplier="1:1" id="qtj-Bc-xqE"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                                         <state key="normal" title="−">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -347,6 +350,7 @@
                                                                             <constraint firstAttribute="width" secondItem="czy-hl-2G1" secondAttribute="height" multiplier="1:1" id="upR-B7-x78"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                                         <state key="normal" title="×">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -482,6 +486,7 @@
                                                                             <constraint firstAttribute="width" secondItem="YDb-jt-EEl" secondAttribute="height" multiplier="1:1" id="Nvz-gJ-ruK"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                                         <state key="normal" title="÷">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
