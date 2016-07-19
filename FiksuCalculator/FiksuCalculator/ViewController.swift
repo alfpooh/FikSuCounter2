@@ -17,13 +17,15 @@ class ViewController: UIViewController {
     var resultplayer: AVAudioPlayer!
     var swipingplayer: AVAudioPlayer!
     var sayCount = AVSpeechUtterance(string: "")
-    
+    var taxrate = 0.24
+    var tiprate = 0.14
     
     @IBOutlet weak var BasicPad: UIView!
 
     @IBOutlet weak var FunctionPad: UIView!
     @IBOutlet weak var funcDigits: UILabel!
 
+    @IBOutlet weak var setTax: FtkToolBtn!
     
     @IBOutlet weak var XxX: FtkToolBtn!
     @IBAction func sayDisplay(sender:AnyObject) {
@@ -31,7 +33,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func copytoClipboard(sender: AnyObject) {
-        
         UIPasteboard.generalPasteboard().string = display.text
     }
     
@@ -62,7 +63,95 @@ class ViewController: UIViewController {
             userIsInTheMiddleOfTyping = true        }
     }
     
-
+    
+    //TAX features
+    
+    @IBAction func taxButton(sender: UIButton) {
+        
+        if sender.currentTitle == "Set Tax" {
+            taxrate = Double(display.text!)!
+            let taxtitle = "Tax:\(display.text!)"
+            sender.setTitle(taxtitle, forState: .Normal)
+        }
+        else {
+            displayValue = taxrate
+            userIsInTheMiddleOfTyping = false
+        }
+    }
+    
+    @IBAction func taxClear(sender: AnyObject) {
+        let key = "Set Tax"
+        sender.setTitle(key, forState: .Normal)
+        taxrate = 0.0
+    }
+    
+    @IBAction func taxPlusButton(sender: UIButton) {
+        
+        if setTax.currentTitle == "Set Tax" {
+        }
+        else {
+            let net = Double(display.text!)!
+            displayValue = net+(net*taxrate)
+            userIsInTheMiddleOfTyping = false
+        }
+    }
+    
+    @IBAction func taxMinusButton(sender: UIButton) {
+        
+        if setTax.currentTitle == "Set Tax" {
+        }
+        else {
+            let net = Double(display.text!)!
+            displayValue = net-(net*taxrate)
+            userIsInTheMiddleOfTyping = false
+        }
+    }
+    
+    
+    // TIP feature
+    
+    @IBAction func tipButton(sender: UIButton) {
+        
+        if sender.currentTitle == "Set Tip" {
+            tiprate = Double(display.text!)!
+            let tiptitle = "Tip:\(display.text!)"
+            sender.setTitle(tiptitle, forState: .Normal)
+        }
+        else {
+            displayValue = tiprate
+            userIsInTheMiddleOfTyping = false
+        }
+    }
+    
+    @IBAction func tipClear(sender: AnyObject) {
+        let key = "Set Tip"
+        sender.setTitle(key, forState: .Normal)
+        tiprate = 0.0
+    }
+    
+    @IBAction func tipPlusButton(sender: UIButton) {
+        
+        if sender.currentTitle == "Set Tip" {
+        }
+        else {
+            let net = Double(display.text!)!
+            displayValue = net+(net*tiprate)
+            userIsInTheMiddleOfTyping = false
+        }
+    }
+    
+    @IBAction func tipMinusButton(sender: UIButton) {
+        
+        if sender.currentTitle == "Set Tip" {
+        }
+        else {
+            let net = Double(display.text!)!
+            displayValue = net-(net*tiprate)
+            userIsInTheMiddleOfTyping = false
+        }
+    }
+    
+    
     @IBAction func clearCalc(sender: UIButton) {
         if userIsInTheMiddleOfTyping {
             let textInTheCurrentDisplay = display.text!
