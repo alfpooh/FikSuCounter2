@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var isBasicShowing = true
+    var isDot = false
     let synth = AVSpeechSynthesizer()
     var buttonclickplayer: AVAudioPlayer!
     var resultplayer: AVAudioPlayer!
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var FunctionPad: UIView!
     @IBOutlet weak var funcDigits: UILabel!
 
+    @IBOutlet weak var setTip: FtkToolBtn!
     @IBOutlet weak var setTax: FtkToolBtn!
     
     @IBOutlet weak var XxX: FtkToolBtn!
@@ -71,7 +73,10 @@ class ViewController: UIViewController {
         if sender.currentTitle == "Set Tax" {
             taxrate = Double(display.text!)!
             let taxtitle = "Tax:\(display.text!)"
+            NSUserDefaults.standardUserDefaults().setValue(display.text, forKeyPath: "TaxRate")
+            NSUserDefaults.standardUserDefaults().synchronize()
             sender.setTitle(taxtitle, forState: .Normal)
+
         }
         else {
             displayValue = taxrate
@@ -114,8 +119,11 @@ class ViewController: UIViewController {
         
         if sender.currentTitle == "Set Tip" {
             tiprate = Double(display.text!)!
+            NSUserDefaults.standardUserDefaults().setValue(display.text, forKeyPath: "TipRate")
+            NSUserDefaults.standardUserDefaults().synchronize()
             let tiptitle = "Tip:\(display.text!)"
             sender.setTitle(tiptitle, forState: .Normal)
+
         }
         else {
             displayValue = tiprate
@@ -172,25 +180,44 @@ class ViewController: UIViewController {
     
     @IBAction private func touchDigit (sender: UIButton) {
         let digit = sender.currentTitle!
+                    let textInTheCurrentDisplay = display.text!
         if userIsInTheMiddleOfTyping {
-            let textInTheCurrentDisplay = display.text!
-                    if digit == "0" && display.text == "0" {
-                            display.text = "0"
+                    switch digit {
+                        case "0" :
+                                // check if "00" case
+                                if textInTheCurrentDisplay == "0" {display.text = "0"
+                                userIsInTheMiddleOfTyping = true}
+                                    else {
+                                        display.text = textInTheCurrentDisplay + digit
+                                        userIsInTheMiddleOfTyping = true
+                                    }
+                        case "." :
+                            if isDot == false {
+                            display.text = "\(display.text!)."
+                            isDot = true
+                            } else {
                             userIsInTheMiddleOfTyping = false
-                                                    } else {
-                    if display.text == "0"  {
-                        display.text = digit
-                    } else {
-                        display.text = textInTheCurrentDisplay + digit}
+                            break
+                            }
+                
+                        default:
+                        if textInTheCurrentDisplay == "0" {
+                            display.text = digit
+                            }
+                        else {display.text = textInTheCurrentDisplay + digit}
+                        userIsInTheMiddleOfTyping = true
+                    }//switchend
             }
-        } else {
-            if digit == "." { display.text = "0\(digit)"}
-            else {
-                display.text = digit
-            }
+            else
+            {
+            // userIsInTheMiddleOfTyping = false
+            if digit == "." {
+                display.text = "0\(digit)"
+                } else {
+                display.text = digit}
+                }
+            userIsInTheMiddleOfTyping = true
 
-        }
-        userIsInTheMiddleOfTyping = true
     }
     
     private var displayValue: Double {
@@ -228,7 +255,10 @@ class ViewController: UIViewController {
         let xxx =  "x\u{B2}"
         XxX.setTitle(xxx, forState: .Normal)
         
-        do {
+
+        
+        
+ //       do {
 //            let resourcePath =  NSBundle.mainBundle().pathForResource("Timer", ofType: "wav")!
 //            let url = NSURL(fileURLWithPath: resourcePath)
 //            try timerEffectplayer = AVAudioPlayer(contentsOfURL: url)
@@ -244,9 +274,9 @@ class ViewController: UIViewController {
             
             
             
-        } catch let err as NSError {
-            print (err.debugDescription)
-        }
+//        } catch let err as NSError {
+//            print (err.debugDescription)
+ //       }
 
 
     }
@@ -259,6 +289,16 @@ class ViewController: UIViewController {
                                       options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion:nil)
                                         funcDigits.text = display.text
+            if let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate") {
+            taxrate = Double (taxRate as! NSNumber)
+            setTax.setTitle(String ("Tax: \(taxrate)"), forState: .Normal)
+            }
+            if let tipRate = NSUserDefaults.standardUserDefaults().valueForKey("TipRate") {
+            tiprate = Double (tipRate as! NSNumber)
+            setTip.setTitle(String ("Tax: \(tiprate)"), forState: .Normal)
+            }
+            
+            
         } else {
             UIView.transitionFromView(FunctionPad,
                                       toView: BasicPad,

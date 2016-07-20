@@ -420,15 +420,15 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OrG-of-Tsz"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXP-LP-KvX" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXP-LP-KvX" userLabel="point" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="350" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="iXP-LP-KvX" secondAttribute="height" multiplier="1:1" id="P6C-Fe-hsD"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
-                                                                        <state key="normal">
-                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <state key="normal" title=".">
+                                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
@@ -613,6 +613,7 @@
                                                                             <constraint firstAttribute="width" secondItem="jmn-yD-IO2" secondAttribute="height" multiplier="1:1" id="ccT-Sw-Ley"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
                                                                         <state key="normal" title="e">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -632,6 +633,7 @@
                                                                             <constraint firstAttribute="width" secondItem="Hw1-EH-cAV" secondAttribute="height" multiplier="1:1" id="jWg-jR-YH7"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                                         <state key="normal" title="π">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -651,6 +653,7 @@
                                                                             <constraint firstAttribute="width" secondItem="BQ5-x6-VZN" secondAttribute="height" multiplier="1:1" id="eFQ-NN-0SR"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                                         <state key="normal" title="√">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
@@ -786,7 +789,7 @@
                                                                             <constraint firstAttribute="width" secondItem="F1m-uZ-q5p" secondAttribute="height" multiplier="1:1" id="aEo-NQ-Gdi"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
-                                                                        <state key="normal" title="- Tip">
+                                                                        <state key="normal" title="− Tip">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
@@ -933,6 +936,7 @@
                         <outlet property="display" destination="Nz3-dk-WI0" id="Je3-JV-omc"/>
                         <outlet property="funcDigits" destination="N3Y-Fk-584" id="NqG-gP-jAc"/>
                         <outlet property="setTax" destination="6My-vL-z5B" id="3ir-Kb-8KQ"/>
+                        <outlet property="setTip" destination="nO7-gT-os9" id="ys5-Dm-6Qz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
