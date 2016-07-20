@@ -12,7 +12,6 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var isBasicShowing = true
-    var isDot = false
     let synth = AVSpeechSynthesizer()
     var buttonclickplayer: AVAudioPlayer!
     var resultplayer: AVAudioPlayer!
@@ -20,6 +19,36 @@ class ViewController: UIViewController {
     var sayCount = AVSpeechUtterance(string: "")
     var taxrate = 0.24
     var tiprate = 0.14
+    
+    
+    private var userIsInTheMiddleOfTyping = false
+    
+    private var isDot: Bool {
+        
+        get {
+            var dotornot = false
+            if ((display.text?.characters.contains(".")) != nil) {dotornot = true}
+        return dotornot }
+        
+        set {
+        _ = newValue
+        }
+        
+    }
+    
+    private var displayValue: Double {
+        
+        get {
+            return Double(display.text!)!
+        }
+        
+        set {
+            display.text = String(newValue)
+            funcDigits.text = String(newValue)
+        }
+    }
+    
+    private var brain = CalculatorBrain()
     
     @IBOutlet weak var BasicPad: UIView!
 
@@ -33,6 +62,10 @@ class ViewController: UIViewController {
     @IBAction func sayDisplay(sender:AnyObject) {
     SoundOut(0)
     }
+    
+    
+    
+    
 
     @IBAction func copytoClipboard(sender: AnyObject) {
         UIPasteboard.generalPasteboard().string = display.text
@@ -175,64 +208,53 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    private var userIsInTheMiddleOfTyping = false
-    
+
     @IBAction private func touchDigit (sender: UIButton) {
         let digit = sender.currentTitle!
-                    let textInTheCurrentDisplay = display.text!
+        let textInTheCurrentDisplay = display.text!
         if userIsInTheMiddleOfTyping {
-                    switch digit {
-                        case "0" :
-                                // check if "00" case
-                                if textInTheCurrentDisplay == "0" {display.text = "0"
-                                userIsInTheMiddleOfTyping = true}
-                                    else {
-                                        display.text = textInTheCurrentDisplay + digit
-                                        userIsInTheMiddleOfTyping = true
-                                    }
-                        case "." :
-                            if isDot == false {
-                            display.text = "\(display.text!)."
-                            isDot = true
-                            } else {
-                            userIsInTheMiddleOfTyping = false
-                            break
-                            }
+            switch digit {
+            case "0" :
+                // check if "00" case
+                if textInTheCurrentDisplay == "0" {display.text = "0"
+                    userIsInTheMiddleOfTyping = true}
+                else {
+                    display.text = textInTheCurrentDisplay + digit
+                    userIsInTheMiddleOfTyping = true
+                }
+            case "." :
+                if isDot == false {
+                    display.text = textInTheCurrentDisplay + digit
+                } else {
+                    isDot = true
+                    print ("ghmmmm")
+                    display.text = textInTheCurrentDisplay + digit
+                    break
+                }
                 
-                        default:
-                        if textInTheCurrentDisplay == "0" {
-                            display.text = digit
-                            }
-                        else {display.text = textInTheCurrentDisplay + digit}
-                        userIsInTheMiddleOfTyping = true
-                    }//switchend
-            }
-            else
-            {
+            default:
+                if textInTheCurrentDisplay == "0" {
+                    display.text = digit
+                }
+                else {display.text = textInTheCurrentDisplay + digit}
+                userIsInTheMiddleOfTyping = true
+            }//switchend
+        }
+        else
+        {
             // userIsInTheMiddleOfTyping = false
             if digit == "." {
-                display.text = "0\(digit)"
-                } else {
-                display.text = digit}
-                }
+                display.text = "0."
+            } else {
+                display.text = digit
+            }
             userIsInTheMiddleOfTyping = true
+            
+        }
+    }//func end
 
-    }
     
-    private var displayValue: Double {
-        
-        get {
-            return Double(display.text!)!
-        }
-        
-        set {
-            display.text = String(newValue)
-            funcDigits.text = String(newValue)
-        }
-    }
-    
-    private var brain = CalculatorBrain()
+
     
     @IBAction private func performOperation (sender: UIButton) {
         
