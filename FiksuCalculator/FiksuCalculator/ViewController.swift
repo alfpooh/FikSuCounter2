@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var taxrate = 0.24
     var tiprate = 0.14
     var dotornot = false
+    var defaults = NSUserDefaults.standardUserDefaults()
     
 
     private var userIsInTheMiddleOfTyping = false
@@ -101,8 +102,8 @@ class ViewController: UIViewController {
         if sender.currentTitle == "Set Tax" {
             taxrate = Double(display.text!)!
             let taxtitle = "Tax:\(display.text!)"
-            NSUserDefaults.standardUserDefaults().setValue(display.text!, forKeyPath: "TaxRate")
-            NSUserDefaults.standardUserDefaults().synchronize()
+            defaults.setDouble(displayValue, forKey: "TaxRate")
+            defaults.synchronize()
             sender.setTitle(taxtitle, forState: .Normal)
 
         }
@@ -147,8 +148,8 @@ class ViewController: UIViewController {
         
         if sender.currentTitle == "Set Tip" {
             tiprate = Double(display.text!)!
-            NSUserDefaults.standardUserDefaults().setValue(display.text, forKeyPath: "TipRate")
-            NSUserDefaults.standardUserDefaults().synchronize()
+            defaults.setDouble(displayValue, forKey: "TipRate")
+            defaults.synchronize()
             let tiptitle = "Tip:\(display.text!)"
             sender.setTitle(tiptitle, forState: .Normal)
 
@@ -272,8 +273,18 @@ class ViewController: UIViewController {
         let xxx =  "x\u{B2}"
         XxX.setTitle(xxx, forState: .Normal)
         
-
-        
+                    if let taxRate = defaults.objectForKey("TaxRate") as? Double
+                    {
+                    taxrate = taxRate
+                    setTax.setTitle(String ("Tax:\(taxrate)"), forState: .Normal)
+                        print ("Tax: \(taxrate)")
+                    }
+                    if let tipRate = defaults.objectForKey("TipRate") as? Double
+                    {
+                    tiprate = tipRate
+                    setTip.setTitle(String ("Tip:\(tiprate)"), forState: .Normal)
+                        print ("Tip: \(tiprate)")
+                    }
         
  //       do {
 //            let resourcePath =  NSBundle.mainBundle().pathForResource("Timer", ofType: "wav")!
@@ -308,14 +319,7 @@ class ViewController: UIViewController {
                                         funcDigits.text = display.text
             let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate")
             print ("recoded taxrate:\(taxRate)")
-//            if let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate") {
-//            taxrate = Double (taxRate as! NSNumber)
-//            setTax.setTitle(String ("Tax: \(taxrate)"), forState: .Normal)
-//            }
-//            if let tipRate = NSUserDefaults.standardUserDefaults().valueForKey("TipRate") {
-//            tiprate = Double (tipRate as! NSNumber)
-//            setTip.setTitle(String ("Tax: \(tiprate)"), forState: .Normal)
-//            }
+
             
             
         } else {
