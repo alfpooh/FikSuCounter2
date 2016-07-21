@@ -622,6 +622,9 @@
                                                                                 <color key="value" red="1" green="0.16841727279999999" blue="0.0" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jd1-Pl-Nwl"/>
                                                                         </connections>
@@ -662,6 +665,9 @@
                                                                                 <color key="value" red="1" green="0.16841727279999999" blue="0.0" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zzl-l3-qAh"/>
                                                                         </connections>
@@ -690,6 +696,9 @@
                                                                                 <color key="value" red="0.37923214312339121" green="0.49102564102564106" blue="0.13792773884355281" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="taxButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1a-Yu-6hw"/>
                                                                             <action selector="taxClear:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="yyX-N2-jsn"/>
@@ -729,6 +738,9 @@
                                                                                 <color key="value" red="0.37923214312339121" green="0.49102564102564106" blue="0.13792773884355281" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="taxMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsI-w4-ANe"/>
                                                                         </connections>
@@ -757,6 +769,9 @@
                                                                                 <color key="value" red="0.41323039189999999" green="0.13665475399999999" blue="0.65817307700000005" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="tipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCF-cd-xxi"/>
                                                                             <action selector="tipClear:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="IPv-FL-OZV"/>
@@ -797,6 +812,9 @@
                                                                                 <color key="value" red="0.41323039189999999" green="0.13665475399999999" blue="0.65817307700000005" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="tipMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svr-Ct-i5N"/>
                                                                         </connections>
@@ -831,6 +849,9 @@
                                                                                 <real key="value" value="0.5"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="copytoClipboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hQ-NA-fWq"/>
                                                                         </connections>
@@ -869,6 +890,9 @@
                                                                                 <color key="value" red="0.25886781096902711" green="0.53928285256410258" blue="0.52918286598774833" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        </variation>
                                                                         <connections>
                                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIG-e1-zVZ"/>
                                                                         </connections>
