@@ -105,7 +105,6 @@ class ViewController: UIViewController {
             defaults.setDouble(displayValue, forKey: "TaxRate")
             defaults.synchronize()
             sender.setTitle(taxtitle, forState: .Normal)
-
         }
         else {
             displayValue = taxrate
@@ -115,6 +114,8 @@ class ViewController: UIViewController {
     
     @IBAction func taxClear(sender: AnyObject) {
         let key = "Set Tax"
+        defaults.setDouble(0, forKey: "TaxRate")
+        defaults.synchronize()
         sender.setTitle(key, forState: .Normal)
         taxrate = 0.0
     }
@@ -162,6 +163,8 @@ class ViewController: UIViewController {
     
     @IBAction func tipClear(sender: AnyObject) {
         let key = "Set Tip"
+        defaults.setDouble(0, forKey: "TipRate")
+        defaults.synchronize()
         sender.setTitle(key, forState: .Normal)
         tiprate = 0.0
     }
@@ -276,37 +279,23 @@ class ViewController: UIViewController {
                     if let taxRate = defaults.objectForKey("TaxRate") as? Double
                     {
                     taxrate = taxRate
+                        if taxrate == 0 {
+                            setTax.setTitle(String ("Set Tax"), forState: .Normal)
+                        } else {
                     setTax.setTitle(String ("Tax:\(taxrate)"), forState: .Normal)
-                        print ("Tax: \(taxrate)")
+                            print ("Tax: \(taxrate)")}
                     }
                     if let tipRate = defaults.objectForKey("TipRate") as? Double
                     {
                     tiprate = tipRate
+                        if tiprate == 0 {
+                            setTip.setTitle(String ("Set Tip"), forState: .Normal)
+                        } else {
                     setTip.setTitle(String ("Tip:\(tiprate)"), forState: .Normal)
                         print ("Tip: \(tiprate)")
                     }
         
- //       do {
-//            let resourcePath =  NSBundle.mainBundle().pathForResource("Timer", ofType: "wav")!
-//            let url = NSURL(fileURLWithPath: resourcePath)
-//            try timerEffectplayer = AVAudioPlayer(contentsOfURL: url)
-//            try timerLoudRingplayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("TimerLoudRing", ofType: "wav")!))
-//            try timerShortRingplayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("TimerShortRing", ofType: "wav")!))
-//            try timerRewindplayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("TimerRewind", ofType: "wav")!))
-//            
-//            timerEffectplayer.numberOfLoops = -1
-//            timerEffectplayer.prepareToPlay()
-//            timerLoudRingplayer.prepareToPlay()
-//            timerShortRingplayer.prepareToPlay()
-//            timerRewindplayer.prepareToPlay()
-            
-            
-            
-//        } catch let err as NSError {
-//            print (err.debugDescription)
- //       }
-
-
+        }
     }
     
     @IBAction func counterViewSwipe (gesture:UISwipeGestureRecognizer?) {
@@ -364,8 +353,7 @@ class ViewController: UIViewController {
             resultplayer.play()}
         else if index == 3 {
             swipingplayer.play()}
-    }
+}
 
-    
 }
 
