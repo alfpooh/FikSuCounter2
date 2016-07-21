@@ -18,19 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdF-cs-5Y5" userLabel="TopPad">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdF-cs-5Y5" userLabel="TopPad">
                                 <rect key="frame" x="150" y="50" width="300" height="500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-bM-YnP" userLabel="BasicPad">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="El5-FM-2zX">
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="El5-FM-2zX">
                                                 <rect key="frame" x="17" y="14" width="265" height="473"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-ZL-6NM" userLabel="Display" customClass="FtkSquareBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-ZL-6NM" userLabel="Display" customClass="FtkSquareBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="265" height="53"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="right" lineBreakMode="headTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz3-dk-WI0">
+                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="headTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz3-dk-WI0">
                                                                 <rect key="frame" x="5" y="10" width="255" height="32.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="28"/>
@@ -60,13 +60,13 @@
                                                             <action selector="sayDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rj-3x-Hdc"/>
                                                         </connections>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KxB-c5-rkQ">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KxB-c5-rkQ">
                                                         <rect key="frame" x="0.0" y="68" width="265" height="405"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WR5-4e-rYR">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WR5-4e-rYR">
                                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="405"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soj-De-MEw" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soj-De-MEw" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -86,7 +86,7 @@
                                                                             <action selector="memoryDelete:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="ObF-tn-3yS"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVy-yH-P7H" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVy-yH-P7H" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="70" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -106,7 +106,7 @@
                                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3P-J6-3yD"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-7Y-P6F" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-7Y-P6F" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="140" width="55" height="55"/>
                                                                         <color key="backgroundColor" red="0.59709535256410251" green="0.065809743742177421" blue="0.23081452327147664" alpha="0.0" colorSpace="calibratedRGB"/>
                                                                         <constraints>
@@ -125,7 +125,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1s-2h-RJb"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reP-ZE-OMJ" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reP-ZE-OMJ" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="210" width="55" height="55"/>
                                                                         <color key="backgroundColor" red="0.59709535256410251" green="0.065809743742177421" blue="0.23081452327147664" alpha="0.0" colorSpace="calibratedRGB"/>
                                                                         <constraints>
@@ -144,7 +144,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAN-uj-MnO"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoO-AA-tvO" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoO-AA-tvO" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="280" width="55" height="55"/>
                                                                         <color key="backgroundColor" red="0.59709535256410251" green="0.065809743742177421" blue="0.23081452327147664" alpha="0.0" colorSpace="calibratedRGB"/>
                                                                         <constraints>
@@ -163,7 +163,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Crf-Or-72e"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grc-A9-J78" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grc-A9-J78" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="350" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -189,10 +189,10 @@
                                                                     <constraint firstAttribute="width" constant="55" id="Lcm-k7-QrO"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-Gb-7eb">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-Gb-7eb">
                                                                 <rect key="frame" x="70" y="0.0" width="55" height="405"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-DE-XC4" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-DE-XC4" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -215,7 +215,7 @@
                                                                             <action selector="memoryDelete:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="hFP-gs-onW"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgT-oc-ag2" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgT-oc-ag2" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="70" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -235,7 +235,7 @@
                                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAG-UV-Dfo"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jG-Vt-Baw" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jG-Vt-Baw" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="140" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -254,7 +254,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryg-Gn-5eX"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ll-iq-mBg" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ll-iq-mBg" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="210" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -273,7 +273,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3vs-cB-qUS"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmL-WD-2ra" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmL-WD-2ra" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="280" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -292,7 +292,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syN-ux-mVC"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NI-da-LCg" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NI-da-LCg" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="350" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -317,10 +317,10 @@
                                                                     <constraint firstAttribute="width" constant="55" id="fIZ-Aj-f9q"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5Hd-Ej-nnj">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5Hd-Ej-nnj">
                                                                 <rect key="frame" x="140" y="0.0" width="55" height="405"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4V-qL-RBM" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4V-qL-RBM" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -343,7 +343,7 @@
                                                                             <action selector="memoryDelete:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Olw-DK-PfD"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czy-hl-2G1" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czy-hl-2G1" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="70" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -363,7 +363,7 @@
                                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="130-Vo-VNP"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-zE-na2" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-zE-na2" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="140" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -382,7 +382,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvY-Aa-gRt"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10S-xF-trc" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10S-xF-trc" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="210" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -401,7 +401,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Es8-j6-7dU"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoi-Ux-mDG" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoi-Ux-mDG" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="280" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -420,7 +420,7 @@
                                                                             <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OrG-of-Tsz"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXP-LP-KvX" userLabel="point" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXP-LP-KvX" userLabel="point" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="350" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -451,10 +451,10 @@
                                                                     <constraint firstAttribute="width" constant="55" id="qM6-4d-yvY"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-Zl-DTl">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-Zl-DTl">
                                                                 <rect key="frame" x="210" y="0.0" width="55" height="405"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay1-W8-DPJ" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay1-W8-DPJ" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -479,7 +479,7 @@
                                                                             <action selector="copytoClipboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1B-BY-kjs"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDb-jt-EEl" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDb-jt-EEl" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="70" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -499,7 +499,7 @@
                                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HpQ-gn-MRu"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7r-8a-tYU" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7r-8a-tYU" customClass="FtkToolBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="140" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
@@ -518,7 +518,7 @@
                                                                             <action selector="clearCalc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMc-pn-ZFz"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lme-64-rpG" customClass="FtkSquareBtn" customModule="FiksuCalculator" customModuleProvider="target">
+                                                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lme-64-rpG" customClass="FtkSquareBtn" customModule="FiksuCalculator" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="210" width="55" height="195"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="28"/>
@@ -561,7 +561,7 @@
                                             <constraint firstItem="El5-FM-2zX" firstAttribute="centerY" secondItem="zl3-bM-YnP" secondAttribute="centerY" id="b7n-2G-6Xe"/>
                                         </constraints>
                                     </view>
-                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tbr-Ae-fGP" userLabel="FunctionPad">
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tbr-Ae-fGP" userLabel="FunctionPad">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ECk-T7-AI6">
@@ -897,7 +897,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Tbr-Ae-fGP" firstAttribute="centerX" secondItem="YdF-cs-5Y5" secondAttribute="centerX" id="Qg9-45-fsz"/>
+                                    <constraint firstItem="Tbr-Ae-fGP" firstAttribute="centerY" secondItem="YdF-cs-5Y5" secondAttribute="centerY" id="VyR-TW-CL0"/>
                                     <constraint firstAttribute="width" constant="300" id="a4c-aH-UlW"/>
+                                    <constraint firstItem="zl3-bM-YnP" firstAttribute="centerY" secondItem="YdF-cs-5Y5" secondAttribute="centerY" id="bdp-xO-hIW"/>
+                                    <constraint firstItem="zl3-bM-YnP" firstAttribute="centerX" secondItem="YdF-cs-5Y5" secondAttribute="centerX" id="noG-4v-k5i"/>
                                     <constraint firstAttribute="height" constant="500" id="uhA-nn-aLM"/>
                                 </constraints>
                                 <connections>
@@ -909,7 +913,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Cl-VU-2hA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YdF-cs-5Y5" secondAttribute="bottom" id="AFv-63-ydj"/>
+                            <constraint firstAttribute="trailing" secondItem="YdF-cs-5Y5" secondAttribute="trailing" id="EDT-XY-eoe"/>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCb-XC-IaW"/>
+                            <constraint firstItem="YdF-cs-5Y5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q19-Rs-BH2"/>
+                            <constraint firstItem="YdF-cs-5Y5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bxv-u2-fM0"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
