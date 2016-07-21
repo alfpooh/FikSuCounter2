@@ -9,6 +9,11 @@
 import UIKit
 import AVFoundation
 
+extension Double {
+    var isInteger: Bool {return rint(self) == self}
+}
+
+
 class ViewController: UIViewController {
     
     var isBasicShowing = true
@@ -19,22 +24,12 @@ class ViewController: UIViewController {
     var sayCount = AVSpeechUtterance(string: "")
     var taxrate = 0.24
     var tiprate = 0.14
+    var dotornot = false
     
-    
+
     private var userIsInTheMiddleOfTyping = false
     
-    private var isDot: Bool {
-        
-        get {
-            var dotornot = false
-            if ((display.text?.characters.contains(".")) != nil) {dotornot = true}
-        return dotornot }
-        
-        set {
-        _ = newValue
-        }
-        
-    }
+
     
     private var displayValue: Double {
         
@@ -106,7 +101,7 @@ class ViewController: UIViewController {
         if sender.currentTitle == "Set Tax" {
             taxrate = Double(display.text!)!
             let taxtitle = "Tax:\(display.text!)"
-            NSUserDefaults.standardUserDefaults().setValue(display.text, forKeyPath: "TaxRate")
+            NSUserDefaults.standardUserDefaults().setValue(display.text!, forKeyPath: "TaxRate")
             NSUserDefaults.standardUserDefaults().synchronize()
             sender.setTitle(taxtitle, forState: .Normal)
 
@@ -223,11 +218,11 @@ class ViewController: UIViewController {
                     userIsInTheMiddleOfTyping = true
                 }
             case "." :
-                if isDot == false {
-                    display.text = textInTheCurrentDisplay + digit
+                if displayValue.isInteger == false {
+                    print ("it has dot already")
                 } else {
-                    isDot = true
-                    print ("ghmmmm")
+                    //isDot = true
+                    print ("Adding dot ")
                     display.text = textInTheCurrentDisplay + digit
                     break
                 }
@@ -311,14 +306,16 @@ class ViewController: UIViewController {
                                       options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion:nil)
                                         funcDigits.text = display.text
-            if let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate") {
-            taxrate = Double (taxRate as! NSNumber)
-            setTax.setTitle(String ("Tax: \(taxrate)"), forState: .Normal)
-            }
-            if let tipRate = NSUserDefaults.standardUserDefaults().valueForKey("TipRate") {
-            tiprate = Double (tipRate as! NSNumber)
-            setTip.setTitle(String ("Tax: \(tiprate)"), forState: .Normal)
-            }
+            let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate")
+            print ("recoded taxrate:\(taxRate)")
+//            if let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate") {
+//            taxrate = Double (taxRate as! NSNumber)
+//            setTax.setTitle(String ("Tax: \(taxrate)"), forState: .Normal)
+//            }
+//            if let tipRate = NSUserDefaults.standardUserDefaults().valueForKey("TipRate") {
+//            tiprate = Double (tipRate as! NSNumber)
+//            setTip.setTitle(String ("Tax: \(tiprate)"), forState: .Normal)
+//            }
             
             
         } else {
