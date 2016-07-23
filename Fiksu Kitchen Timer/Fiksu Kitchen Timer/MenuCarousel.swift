@@ -45,25 +45,30 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     func ClearandAddimages(ImageArray: Int) {
         
         if isImageAdded  {
-            self.view.willRemoveSubview(images)
-            images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,
-                y: 200,
-                width: ((self.view.frame.size.width/5)*3),
-                height: (self.view.frame.size.width/5)*3))
-            images.ZCdelegate = self
-            images.addImages(["InstantRamen", "Fusilli", "Potatoes", "Spagehtti","Somen","Egg"])
-            self.view.addSubview(images)
+            
+            if let viewWithTag = self.view.viewWithTag(1) {
+                viewWithTag.removeFromSuperview()
+            }
+            
+            let imageArray = ["1", "2", "3", "4","5"]
+            imageAdding(imageArray)
         }
         else {
+            let imageArray = ["InstantRamen", "Fusilli", "Potatoes", "Spagehtti","Somen","Egg"]
+            imageAdding(imageArray)
+            isImageAdded = true
+        }
+    }
+    
+    func imageAdding (toaddarray: AnyObject) {
         images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,
             y: 200,
             width: ((self.view.frame.size.width/5)*3),
             height: (self.view.frame.size.width/5)*3))
         images.ZCdelegate = self
-        images.addImages(["InstantRamen", "Fusilli", "Potatoes", "Spagehtti","Somen","Egg"])
+        images.addImages(toaddarray as! [String])
+        images.tag = 1
         self.view.addSubview(images)
-        isImageAdded = true
-        }
     }
     
     func GotoTimer(sender: AnyObject) {
@@ -75,7 +80,8 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     }
     
     func ChangeMenu (sender: AnyObject) {
-        print("Tap title for chaning test is ok")
+        ClearandAddimages(1)
+        print("Testing change added images")
     
     }
     
