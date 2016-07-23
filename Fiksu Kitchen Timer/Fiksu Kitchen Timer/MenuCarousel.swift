@@ -26,13 +26,12 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         
         //menu buttons
         
-        menu = ZCarouselTitle(frame: CGRect( x: self.view.frame.size.width/5-20,
+        menu = ZCarouselTitle(frame: CGRect( x: (self.view.frame.size.width/5),
             y: 100,
             width: (self.view.frame.size.width/5)*3,
             height: 50))
         menu.ZCTitledelegate = self
-        menu.addButtons(["Boiling", "Roasting", "Steaming", "Resting"])
-        
+        menu.addButtons(["Boiling", "Roasting", "Steaming", "Resting","Oven","Slow","Coffee","Tea"])
         self.view.addSubview(menu!)
         
         images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,

@@ -74,14 +74,14 @@
             if i != 0 {
                 buttonFrame = CGRectMake(buttonFrame.origin.x+buttonFrame.width,
                                          self.frame.height/2-self.frame.height/2,
-                                         (self.frame.size.width/7)*3,
+                                         self.frame.size.width,
                                          self.frame.height)
             }
             //4
             let button = FtkSquareBtn(frame: buttonFrame)
             button.setTitle(finalButtons[i], forState: UIControlState.Normal)
             button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-            button.titleLabel!.font = UIFont(name: "HelveticaNeue-UltraLight", size: 24)
+            button.titleLabel!.font = UIFont(name: "HelveticaNeue-UltraLight", size: 20)
             
             //
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ZCarouselTitle.buttonTapped(_:)))
@@ -190,12 +190,9 @@
         if pageInt == -1 {
             pageInt = pageInt + originalArrayCount
         }
-        
         if pageInt == originalArrayCount {
             pageInt = 0
         }
-        
-        //println(pageInt)
         self.ZCTitledelegate?.ZCarouselTitleShowingIndex(self, index: pageInt)
     }
  }
