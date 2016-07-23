@@ -1,18 +1,18 @@
-//
-//  Carrousel.swift
-//  ZCScrollMenu
-//
-//  Created by Ricardo Zertuche on 2/8/15.
-//  Copyright (c) 2015 Ricardo Zertuche. All rights reserved.
-//
-
-import UIKit
-
-@objc protocol ZCarouselDelegate {
-    func ZCarouselShowingIndex(scrollview:ZCarousel, index: Int)
-}
-
-class ZCarousel: UIScrollView, UIScrollViewDelegate {
+ //
+ //  Carrousel.swift
+ //  ZCScrollMenu
+ //
+ //  Created by Ricardo Zertuche on 2/8/15.
+ //  Copyright (c) 2015 Ricardo Zertuche. All rights reserved.
+ //
+ 
+ import UIKit
+ 
+ @objc protocol ZCarouselTitleDelegate {
+    func ZCarouselTitleShowingIndex(scrollview:ZCarouselTitle, index: Int)
+ }
+ 
+ class ZCarouselTitle: UIScrollView, UIScrollViewDelegate {
     
     var ZCButtons:[UIButton] = []
     var ZCImages:[UIImageView] = []
@@ -23,7 +23,7 @@ class ZCarousel: UIScrollView, UIScrollViewDelegate {
     private var isImage: Bool!
     private var originalArrayCount: Int!
     
-    var ZCdelegate: ZCarouselDelegate?
+    var ZCTitledelegate: ZCarouselTitleDelegate?
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -84,7 +84,7 @@ class ZCarousel: UIScrollView, UIScrollViewDelegate {
             button.titleLabel!.font = UIFont(name: "HelveticaNeue-UltraLight", size: 24)
             
             //
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ZCarousel.buttonTapped(_:)))
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ZCarouselTitle.buttonTapped(_:)))
             button.userInteractionEnabled = true
             button.addGestureRecognizer(tapGestureRecognizer)
             
@@ -100,64 +100,64 @@ class ZCarousel: UIScrollView, UIScrollViewDelegate {
         self.scrollRectToVisible(middleButton.frame, animated: false)
     }
     
-    func addImages(imagesToUSe: [String]){
-        originalArrayCount = imagesToUSe.count
-        //1
-        var imageViewFrame = CGRectMake(0,0, self.frame.size.width, self.frame.height)
-        
-        //a
-        var finalImageViews = imagesToUSe
-        //b
-        let firstItem       = imagesToUSe[0]
-        let secondItem      = imagesToUSe[1]
-        let almostLastItem  = imagesToUSe[imagesToUSe.count-2]
-        let lastItem        = imagesToUSe.last
-        //c
-        finalImageViews.insert(almostLastItem, atIndex: 0)
-        finalImageViews.insert(lastItem!, atIndex: 1)
-        finalImageViews.append(firstItem)
-        finalImageViews.append(secondItem)
-        
-        //2
-        for i in 0..<finalImageViews.count {
-            
-            let image = UIImage(named: finalImageViews[i])
-            //3
-            
-            if i != 0 {
-                imageViewFrame = CGRectMake(imageViewFrame.origin.x+imageViewFrame.width+20,
-                                            self.frame.height/2-self.frame.height/2+20,
-                                            self.frame.size.width-20,
-                                            self.frame.height-20)
-            }
-            //4
-            let imageView = UIImageView(frame: imageViewFrame)
-            imageView.image = image
-            
-            //
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ZCarousel.imageTapped(_:)))
-            imageView.userInteractionEnabled = true
-            imageView.addGestureRecognizer(tapGestureRecognizer)
-            
-            //6
-            self.addSubview(imageView)
-            self.contentSize.width = super.contentSize.width+imageView.frame.width
-            
-            images.append(imageView)
-        }
-        
-        isImage = true
-        let middleImage = images[(images.count/2)]
-        self.scrollRectToVisible(middleImage.frame, animated: false)
-    }
-    
-    func imageTapped(image: AnyObject) {
-        NSNotificationCenter.defaultCenter().postNotificationName("starttimer", object: nil)
-        print ("tapped!")
-    }
+//    func addImages(imagesToUSe: [String]){
+//        originalArrayCount = imagesToUSe.count
+//        //1
+//        var imageViewFrame = CGRectMake(0,0, self.frame.size.width, self.frame.height)
+//        
+//        //a
+//        var finalImageViews = imagesToUSe
+//        //b
+//        let firstItem       = imagesToUSe[0]
+//        let secondItem      = imagesToUSe[1]
+//        let almostLastItem  = imagesToUSe[imagesToUSe.count-2]
+//        let lastItem        = imagesToUSe.last
+//        //c
+//        finalImageViews.insert(almostLastItem, atIndex: 0)
+//        finalImageViews.insert(lastItem!, atIndex: 1)
+//        finalImageViews.append(firstItem)
+//        finalImageViews.append(secondItem)
+//        
+//        //2
+//        for i in 0..<finalImageViews.count {
+//            
+//            let image = UIImage(named: finalImageViews[i])
+//            //3
+//            
+//            if i != 0 {
+//                imageViewFrame = CGRectMake(imageViewFrame.origin.x+imageViewFrame.width+20,
+//                                            self.frame.height/2-self.frame.height/2+20,
+//                                            self.frame.size.width-20,
+//                                            self.frame.height-20)
+//            }
+//            //4
+//            let imageView = UIImageView(frame: imageViewFrame)
+//            imageView.image = image
+//            
+//            //
+//            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ZCarousel.imageTapped(_:)))
+//            imageView.userInteractionEnabled = true
+//            imageView.addGestureRecognizer(tapGestureRecognizer)
+//            
+//            //6
+//            self.addSubview(imageView)
+//            self.contentSize.width = super.contentSize.width+imageView.frame.width
+//            
+//            images.append(imageView)
+//        }
+//        
+//        isImage = true
+//        let middleImage = images[(images.count/2)]
+//        self.scrollRectToVisible(middleImage.frame, animated: false)
+//    }
+//    
+//    func imageTapped(image: AnyObject) {
+//        NSNotificationCenter.defaultCenter().postNotificationName("starttimer", object: nil)
+//        print ("tapped!")
+//    }
     func buttonTapped(image: AnyObject) {
-        NSNotificationCenter.defaultCenter().postNotificationName("starttimer", object: nil)
-        print ("tapped!")
+        NSNotificationCenter.defaultCenter().postNotificationName("Title", object: nil)
+        print ("Title tapped!")
     }
     
     
@@ -167,14 +167,9 @@ class ZCarousel: UIScrollView, UIScrollViewDelegate {
         //2
         var objectsCount: CGFloat!
         var objects = []
-        if isImage==true {
-            objectsCount = CGFloat(images.count)
-            objects = images
-        }
-        else {
-            objectsCount = CGFloat(buttons.count)
-            objects = buttons
-        }
+        objectsCount = CGFloat(buttons.count)
+        objects = buttons
+
         //3
         if page <= 1{
             let scrollToObject: AnyObject = objects[Int(objectsCount-3)]
@@ -194,13 +189,13 @@ class ZCarousel: UIScrollView, UIScrollViewDelegate {
         
         if pageInt == -1 {
             pageInt = pageInt + originalArrayCount
-        }  
+        }
         
         if pageInt == originalArrayCount {
             pageInt = 0
         }
         
         //println(pageInt)
-        self.ZCdelegate?.ZCarouselShowingIndex(self, index: pageInt)
+        self.ZCTitledelegate?.ZCarouselTitleShowingIndex(self, index: pageInt)
     }
-}
+ }

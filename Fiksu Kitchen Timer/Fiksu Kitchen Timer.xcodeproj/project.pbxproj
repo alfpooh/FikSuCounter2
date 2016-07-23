@@ -27,6 +27,8 @@
 		FDF2FDE21D266BE500F0CEC5 /* UniLense.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF2FDE11D266BE500F0CEC5 /* UniLense.swift */; };
 		FDF2FDE41D26721A00F0CEC5 /* watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF2FDE31D26721A00F0CEC5 /* watch.swift */; };
 		FDF2FDE61D267E9B00F0CEC5 /* Ktimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF2FDE51D267E9B00F0CEC5 /* Ktimer.swift */; };
+		FDF44C6E1D42605700EFEC48 /* FTK_RoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF44C6D1D42605700EFEC48 /* FTK_RoundedRectangle.swift */; };
+		FDF44C701D4359E500EFEC48 /* ZCarouselTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF44C6F1D4359E500EFEC48 /* ZCarouselTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		FDF2FDE11D266BE500F0CEC5 /* UniLense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniLense.swift; sourceTree = "<group>"; };
 		FDF2FDE31D26721A00F0CEC5 /* watch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = watch.swift; sourceTree = "<group>"; };
 		FDF2FDE51D267E9B00F0CEC5 /* Ktimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ktimer.swift; sourceTree = "<group>"; };
+		FDF44C6D1D42605700EFEC48 /* FTK_RoundedRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTK_RoundedRectangle.swift; sourceTree = "<group>"; };
+		FDF44C6F1D4359E500EFEC48 /* ZCarouselTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCarouselTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 				FDF2FDB91D26697100F0CEC5 /* Info.plist */,
 				FDF2FDDF1D266ADF00F0CEC5 /* UniButton.swift */,
 				FDF2FDE31D26721A00F0CEC5 /* watch.swift */,
+				FDF44C6D1D42605700EFEC48 /* FTK_RoundedRectangle.swift */,
+				FDF44C6F1D4359E500EFEC48 /* ZCarouselTitle.swift */,
 			);
 			path = "Fiksu Kitchen Timer";
 			sourceTree = "<group>";
@@ -301,9 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF2FDB01D26697100F0CEC5 /* ViewController.swift in Sources */,
+				FDF44C701D4359E500EFEC48 /* ZCarouselTitle.swift in Sources */,
 				FDF2FDAE1D26697100F0CEC5 /* AppDelegate.swift in Sources */,
 				FDF2FDE01D266ADF00F0CEC5 /* UniButton.swift in Sources */,
 				FDEE1A021D2BC18000EE7F96 /* RecipeButton.swift in Sources */,
+				FDF44C6E1D42605700EFEC48 /* FTK_RoundedRectangle.swift in Sources */,
 				FDEE19E21D2A709000EE7F96 /* MenuCarousel.swift in Sources */,
 				FDF2FDE61D267E9B00F0CEC5 /* Ktimer.swift in Sources */,
 				FDEE19FE1D2B078C00EE7F96 /* ZCarousel.swift in Sources */,

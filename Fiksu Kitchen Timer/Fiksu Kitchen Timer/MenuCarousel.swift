@@ -10,10 +10,11 @@ import UIKit
 import AVFoundation
 
 
-class MenuViewController: UIViewController, ZCarouselDelegate {
+class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDelegate {
     
    // var menu: ZCarousel!
     var images: ZCarousel!
+    var menu: ZCarouselTitle!
     var currentIndex: Int!
 
     
@@ -23,17 +24,19 @@ class MenuViewController: UIViewController, ZCarouselDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //menu = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5,
-            //y: 100,
-            //width: (self.view.frame.size.width/5)*3,
-            //height: 50))
-        //menu.ZCdelegate = self
-       // menu.addButtons(["iOS 8 by Tutorials", "Swift by Tutorials", "Core Data by Tutorials", "WatchKit by Tutorials"])
+        //menu buttons
         
-       // self.view.addSubview(menu!)
+        menu = ZCarouselTitle(frame: CGRect( x: self.view.frame.size.width/5-20,
+            y: 100,
+            width: (self.view.frame.size.width/5)*3,
+            height: 50))
+        menu.ZCTitledelegate = self
+        menu.addButtons(["Boiling", "Roasting", "Steaming", "Resting"])
+        
+        self.view.addSubview(menu!)
         
         images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,
-            y: 100,
+            y: 200,
             width: ((self.view.frame.size.width/5)*3),
             height: (self.view.frame.size.width/5)*3))
         images.ZCdelegate = self
@@ -44,6 +47,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate {
         self.view.addSubview(images)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GotoTimer), name: "starttimer", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
     }
     
     func GotoTimer(sender: AnyObject) {
@@ -52,6 +56,11 @@ class MenuViewController: UIViewController, ZCarouselDelegate {
                 let str = "\(currentIndex)"
                 performSegueWithIdentifier("GoTimer", sender: str)
 
+    }
+    
+    func ChangeMenu (sender: AnyObject) {
+        print("Tap title for chaning test is ok")
+    
     }
     
     func ZCarouselShowingIndex(scrollview: ZCarousel, index: Int) {
@@ -63,6 +72,16 @@ class MenuViewController: UIViewController, ZCarouselDelegate {
         currentIndex = index
        // }
     }
+    func ZCarouselTitleShowingIndex(scrollview: ZCarouselTitle, index: Int) {
+        //if scrollview == menu {
+        //    print("Showing Button at index \(index)")
+        //}
+        //else if scrollview == images {
+        print("Showing Title index \(index)")
+        currentIndex = index
+        // }
+    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
