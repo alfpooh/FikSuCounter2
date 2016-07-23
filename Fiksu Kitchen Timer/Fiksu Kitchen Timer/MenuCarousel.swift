@@ -16,6 +16,8 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var images: ZCarousel!
     var menu: ZCarouselTitle!
     var currentIndex: Int!
+    var currentMenu: Int!
+    var isImageAdded = false
 
     
 
@@ -33,20 +35,35 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         menu.ZCTitledelegate = self
         menu.addButtons(["Boiling", "Roasting", "Steaming", "Resting","Oven","Slow","Coffee","Tea"])
         self.view.addSubview(menu!)
+        currentMenu = 0
+        ClearandAddimages(currentMenu)
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GotoTimer), name: "starttimer", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
+    }
+    
+    func ClearandAddimages(ImageArray: Int) {
+        
+        if isImageAdded  {
+            self.view.willRemoveSubview(images)
+            images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,
+                y: 200,
+                width: ((self.view.frame.size.width/5)*3),
+                height: (self.view.frame.size.width/5)*3))
+            images.ZCdelegate = self
+            images.addImages(["InstantRamen", "Fusilli", "Potatoes", "Spagehtti","Somen","Egg"])
+            self.view.addSubview(images)
+        }
+        else {
         images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,
             y: 200,
             width: ((self.view.frame.size.width/5)*3),
             height: (self.view.frame.size.width/5)*3))
         images.ZCdelegate = self
-        
         images.addImages(["InstantRamen", "Fusilli", "Potatoes", "Spagehtti","Somen","Egg"])
-        
-
         self.view.addSubview(images)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GotoTimer), name: "starttimer", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
+        isImageAdded = true
+        }
     }
     
     func GotoTimer(sender: AnyObject) {
