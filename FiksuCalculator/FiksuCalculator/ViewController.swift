@@ -204,6 +204,8 @@ class ViewController: UIViewController {
             
         } else {
         display.text = "0"
+        brain.clear()
+        brain.setOperand(displayValue)
         userIsInTheMiddleOfTyping = false
         }
     }
@@ -310,13 +312,20 @@ class ViewController: UIViewController {
     func Tap() {
         display.text = "0"
         displayValue = 0
+        brain.clear()
+        brain.setOperand(displayValue)
+        funcDigits.text = display.text
         userIsInTheMiddleOfTyping = false
+        
         print("Double Tap happend")
     }
     
     func Long() {
         display.text = "0"
         displayValue = 0
+        brain.clear()
+        brain.setOperand(displayValue)
+        funcDigits.text = display.text
         userIsInTheMiddleOfTyping = false
         print("Long press")
     }
