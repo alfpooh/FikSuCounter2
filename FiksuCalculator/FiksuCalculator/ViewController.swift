@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     
     private var brain = CalculatorBrain()
     
+    @IBOutlet weak var clearall: FtkToolBtn!
     @IBOutlet weak var BasicPad: UIView!
 
     @IBOutlet weak var FunctionPad: UIView!
@@ -276,26 +277,48 @@ class ViewController: UIViewController {
         let xxx =  "x\u{B2}"
         XxX.setTitle(xxx, forState: .Normal)
         
-                    if let taxRate = defaults.objectForKey("TaxRate") as? Double
-                    {
-                    taxrate = taxRate
-                        if taxrate == 0 {
-                            setTax.setTitle(String ("Set Tax"), forState: .Normal)
-                        } else {
-                    setTax.setTitle(String ("Tax:\(taxrate)"), forState: .Normal)
-                            print ("Tax: \(taxrate)")}
-                    }
-                    if let tipRate = defaults.objectForKey("TipRate") as? Double
-                    {
-                    tiprate = tipRate
-                        if tiprate == 0 {
-                            setTip.setTitle(String ("Set Tip"), forState: .Normal)
-                        } else {
-                    setTip.setTitle(String ("Tip:\(tiprate)"), forState: .Normal)
-                        print ("Tip: \(tiprate)")
-                    }
+        let tapGesture = UITapGestureRecognizer(target: self, action: Selector("Tap"))  //Tap function will call when user tap on button
+        let longGesture = UILongPressGestureRecognizer(target: self, action: Selector("Long")) //Long function will call when user long press on button.
+        tapGesture.numberOfTapsRequired = 2
+        clearall.addGestureRecognizer(tapGesture)
+        clearall.addGestureRecognizer(longGesture)
         
+        
+        
+        if let taxRate = defaults.objectForKey("TaxRate") as? Double
+        {
+            taxrate = taxRate
+            if taxrate == 0 {
+                setTax.setTitle(String ("Set Tax"), forState: .Normal)
+            } else {
+                setTax.setTitle(String ("Tax:\(taxrate)"), forState: .Normal)
+                print ("Tax: \(taxrate)")}
         }
+        if let tipRate = defaults.objectForKey("TipRate") as? Double
+        {
+            tiprate = tipRate
+            if tiprate == 0 {
+                setTip.setTitle(String ("Set Tip"), forState: .Normal)
+            } else {
+                setTip.setTitle(String ("Tip:\(tiprate)"), forState: .Normal)
+                print ("Tip: \(tiprate)")
+            }
+            
+        }
+    }
+    
+    func Tap() {
+        display.text = "0"
+        displayValue = 0
+        userIsInTheMiddleOfTyping = false
+        print("Double Tap happend")
+    }
+    
+    func Long() {
+        display.text = "0"
+        displayValue = 0
+        userIsInTheMiddleOfTyping = false
+        print("Long press")
     }
     
     @IBAction func counterViewSwipe (gesture:UISwipeGestureRecognizer?) {

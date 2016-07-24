@@ -977,6 +977,7 @@
                         <outlet property="BasicPad" destination="zl3-bM-YnP" id="XPp-ld-h8k"/>
                         <outlet property="FunctionPad" destination="Tbr-Ae-fGP" id="2dz-S9-jtt"/>
                         <outlet property="XxX" destination="5fI-0g-3x4" id="Gmp-3g-0yh"/>
+                        <outlet property="clearall" destination="X7r-8a-tYU" id="Ra8-e2-PTd"/>
                         <outlet property="display" destination="Nz3-dk-WI0" id="Je3-JV-omc"/>
                         <outlet property="funcDigits" destination="N3Y-Fk-584" id="NqG-gP-jAc"/>
                         <outlet property="setTax" destination="6My-vL-z5B" id="3ir-Kb-8KQ"/>

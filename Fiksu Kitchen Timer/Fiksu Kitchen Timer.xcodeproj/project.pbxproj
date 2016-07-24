@@ -104,6 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD9532AD1D453D250010C9F4 /* Gloss */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Gloss;
+			sourceTree = "<group>";
+		};
 		FDF2FDA11D26697100F0CEC5 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				FDAB66D01D33E00C00F7CEC5 /* TimerLoudRing.wav */,
+				FD9532AD1D453D250010C9F4 /* Gloss */,
 				FDAB66D11D33E00C00F7CEC5 /* TimerRewind.wav */,
 				FDAB66D21D33E00C00F7CEC5 /* TimerShortRing.wav */,
 				FDAB66D31D33E00C00F7CEC5 /* Timer.wav */,

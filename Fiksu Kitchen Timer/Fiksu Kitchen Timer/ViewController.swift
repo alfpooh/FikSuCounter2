@@ -62,6 +62,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         //target time should be decided from selecting menu later!
         let timerindex = Int(transferText)!
+        // set target.
         currentTargetmin = Double(targetTime[timerindex])
         if targetTime[timerindex] < 10 {
             targetTimeLabel.text = "0\(targetTime[timerindex]):00"

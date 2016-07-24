@@ -19,9 +19,11 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var currentMenu: Int!
     var isImageAdded = false
 
-    
+    //Recipes
+    let Boiling: [String] = ["InstantRamen", "Fusilli", "Potatoes", "Spagehtti","Somen","Egg"]
+    let MenuArray: [String] = ["Boiling", "Roasting", "Steaming", "Resting","Oven","Slow","Coffee","Tea"]
+    let TestArray: [String] = ["1", "2", "3", "4","5"]
 
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
             width: (self.view.frame.size.width/5)*3,
             height: 50))
         menu.ZCTitledelegate = self
-        menu.addButtons(["Boiling", "Roasting", "Steaming", "Resting","Oven","Slow","Coffee","Tea"])
+        menu.addButtons(MenuArray)
         self.view.addSubview(menu!)
         currentMenu = 0
         ClearandAddimages(currentMenu)
@@ -50,11 +52,11 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                 viewWithTag.removeFromSuperview()
             }
             
-            let imageArray = ["1", "2", "3", "4","5"]
+            let imageArray = TestArray
             imageAdding(imageArray)
         }
         else {
-            let imageArray = ["InstantRamen", "Fusilli", "Potatoes", "Spagehtti","Somen","Egg"]
+            let imageArray = Boiling
             imageAdding(imageArray)
             isImageAdded = true
         }
