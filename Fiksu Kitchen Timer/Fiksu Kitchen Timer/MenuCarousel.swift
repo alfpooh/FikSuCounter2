@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 
+@IBDesignable
+
 
 class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDelegate {
     

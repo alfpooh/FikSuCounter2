@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     
     private var isBasicShowing = true
     private let synth = AVSpeechSynthesizer()
-    private var buttonclickplayer: AVAudioPlayer!
-    private var resultplayer: AVAudioPlayer!
-    private var swipingplayer: AVAudioPlayer!
+    private var clicksound: AVAudioPlayer!
+    //private var resultplayer: AVAudioPlayer!
+    //private var swipingplayer: AVAudioPlayer!
     private var sayCount = AVSpeechUtterance(string: "")
     private var taxrate = 0.24
     private var tiprate = 0.14
@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     private var userIsInTheMiddleOfTyping = false
     private var brain = CalculatorBrain()
     private var memory:[String:String] = ["M1":"", "M2":"", "M3":""]
+    
     
     var displayValue: Double {
         
@@ -211,6 +212,7 @@ class ViewController: UIViewController {
     
 
     @IBAction private func touchDigit (sender: UIButton) {
+        SoundOut(1)
         let digit = sender.currentTitle!
         let textInTheCurrentDisplay = display.text!
         if userIsInTheMiddleOfTyping {
@@ -258,7 +260,7 @@ class ViewController: UIViewController {
 
     
     @IBAction private func performOperation (sender: UIButton) {
-        
+        SoundOut(1)
         if userIsInTheMiddleOfTyping {
             brain.setOperand(displayValue)
             userIsInTheMiddleOfTyping = false
@@ -278,6 +280,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //sound setting
+        // for sound
+        let path = NSBundle.mainBundle().pathForResource("Click", ofType: "wav")
+        let soundUrl = NSURL(fileURLWithPath: path!)
+        
+        do {
+            try clicksound = AVAudioPlayer(contentsOfURL: soundUrl)
+            clicksound.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+
+        
+        // force to replace x superscript 2
         let xxx =  "x\u{B2}"
         XxX.setTitle(xxx, forState: .Normal)
         
@@ -380,12 +396,9 @@ class ViewController: UIViewController {
             sayCount.rate = 0.5
             synth.speakUtterance(sayCount)}
         else if index == 1 {
-            buttonclickplayer.play()}
-        else if index == 2 {
-            resultplayer.play()}
-        else if index == 3 {
-            swipingplayer.play()}
+            clicksound.volume = 0.1
+            clicksound.play()}
+    }
 }
 
-}
 
