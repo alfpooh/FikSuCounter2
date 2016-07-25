@@ -128,6 +128,7 @@ class ViewController: UIViewController {
         else {
             let net = Double(display.text!)!
             displayValue = net+(net*taxrate)
+            brain.result = displayValue
             userIsInTheMiddleOfTyping = false
         }
     }
@@ -139,6 +140,7 @@ class ViewController: UIViewController {
         else {
             let net = Double(display.text!)!
             displayValue = net-(net*taxrate)
+            brain.result = displayValue
             userIsInTheMiddleOfTyping = false
         }
     }
@@ -177,6 +179,7 @@ class ViewController: UIViewController {
         else {
             let net = Double(display.text!)!
             displayValue = net+(net*tiprate)
+            brain.result = displayValue
             userIsInTheMiddleOfTyping = false
         }
     }
@@ -188,6 +191,7 @@ class ViewController: UIViewController {
         else {
             let net = Double(display.text!)!
             displayValue = net-(net*tiprate)
+            brain.result = displayValue
             userIsInTheMiddleOfTyping = false
         }
     }
@@ -268,7 +272,10 @@ class ViewController: UIViewController {
         if let mathematicalSymbol = sender.currentTitle {
             brain.performOperation(mathematicalSymbol)
         }
+        //strange case of -0.0
+        if brain.result == -0.0 {brain.result = 0.0}
         displayValue = brain.result
+        print ("\(brain.result)")
         
         
     }
@@ -279,8 +286,8 @@ class ViewController: UIViewController {
         let xxx =  "x\u{B2}"
         XxX.setTitle(xxx, forState: .Normal)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: Selector("Tap"))  //Tap function will call when user tap on button
-        let longGesture = UILongPressGestureRecognizer(target: self, action: Selector("Long")) //Long function will call when user long press on button.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.Tap))  //Tap function will call when user tap on button
+        let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.Long)) //Long function will call when user long press on button.
         tapGesture.numberOfTapsRequired = 2
         clearall.addGestureRecognizer(tapGesture)
         clearall.addGestureRecognizer(longGesture)
@@ -310,24 +317,23 @@ class ViewController: UIViewController {
     }
     
     func Tap() {
-        display.text = "0"
-        displayValue = 0
-        brain.clear()
-        brain.setOperand(displayValue)
-        funcDigits.text = display.text
-        userIsInTheMiddleOfTyping = false
-        
+        clearmemory()
         print("Double Tap happend")
     }
     
     func Long() {
+        clearmemory()
+        print("Long press")
+    }
+    
+    func clearmemory() {
         display.text = "0"
         displayValue = 0
         brain.clear()
         brain.setOperand(displayValue)
         funcDigits.text = display.text
         userIsInTheMiddleOfTyping = false
-        print("Long press")
+    
     }
     
     @IBAction func counterViewSwipe (gesture:UISwipeGestureRecognizer?) {

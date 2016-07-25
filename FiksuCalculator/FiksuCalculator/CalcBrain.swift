@@ -26,7 +26,7 @@ class CalculatorBrain {
         "÷": Operation.BinaryOperation({$0/$1}),
         "±": Operation.UnaryOperation({-$0}),
         "√": Operation.UnaryOperation({ sqrt($0) }),
-        "Round": Operation.UnaryOperation({round(sqrt($0*$0))}),
+        "Round": Operation.Rounding({round($0)}),
         "x\u{B2}": Operation.UnaryOperation({$0*$0}),
         "=": Operation.Equals,
         "π": Operation.Constant(M_PI),
@@ -42,6 +42,7 @@ class CalculatorBrain {
         case UnaryOperation((Double) -> Double)
         case BinaryOperation((Double, Double) -> Double)
         case Equals
+        case Rounding((Double) -> Double)
     }
     
     func  performOperation(symbol: String) {
@@ -53,6 +54,11 @@ class CalculatorBrain {
                 
             case .Constant(let value):
                 accumulator = value
+                
+            case .Rounding(let function):
+                executePendingBinaryOperation()
+                accumulator = function(accumulator)
+                print ("rounding is here")
 
             case .UnaryOperation(let function):
                 accumulator = function(accumulator)
@@ -113,7 +119,7 @@ class CalculatorBrain {
             return accumulator
         }
         set {
-            
+            accumulator = newValue
         }
     }
     
