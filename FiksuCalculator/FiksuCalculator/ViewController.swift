@@ -16,23 +16,21 @@ extension Double {
 
 class ViewController: UIViewController {
     
-    var isBasicShowing = true
-    let synth = AVSpeechSynthesizer()
-    var buttonclickplayer: AVAudioPlayer!
-    var resultplayer: AVAudioPlayer!
-    var swipingplayer: AVAudioPlayer!
-    var sayCount = AVSpeechUtterance(string: "")
-    var taxrate = 0.24
-    var tiprate = 0.14
-    var dotornot = false
-    var defaults = NSUserDefaults.standardUserDefaults()
-    
-
+    private var isBasicShowing = true
+    private let synth = AVSpeechSynthesizer()
+    private var buttonclickplayer: AVAudioPlayer!
+    private var resultplayer: AVAudioPlayer!
+    private var swipingplayer: AVAudioPlayer!
+    private var sayCount = AVSpeechUtterance(string: "")
+    private var taxrate = 0.24
+    private var tiprate = 0.14
+    private var dotornot = false
+    private var defaults = NSUserDefaults.standardUserDefaults()
     private var userIsInTheMiddleOfTyping = false
+    private var brain = CalculatorBrain()
+    private var memory:[String:String] = ["M1":"", "M2":"", "M3":""]
     
-
-    
-    private var displayValue: Double {
+    var displayValue: Double {
         
         get {
             return Double(display.text!)!
@@ -44,7 +42,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private var brain = CalculatorBrain()
+
     
     @IBOutlet weak var clearall: FtkToolBtn!
     @IBOutlet weak var BasicPad: UIView!
@@ -56,12 +54,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var setTax: FtkToolBtn!
     
     @IBOutlet weak var XxX: FtkToolBtn!
+    
     @IBAction func sayDisplay(sender:AnyObject) {
     SoundOut(0)
     }
-    
-    
-    
     
 
     @IBAction func copytoClipboard(sender: AnyObject) {
@@ -71,8 +67,7 @@ class ViewController: UIViewController {
     //displaying digits
     @IBOutlet weak var display: UILabel!
     
-    
-    var memory:[String:String] = ["M1":"", "M2":"", "M3":""]
+
     
     @IBAction func memoryDelete(sender: AnyObject) {
         let key = "M\(sender.tag+1)"
@@ -326,7 +321,7 @@ class ViewController: UIViewController {
         print("Long press")
     }
     
-    func clearmemory() {
+    private func clearmemory() {
         display.text = "0"
         displayValue = 0
         brain.clear()
@@ -379,9 +374,8 @@ class ViewController: UIViewController {
         isBasicShowing = !isBasicShowing
     }
 
-    func SoundOut(index: Int){
+     private func SoundOut(index: Int){
         if index == 0 {
-            print ("sound shoud be out!")
             sayCount = AVSpeechUtterance(string: display.text!)
             sayCount.rate = 0.5
             synth.speakUtterance(sayCount)}

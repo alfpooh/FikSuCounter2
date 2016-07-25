@@ -90,7 +90,7 @@ class CalculatorBrain {
     
     typealias PropertyList = AnyObject
     
-    var program: PropertyList {
+    private var program: PropertyList {
         get {
             return internalProgram
         }
