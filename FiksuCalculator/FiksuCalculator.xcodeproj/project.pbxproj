@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD1A68DF1D46802500FF5A38 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD1A68DE1D46802500FF5A38 /* Click.wav */; };
+		FD1A68E21D46B4CE00FF5A38 /* clear.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD1A68E11D46B4CE00FF5A38 /* clear.wav */; };
 		FD52BF1E1D3A08870033BB46 /* FTK_RoundedSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */; };
 		FDD922671D37836F00CE5AE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD922661D37836F00CE5AE5 /* AppDelegate.swift */; };
 		FDD922691D37836F00CE5AE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD922681D37836F00CE5AE5 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		FD1A68DE1D46802500FF5A38 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
+		FD1A68E11D46B4CE00FF5A38 /* clear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clear.wav; sourceTree = "<group>"; };
 		FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTK_RoundedSquare.swift; sourceTree = "<group>"; };
 		FDD922631D37836F00CE5AE5 /* FiksuCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiksuCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD922661D37836F00CE5AE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				FDD922681D37836F00CE5AE5 /* ViewController.swift */,
 				FDD9226A1D37836F00CE5AE5 /* Main.storyboard */,
 				FDD9226D1D37836F00CE5AE5 /* Assets.xcassets */,
+				FD1A68E11D46B4CE00FF5A38 /* clear.wav */,
 				FD1A68DE1D46802500FF5A38 /* Click.wav */,
 				FDD9226F1D37836F00CE5AE5 /* LaunchScreen.storyboard */,
 				FDD922721D37836F00CE5AE5 /* Info.plist */,
@@ -249,6 +252,7 @@
 				FDD9226E1D37836F00CE5AE5 /* Assets.xcassets in Resources */,
 				FDD9226C1D37836F00CE5AE5 /* Main.storyboard in Resources */,
 				FD1A68DF1D46802500FF5A38 /* Click.wav in Resources */,
+				FD1A68E21D46B4CE00FF5A38 /* clear.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

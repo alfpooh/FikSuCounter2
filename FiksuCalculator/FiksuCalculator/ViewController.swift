@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     private var isBasicShowing = true
     private let synth = AVSpeechSynthesizer()
     private var clicksound: AVAudioPlayer!
-    //private var resultplayer: AVAudioPlayer!
+    private var clearsound: AVAudioPlayer!
     //private var swipingplayer: AVAudioPlayer!
     private var sayCount = AVSpeechUtterance(string: "")
     private var taxrate = 0.24
@@ -72,6 +72,7 @@ class ViewController: UIViewController {
     
     @IBAction func memoryDelete(sender: AnyObject) {
         let key = "M\(sender.tag+1)"
+        SoundOut(2)
         sender.setTitle(key, forState: .Normal)
         memory[key] = ""
     }
@@ -113,6 +114,7 @@ class ViewController: UIViewController {
         let key = "Set Tax"
         defaults.setDouble(0, forKey: "TaxRate")
         defaults.synchronize()
+        SoundOut(2)
         sender.setTitle(key, forState: .Normal)
         taxrate = 0.0
     }
@@ -164,6 +166,7 @@ class ViewController: UIViewController {
         let key = "Set Tip"
         defaults.setDouble(0, forKey: "TipRate")
         defaults.synchronize()
+        SoundOut(2)
         sender.setTitle(key, forState: .Normal)
         tiprate = 0.0
     }
@@ -199,6 +202,7 @@ class ViewController: UIViewController {
             display.text = String(textInTheCurrentDisplay.characters.dropLast())
             if display.text == "" {
                 display.text="0"
+                SoundOut(2)
             userIsInTheMiddleOfTyping = false
             }
             
@@ -206,6 +210,7 @@ class ViewController: UIViewController {
         display.text = "0"
         brain.clear()
         brain.setOperand(displayValue)
+        SoundOut(2)
         userIsInTheMiddleOfTyping = false
         }
     }
@@ -282,12 +287,18 @@ class ViewController: UIViewController {
         
         //sound setting
         // for sound
-        let path = NSBundle.mainBundle().pathForResource("Click", ofType: "wav")
-        let soundUrl = NSURL(fileURLWithPath: path!)
+
         
         do {
+            let path = NSBundle.mainBundle().pathForResource("Click", ofType: "wav")
+            let soundUrl = NSURL(fileURLWithPath: path!)
             try clicksound = AVAudioPlayer(contentsOfURL: soundUrl)
+            let path1 = NSBundle.mainBundle().pathForResource("clear", ofType: "wav")
+            let soundUrl1 = NSURL(fileURLWithPath: path1!)
+            try clearsound = AVAudioPlayer(contentsOfURL: soundUrl1)
             clicksound.prepareToPlay()
+            clearsound.prepareToPlay()
+            
         } catch let err as NSError {
             print(err.debugDescription)
         }
@@ -341,6 +352,7 @@ class ViewController: UIViewController {
         display.text = "0"
         displayValue = 0
         brain.clear()
+        SoundOut(2)
         brain.setOperand(displayValue)
         funcDigits.text = display.text
         userIsInTheMiddleOfTyping = false
@@ -398,6 +410,9 @@ class ViewController: UIViewController {
         else if index == 1 {
             clicksound.volume = 0.1
             clicksound.play()}
+        else if index == 2 {
+            clearsound.volume = 0.1
+            clearsound.play()}
     }
 }
 
