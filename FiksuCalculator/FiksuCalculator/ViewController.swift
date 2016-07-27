@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     private let synth = AVSpeechSynthesizer()
     private var clicksound: AVAudioPlayer!
     private var clearsound: AVAudioPlayer!
-    //private var swipingplayer: AVAudioPlayer!
+    private var swipingplayer: AVAudioPlayer!
     private var sayCount = AVSpeechUtterance(string: "")
     private var taxrate = 0.24
     private var tiprate = 0.14
@@ -43,24 +43,24 @@ class ViewController: UIViewController {
         }
     }
     
-
+    
     
     @IBOutlet weak var clearall: FtkToolBtn!
     @IBOutlet weak var BasicPad: UIView!
-
+    
     @IBOutlet weak var FunctionPad: UIView!
     @IBOutlet weak var funcDigits: UILabel!
-
+    
     @IBOutlet weak var setTip: FtkToolBtn!
     @IBOutlet weak var setTax: FtkToolBtn!
     
     @IBOutlet weak var XxX: FtkToolBtn!
     
     @IBAction func sayDisplay(sender:AnyObject) {
-    SoundOut(0)
+        SoundOut(0)
     }
     
-
+    
     @IBAction func copytoClipboard(sender: AnyObject) {
         UIPasteboard.generalPasteboard().string = display.text
     }
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     //displaying digits
     @IBOutlet weak var display: UILabel!
     
-
+    
     
     @IBAction func memoryDelete(sender: AnyObject) {
         let key = "M\(sender.tag+1)"
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func memoryButton(sender: UIButton) {
-
+        
         let key = "M\(sender.tag+1)"
         
         if memory[key] == "" {
@@ -154,7 +154,7 @@ class ViewController: UIViewController {
             defaults.synchronize()
             let tiptitle = "Tip:\(display.text!)"
             sender.setTitle(tiptitle, forState: .Normal)
-
+            
         }
         else {
             displayValue = tiprate
@@ -203,19 +203,19 @@ class ViewController: UIViewController {
             if display.text == "" {
                 display.text="0"
                 SoundOut(2)
-            userIsInTheMiddleOfTyping = false
+                userIsInTheMiddleOfTyping = false
             }
             
         } else {
-        display.text = "0"
-        brain.clear()
-        brain.setOperand(displayValue)
-        SoundOut(2)
-        userIsInTheMiddleOfTyping = false
+            display.text = "0"
+            brain.clear()
+            brain.setOperand(displayValue)
+            SoundOut(2)
+            userIsInTheMiddleOfTyping = false
         }
     }
     
-
+    
     @IBAction private func touchDigit (sender: UIButton) {
         SoundOut(1)
         let digit = sender.currentTitle!
@@ -260,9 +260,9 @@ class ViewController: UIViewController {
             
         }
     }//func end
-
     
-
+    
+    
     
     @IBAction private func performOperation (sender: UIButton) {
         SoundOut(1)
@@ -287,7 +287,7 @@ class ViewController: UIViewController {
         
         //sound setting
         // for sound
-
+        
         
         do {
             let path = NSBundle.mainBundle().pathForResource("Click", ofType: "wav")
@@ -296,13 +296,16 @@ class ViewController: UIViewController {
             let path1 = NSBundle.mainBundle().pathForResource("clear", ofType: "wav")
             let soundUrl1 = NSURL(fileURLWithPath: path1!)
             try clearsound = AVAudioPlayer(contentsOfURL: soundUrl1)
+            let path2 = NSBundle.mainBundle().pathForResource("Flip", ofType: "wav")
+            let soundUrl2 = NSURL(fileURLWithPath: path2!)
+            try swipingplayer = AVAudioPlayer(contentsOfURL: soundUrl2)
             clicksound.prepareToPlay()
             clearsound.prepareToPlay()
             
         } catch let err as NSError {
             print(err.debugDescription)
         }
-
+        
         
         // force to replace x superscript 2
         let xxx =  "x\u{B2}"
@@ -356,7 +359,7 @@ class ViewController: UIViewController {
         brain.setOperand(displayValue)
         funcDigits.text = display.text
         userIsInTheMiddleOfTyping = false
-    
+        
     }
     
     @IBAction func counterViewSwipe (gesture:UISwipeGestureRecognizer?) {
@@ -366,10 +369,10 @@ class ViewController: UIViewController {
                                       duration: 1.0,
                                       options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion:nil)
-                                        funcDigits.text = display.text
+            funcDigits.text = display.text
             let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate")
             print ("recoded taxrate:\(taxRate)")
-
+            SoundOut(3)
             
             
         } else {
@@ -378,8 +381,9 @@ class ViewController: UIViewController {
                                       duration: 1.0,
                                       options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion: nil)
-                                        display.text = funcDigits.text}
-                isBasicShowing = !isBasicShowing
+            display.text = funcDigits.text
+            SoundOut(3)}
+        isBasicShowing = !isBasicShowing
     }
     
     @IBAction func counterViewSwipeback (gesture:UISwipeGestureRecognizer?) {
@@ -391,6 +395,7 @@ class ViewController: UIViewController {
                                         , UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion:nil)
             funcDigits.text = display.text
+            SoundOut(3)
         } else {
             UIView.transitionFromView(FunctionPad,
                                       toView: BasicPad,
@@ -398,11 +403,12 @@ class ViewController: UIViewController {
                                       options: [UIViewAnimationOptions.TransitionFlipFromRight
                                         , UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion: nil)
+            SoundOut(3)
             display.text = funcDigits.text}
         isBasicShowing = !isBasicShowing
     }
-
-     private func SoundOut(index: Int){
+    
+    private func SoundOut(index: Int){
         if index == 0 {
             sayCount = AVSpeechUtterance(string: display.text!)
             sayCount.rate = 0.5
@@ -413,6 +419,10 @@ class ViewController: UIViewController {
         else if index == 2 {
             clearsound.volume = 0.1
             clearsound.play()}
+        else if index == 3 {
+            swipingplayer.volume = 0.1
+            swipingplayer.play()}
+        
     }
 }
 

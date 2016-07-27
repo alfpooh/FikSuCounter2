@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDD922621D37836F00CE5AE5"
-               BuildableName = "FiksuCalculator.app"
-               BlueprintName = "FiksuCalculator"
-               ReferencedContainer = "container:FiksuCalculator.xcodeproj">
+               BuildableName = "Fiksu Calc.app"
+               BlueprintName = "Fiksu Calc"
+               ReferencedContainer = "container:Fiksu Calc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDD922761D37836F00CE5AE5"
-               BuildableName = "FiksuCalculatorTests.xctest"
-               BlueprintName = "FiksuCalculatorTests"
-               ReferencedContainer = "container:FiksuCalculator.xcodeproj">
+               BuildableName = "Fiksu Calc.xctest"
+               BlueprintName = "Fiksu CalcTests"
+               ReferencedContainer = "container:Fiksu Calc.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDD922811D37836F00CE5AE5"
-               BuildableName = "FiksuCalculatorUITests.xctest"
-               BlueprintName = "FiksuCalculatorUITests"
-               ReferencedContainer = "container:FiksuCalculator.xcodeproj">
+               BuildableName = "Fiksu Calc.xctest"
+               BlueprintName = "Fiksu CalcUITests"
+               ReferencedContainer = "container:Fiksu Calc.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDD922621D37836F00CE5AE5"
-            BuildableName = "FiksuCalculator.app"
-            BlueprintName = "FiksuCalculator"
-            ReferencedContainer = "container:FiksuCalculator.xcodeproj">
+            BuildableName = "Fiksu Calc.app"
+            BlueprintName = "Fiksu Calc"
+            ReferencedContainer = "container:Fiksu Calc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDD922621D37836F00CE5AE5"
-            BuildableName = "FiksuCalculator.app"
-            BlueprintName = "FiksuCalculator"
-            ReferencedContainer = "container:FiksuCalculator.xcodeproj">
+            BuildableName = "Fiksu Calc.app"
+            BlueprintName = "Fiksu Calc"
+            ReferencedContainer = "container:Fiksu Calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDD922621D37836F00CE5AE5"
-            BuildableName = "FiksuCalculator.app"
-            BlueprintName = "FiksuCalculator"
-            ReferencedContainer = "container:FiksuCalculator.xcodeproj">
+            BuildableName = "Fiksu Calc.app"
+            BlueprintName = "Fiksu Calc"
+            ReferencedContainer = "container:Fiksu Calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
