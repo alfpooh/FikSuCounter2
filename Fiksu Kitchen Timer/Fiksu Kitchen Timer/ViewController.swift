@@ -26,12 +26,15 @@ class ViewController: UIViewController {
     var currentTargetmin:Double = 0
     var timer = NSTimer()
     var transferText: String! = "0"
+    var isBaseButtonSWpaused: Bool = false
     
     @IBOutlet weak var targetTimeLabel: UILabel!
     
     @IBOutlet weak var playorpauseLbl: UILabel!
     
     @IBOutlet weak var elapsedTimeLabel: UILabel!
+    
+    @IBOutlet weak var BaseButton: FtkToolBtn!
     
     let watch = Watch()
     
@@ -41,6 +44,7 @@ class ViewController: UIViewController {
             let resourcePath =  NSBundle.mainBundle().pathForResource("Timer", ofType: "wav")!
             let url = NSURL(fileURLWithPath: resourcePath)
             try timerEffectplayer = AVAudioPlayer(contentsOfURL: url)
+
             try timerLoudRingplayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("TimerLoudRing", ofType: "wav")!))
             try timerShortRingplayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("TimerShortRing", ofType: "wav")!))
             try timerRewindplayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("TimerRewind", ofType: "wav")!))
@@ -154,8 +158,11 @@ class ViewController: UIViewController {
                                                                             selector: #selector(ViewController.updateElapsedTimeLabel(_:)), userInfo: nil, repeats: true)
                  timerEffectplayer.play()
                 
+                //swap to pause
+                //playorpauseLbl.text = "❙❙"
                 
-                playorpauseLbl.text = "❙❙"
+                BaseButtonToggle()
+                
             } else {
                 print ("play button is pressed while timer counting")
             }
@@ -163,7 +170,9 @@ class ViewController: UIViewController {
         } else {
             timerEffectplayer.pause()
             watch.pause()
-            playorpauseLbl.text = "►"
+            //swap to play
+            //playorpauseLbl.text = "►"
+            BaseButtonToggle()
             VoiceOut(3)
             timer.invalidate()
             self.pausedTime = 0.0
@@ -174,6 +183,20 @@ class ViewController: UIViewController {
     
     @IBAction func stopButtonTapped(sender: UIButton) {
         watch.stop()
+    }
+    
+    func BaseButtonToggle(){
+        isBaseButtonSWpaused = !isBaseButtonSWpaused
+        if isBaseButtonSWpaused {
+            BaseButton.iconScale = 0.1
+            BaseButton.offsetX = 7
+            BaseButton.offsetY = 93
+            BaseButton.tagnumber = 4 }
+        else {
+            BaseButton.iconScale = 0.3
+            BaseButton.offsetX = 2
+            BaseButton.offsetY = 93
+            BaseButton.tagnumber = 5}
     }
     
     func resumeTimer(lastTime: NSTimeInterval) {

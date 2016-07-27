@@ -39,6 +39,7 @@
                                             <constraint firstAttribute="height" constant="50" id="nJt-H2-cNx"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="16"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -117,6 +118,9 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iconScale">
                                                         <real key="value" value="0.20000000000000001"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tagnumber">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="plusTargetTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eiY-l9-cZe"/>
@@ -154,6 +158,9 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iconScale">
                                                         <real key="value" value="0.40000000000000002"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tagnumber">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="minusTargetTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCv-vd-zIA"/>
@@ -164,7 +171,7 @@
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kG8-Jc-SJA" customClass="UniLensView" customModule="Fiksu_Kitchen_Timer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65" width="250" height="250"/>
                                         <subviews>
-                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-nf-DX8" userLabel="Base" customClass="FtkToolBtn" customModule="Fiksu_Kitchen_Timer" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.80000000000000004" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-nf-DX8" userLabel="Base" customClass="FtkToolBtn" customModule="Fiksu_Kitchen_Timer" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                                 <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="14"/>
                                                 <state key="normal">
@@ -178,10 +185,10 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="strokelineWidth">
-                                                        <real key="value" value="6"/>
+                                                        <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="offsetX">
-                                                        <real key="value" value="3"/>
+                                                        <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="offsetY">
                                                         <real key="value" value="93"/>
@@ -189,10 +196,16 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iconScale">
                                                         <real key="value" value="0.29999999999999999"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tagnumber">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="specialF">
+                                                        <real key="value" value="120"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <stackView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="XUv-84-49B">
-                                                <rect key="frame" x="23" y="29" width="215" height="203"/>
+                                                <rect key="frame" x="23" y="29" width="215" height="205"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="-25" translatesAutoresizingMaskIntoConstraints="NO" id="CBd-rG-S3f">
                                                         <rect key="frame" x="0.0" y="0.0" width="215" height="142"/>
@@ -211,44 +224,44 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="►" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoE-KO-mm3" userLabel="PorP">
-                                                        <rect key="frame" x="96" y="176" width="24" height="27"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="►" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoE-KO-mm3" userLabel="PorP">
+                                                        <rect key="frame" x="96" y="159" width="24" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P5-pF-58E" userLabel="PLAY" customClass="FtkToolBtn" customModule="Fiksu_Kitchen_Timer" customModuleProvider="target">
+                                                        <rect key="frame" x="93" y="176" width="30" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="14"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" red="1" green="0.92100013339999998" blue="0.81405581199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                                <color key="value" red="1" green="0.4759714504" blue="0.62809668330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="strokelineWidth">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="offsetX">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="offsetY">
+                                                                <real key="value" value="93"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconScale">
+                                                                <real key="value" value="0.29999999999999999"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nKM-WD-kr6"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P5-pF-58E" userLabel="PLAY" customClass="FtkToolBtn" customModule="Fiksu_Kitchen_Timer" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
-                                                <fontDescription key="fontDescription" name="TallyCounter-Regular" family="Tally Counter" pointSize="14"/>
-                                                <state key="normal">
-                                                    <color key="titleColor" red="1" green="0.92100013339999998" blue="0.81405581199999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                        <color key="value" red="1" green="0.4759714504" blue="0.62809668330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
-                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="strokelineWidth">
-                                                        <real key="value" value="6"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="offsetX">
-                                                        <real key="value" value="3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="offsetY">
-                                                        <real key="value" value="93"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="iconScale">
-                                                        <real key="value" value="0.29999999999999999"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nKM-WD-kr6"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -296,6 +309,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="iconScale">
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tagnumber">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="PlusMinute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPk-87-og2"/>
@@ -315,6 +331,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BaseButton" destination="ob7-nf-DX8" id="p6c-Ce-kRQ"/>
                         <outlet property="elapsedTimeLabel" destination="ZQa-dZ-dYW" id="E0t-cb-f6C"/>
                         <outlet property="playorpauseLbl" destination="VoE-KO-mm3" id="Vi7-0p-Sou"/>
                         <outlet property="targetTimeLabel" destination="dg0-sY-h3j" id="oKY-H2-54A"/>

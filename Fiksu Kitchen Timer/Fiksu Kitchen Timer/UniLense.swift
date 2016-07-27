@@ -14,9 +14,9 @@ import UIKit
 
 class UniLensView: UIButton {
     
-    @IBInspectable var lensfillColor: UIColor = UIColor.greenColor()
-    @IBInspectable var lensstrokeColor: UIColor = UIColor.redColor()
-    @IBInspectable var lensLinewidth: CGFloat = 2
+    @IBInspectable var lensfillColor: UIColor = UIColor.greenColor() { didSet {setNeedsDisplay()} }
+    @IBInspectable var lensstrokeColor: UIColor = UIColor.redColor() { didSet {setNeedsDisplay()} }
+    @IBInspectable var lensLinewidth: CGFloat = 2 { didSet {setNeedsDisplay()} }
     
     override func drawRect(rect: CGRect) {
         

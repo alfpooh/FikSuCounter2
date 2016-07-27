@@ -15,16 +15,17 @@ import UIKit
 
 class FtkToolBtn: UIButton {
     
-    @IBInspectable var fillColor: UIColor = UIColor.greenColor()
-    @IBInspectable var strokeColor: UIColor = UIColor.whiteColor()
-    @IBInspectable var iconScale: CGFloat = 1.0
-    @IBInspectable var strokelineWidth: CGFloat = 1.0
-    @IBInspectable var miterlimit: CGFloat = 4
-    @IBInspectable var offsetX: CGFloat = 0
-    @IBInspectable var offsetY: CGFloat = 0
-    @IBInspectable var specialF: CGFloat = 1
-    @IBInspectable var LineCapStyle: CGLineCap?
-    @IBInspectable var AnimationSW: Bool = false
+    @IBInspectable var fillColor: UIColor = UIColor.greenColor()  { didSet {setNeedsDisplay()} }
+    @IBInspectable var strokeColor: UIColor = UIColor.whiteColor()  { didSet {setNeedsDisplay()} }
+    @IBInspectable var iconScale: CGFloat = 1.0  { didSet {setNeedsDisplay()} }
+    @IBInspectable var strokelineWidth: CGFloat = 1.0  { didSet {setNeedsDisplay()} }
+    @IBInspectable var miterlimit: CGFloat = 4  { didSet {setNeedsDisplay()} }
+    @IBInspectable var offsetX: CGFloat = 0  { didSet {setNeedsDisplay()} }
+    @IBInspectable var offsetY: CGFloat = 0  { didSet {setNeedsDisplay()} }
+    @IBInspectable var specialF: CGFloat = 1  { didSet {setNeedsDisplay()} }
+    @IBInspectable var LineCapStyle: CGLineCap?  { didSet {setNeedsDisplay()} }
+    @IBInspectable var AnimationSW: Bool = false  { didSet {setNeedsDisplay()} }
+    @IBInspectable var tagnumber: Int = 0 { didSet {setNeedsDisplay()} }
     
     
     
@@ -44,9 +45,9 @@ class FtkToolBtn: UIButton {
         fillColor.setFill()
         gongPath.fill()
         
+        //tagnumber = self.tag
         
-        
-        if self.tag == 1 {
+        if tagnumber == 1 {
             // RESET or O button
             
             let arcCenter = CGPoint(x: cordiW/2, y: cordiH/2)
@@ -78,7 +79,7 @@ class FtkToolBtn: UIButton {
             }
             
             
-        } else if self.tag == 2 {
+        } else if tagnumber == 2 {
             //MINUS button
             
             let minusWidth: CGFloat = min(cordiW, cordiH) * 0.7
@@ -115,7 +116,7 @@ class FtkToolBtn: UIButton {
             //draw the stroke
             minusPath.stroke()
         }
-        else if self.tag == 3 {
+        else if tagnumber == 3 {
             //PLUS Button
             let mfactor: CGFloat = (min(cordiW, cordiH))
             //create the path
@@ -159,7 +160,7 @@ class FtkToolBtn: UIButton {
             //draw the stroke
             plusPath.stroke()
             
-        } else if self.tag == 4 {
+        } else if tagnumber == 4 {
             // \\\ 2 lines Pause
             if specialF == 0 {specialF = 10} //default
             //Drawing Arrow stem
@@ -210,7 +211,7 @@ class FtkToolBtn: UIButton {
             minusPath.lineCapStyle = .Round
             //draw the stroke
             minusPath.stroke()
-        }  else if self.tag == 5 {
+        }  else if tagnumber == 5 {
             //Draw Play icon
             
             let linePath = UIBezierPath()
@@ -245,7 +246,7 @@ class FtkToolBtn: UIButton {
             
         }
         
-        else if self.tag == 6 {
+        else if tagnumber == 6 {
             //Draw Play icon
             
             let linePath = UIBezierPath()
