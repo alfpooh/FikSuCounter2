@@ -285,6 +285,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //for setting menu
+        
+        if self.revealViewController() != nil {
+//            menuButton.target = self.revealViewController()
+//            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+        
         //sound setting
         // for sound
         
@@ -367,7 +376,7 @@ class ViewController: UIViewController {
             UIView.transitionFromView(BasicPad,
                                       toView:FunctionPad,
                                       duration: 1.0,
-                                      options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews],
+                                      options: [UIViewAnimationOptions.TransitionFlipFromTop, UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion:nil)
             funcDigits.text = display.text
             let taxRate = NSUserDefaults.standardUserDefaults().valueForKey("TaxRate")
@@ -379,7 +388,7 @@ class ViewController: UIViewController {
             UIView.transitionFromView(FunctionPad,
                                       toView: BasicPad,
                                       duration: 1.0,
-                                      options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.ShowHideTransitionViews],
+                                      options: [UIViewAnimationOptions.TransitionFlipFromTop, UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion: nil)
             display.text = funcDigits.text
             SoundOut(3)}
@@ -391,7 +400,7 @@ class ViewController: UIViewController {
             UIView.transitionFromView(BasicPad,
                                       toView:FunctionPad,
                                       duration: 1.0,
-                                      options: [UIViewAnimationOptions.TransitionFlipFromRight
+                                      options: [UIViewAnimationOptions.TransitionFlipFromBottom
                                         , UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion:nil)
             funcDigits.text = display.text
@@ -400,7 +409,7 @@ class ViewController: UIViewController {
             UIView.transitionFromView(FunctionPad,
                                       toView: BasicPad,
                                       duration: 1.0,
-                                      options: [UIViewAnimationOptions.TransitionFlipFromRight
+                                      options: [UIViewAnimationOptions.TransitionFlipFromBottom
                                         , UIViewAnimationOptions.ShowHideTransitionViews],
                                       completion: nil)
             SoundOut(3)
