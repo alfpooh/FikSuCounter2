@@ -293,6 +293,8 @@ class ViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
+        //status bar hide
+        prefersStatusBarHidden()
         
         //sound setting
         // for sound
@@ -432,6 +434,10 @@ class ViewController: UIViewController {
             swipingplayer.volume = 0.1
             swipingplayer.play()}
         
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }
 
