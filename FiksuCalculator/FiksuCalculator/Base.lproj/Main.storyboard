@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,7 +21,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdF-cs-5Y5" userLabel="TopPad">
                                 <rect key="frame" x="150" y="50" width="300" height="500"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-bM-YnP" userLabel="BasicPad">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-bM-YnP" userLabel="BasicPad">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="El5-FM-2zX">
@@ -1007,51 +1006,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fiksu Calc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iws-8J-PiX">
-                                <rect key="frame" x="16" y="11" width="274" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="6V2-ud-uG2"/>
-                                    <constraint firstAttribute="width" constant="200" id="dT9-i6-Q4h"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir6-D9-p4I">
-                                <rect key="frame" x="20" y="481" width="200" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="EH0-xT-IA3"/>
-                                    <constraint firstAttribute="height" constant="30" id="FBQ-Rp-VEJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Click to go support group">
-                                    <color key="titleColor" red="1" green="0.68024959910379412" blue="0.30666293805464717" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="supportGroup:" destination="Mq9-FJ-jIu" eventType="touchUpInside" id="Wtc-Rb-Q9c"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MJ-SK-CFa">
-                                <rect key="frame" x="20" y="519" width="259" height="82"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="0JJ-MU-ceg"/>
-                                    <constraint firstAttribute="width" constant="260" id="IRZ-cS-h84"/>
-                                </constraints>
-                                <string key="text">Created By Dr. Alf 
-All right reserved. Forethink. 2016
-Special thanks to Sonja Kim.
-Made in Finland.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="BXb-Ru-XS0" userLabel="help">
-                                <rect key="frame" x="-764" y="40" width="1024" height="420"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="4r3-eg-ZgM"/>
-                                    <constraint firstAttribute="height" constant="420" id="tCi-MZ-jLi"/>
-                                </constraints>
-                                <string key="text">Fiksu calc is a calculator app for everyday use. Fiksu means "Smart" in Finnish. 
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VUX-0x-Jm0">
+                                <rect key="frame" x="30" y="11" width="260" height="487"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fiksu Calc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iws-8J-PiX">
+                                        <rect key="frame" x="30" y="0.0" width="200" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="6V2-ud-uG2"/>
+                                            <constraint firstAttribute="width" constant="200" id="dT9-i6-Q4h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="bottom" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="uV2-XK-b3e">
+                                        <rect key="frame" x="0.0" y="31" width="260" height="456"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="BXb-Ru-XS0" userLabel="help">
+                                                <rect key="frame" x="20" y="0.0" width="240" height="350"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="4r3-eg-ZgM"/>
+                                                    <constraint firstAttribute="height" constant="350" id="tCi-MZ-jLi"/>
+                                                </constraints>
+                                                <string key="text">Fiksu calc is a calculator app for everyday use. Fiksu means "Smart" in Finnish. 
 
 1. Smart memory buttons. : You can keep calculation result on smart memory button "M1","M2", and "M3". Simply press button to remember and press it for reuse. To clear, double tap. To clear all, long tap.
 
@@ -1062,25 +1039,47 @@ Made in Finland.</string>
 4. Tip and tax tool: Set a tax (or tip) and make a quick tax(tip) calculation with tax or without tax from result. You can set a new rate after clearing by double tapping.
 
 5. Result in voice: tap result and you can hear result in voice.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" red="0.30220352564102559" green="0.30220352564102559" blue="0.30220352564102559" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" red="0.30220352564102559" green="0.30220352564102559" blue="0.30220352564102559" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir6-D9-p4I">
+                                                <rect key="frame" x="60" y="348" width="200" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="EH0-xT-IA3"/>
+                                                    <constraint firstAttribute="height" constant="30" id="FBQ-Rp-VEJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Click to go support group">
+                                                    <color key="titleColor" red="1" green="0.68024959910379412" blue="0.30666293805464717" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="supportGroup:" destination="Mq9-FJ-jIu" eventType="touchUpInside" id="Wtc-Rb-Q9c"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MJ-SK-CFa">
+                                                <rect key="frame" x="0.0" y="376" width="260" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="0JJ-MU-ceg"/>
+                                                    <constraint firstAttribute="width" constant="260" id="IRZ-cS-h84"/>
+                                                </constraints>
+                                                <string key="text">Created By Dr. Alf 
+All right reserved. Forethink. 2016
+Special thanks to Sonja Kim.
+Made in Finland.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ir6-D9-p4I" firstAttribute="centerX" secondItem="uV2-XK-b3e" secondAttribute="centerX" id="GE0-vV-2Ye"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iws-8J-PiX" firstAttribute="leading" secondItem="6tb-P9-yD7" secondAttribute="leadingMargin" id="7Kx-mG-vOV"/>
-                            <constraint firstItem="5MJ-SK-CFa" firstAttribute="top" secondItem="Ir6-D9-p4I" secondAttribute="bottom" constant="18" id="BTD-eH-U0w"/>
-                            <constraint firstItem="iws-8J-PiX" firstAttribute="leading" secondItem="6tb-P9-yD7" secondAttribute="leadingMargin" constant="28" id="K0R-Ch-cwo"/>
-                            <constraint firstItem="BXb-Ru-XS0" firstAttribute="top" secondItem="iws-8J-PiX" secondAttribute="bottom" constant="10" id="MqQ-TU-kth"/>
-                            <constraint firstItem="5MJ-SK-CFa" firstAttribute="top" secondItem="Ir6-D9-p4I" secondAttribute="bottom" constant="18" id="Pdg-S3-e6Z"/>
-                            <constraint firstItem="5MJ-SK-CFa" firstAttribute="leading" secondItem="6tb-P9-yD7" secondAttribute="leadingMargin" id="V33-Po-Ia5"/>
-                            <constraint firstItem="iws-8J-PiX" firstAttribute="top" secondItem="9EI-mz-GI2" secondAttribute="bottom" constant="8" id="bDW-Hx-6yn"/>
-                            <constraint firstItem="Ir6-D9-p4I" firstAttribute="leading" secondItem="6tb-P9-yD7" secondAttribute="leadingMargin" id="bej-2a-hUV"/>
-                            <constraint firstItem="BXb-Ru-XS0" firstAttribute="leading" secondItem="6tb-P9-yD7" secondAttribute="leadingMargin" id="r7p-s5-ptf"/>
-                            <constraint firstItem="Ir6-D9-p4I" firstAttribute="top" secondItem="BXb-Ru-XS0" secondAttribute="bottom" constant="15" id="wzg-ww-fzt"/>
-                            <constraint firstItem="iws-8J-PiX" firstAttribute="top" secondItem="9EI-mz-GI2" secondAttribute="bottom" constant="10" id="xtr-hF-Jc4"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0g3-YN-rOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
