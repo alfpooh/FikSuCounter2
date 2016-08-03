@@ -328,9 +328,6 @@ class ViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        //status bar hide
-        prefersStatusBarHidden()
-        
         //sound setting
         // for sound
         

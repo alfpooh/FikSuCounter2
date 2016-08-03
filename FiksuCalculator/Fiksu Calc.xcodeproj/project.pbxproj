@@ -10,6 +10,7 @@
 		FD1A68DF1D46802500FF5A38 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD1A68DE1D46802500FF5A38 /* Click.wav */; };
 		FD1A68E21D46B4CE00FF5A38 /* clear.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD1A68E11D46B4CE00FF5A38 /* clear.wav */; };
 		FD1A68E41D46B9A100FF5A38 /* Flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD1A68E31D46B9A100FF5A38 /* Flip.wav */; };
+		FD4AC41E1D522C5F002AFAA9 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AC41D1D522C5F002AFAA9 /* SideMenu.swift */; };
 		FD52BF1E1D3A08870033BB46 /* FTK_RoundedSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */; };
 		FDBE19E11D4B776F00F5F75C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBE19E01D4B776F00F5F75C /* SWRevealViewController.m */; };
 		FDBE19E31D4B785A00F5F75C /* FiksuCalcSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE19E21D4B785A00F5F75C /* FiksuCalcSettings.swift */; };
@@ -47,6 +48,7 @@
 		FD1A68DE1D46802500FF5A38 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
 		FD1A68E11D46B4CE00FF5A38 /* clear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clear.wav; sourceTree = "<group>"; };
 		FD1A68E31D46B9A100FF5A38 /* Flip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Flip.wav; sourceTree = "<group>"; };
+		FD4AC41D1D522C5F002AFAA9 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTK_RoundedSquare.swift; sourceTree = "<group>"; };
 		FDBE19DE1D4B776E00F5F75C /* Fiksu Calc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fiksu Calc-Bridging-Header.h"; sourceTree = "<group>"; };
 		FDBE19DF1D4B776F00F5F75C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				FDBE19DD1D4B775B00F5F75C /* SWRevealViewController */,
 				FDD922661D37836F00CE5AE5 /* AppDelegate.swift */,
 				FDD922681D37836F00CE5AE5 /* ViewController.swift */,
+				FD4AC41D1D522C5F002AFAA9 /* SideMenu.swift */,
 				FDD9226A1D37836F00CE5AE5 /* Main.storyboard */,
 				FDD9226D1D37836F00CE5AE5 /* Assets.xcassets */,
 				FD1A68E31D46B9A100FF5A38 /* Flip.wav */,
@@ -309,6 +312,7 @@
 				FDBE19E51D4B792300F5F75C /* FiksuCalcTableCell.swift in Sources */,
 				FDD922671D37836F00CE5AE5 /* AppDelegate.swift in Sources */,
 				FDD922951D378C2000CE5AE5 /* FTK_unibutton.swift in Sources */,
+				FD4AC41E1D522C5F002AFAA9 /* SideMenu.swift in Sources */,
 				FD52BF1E1D3A08870033BB46 /* FTK_RoundedSquare.swift in Sources */,
 				FDFAB6F11D37FC6E003D0E60 /* Background.swift in Sources */,
 			);
