@@ -54,6 +54,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var setTip: FtkToolBtn!
     @IBOutlet weak var setTax: FtkToolBtn!
     
+    
+    
     @IBOutlet weak var XxX: FtkToolBtn!
     
     @IBAction func sayDisplay(sender:AnyObject) {
@@ -75,8 +77,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var mem3: FtkToolBtn!
     @IBOutlet weak var mem1: FtkToolBtn!
     @IBOutlet weak var mem2: FtkToolBtn!
-    
-
     
     func memory1clear() {
         let key = "M1"
@@ -145,12 +145,12 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func taxClear(sender: AnyObject) {
+    @objc private func taxClear() {
         let key = "Set Tax"
         defaults.setDouble(0, forKey: "TaxRate")
         defaults.synchronize()
         SoundOut(2)
-        sender.setTitle(key, forState: .Normal)
+        setTax.setTitle(key, forState: .Normal)
         taxrate = 0.0
     }
     
@@ -197,12 +197,12 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func tipClear(sender: AnyObject) {
+    @objc private func tipClear() {
         let key = "Set Tip"
         defaults.setDouble(0, forKey: "TipRate")
         defaults.synchronize()
         SoundOut(2)
-        sender.setTitle(key, forState: .Normal)
+        setTip.setTitle(key, forState: .Normal)
         tiprate = 0.0
     }
     
@@ -356,6 +356,25 @@ class ViewController: UIViewController {
         // force to replace x superscript 2
         let xxx =  "x\u{B2}"
         XxX.setTitle(xxx, forState: .Normal)
+        
+        
+        // tip and tax, tap control
+        //tip
+        let tiptapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.tipClear))  //Tap function will call when user tap on button
+        let tiplongGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.tipClear)) //Long function will call when user long press on button.
+        
+        tiptapGesture.numberOfTapsRequired = 2
+        setTip.addGestureRecognizer(tiptapGesture)
+        setTip.addGestureRecognizer(tiplongGesture)
+        
+        //tax
+        let taxtapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.taxClear))  //Tap function will call when user tap on button
+        let taxlongGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.taxClear)) //Long function will call when user long press on button.
+        
+        taxtapGesture.numberOfTapsRequired = 2
+        setTax.addGestureRecognizer(taxtapGesture)
+        setTax.addGestureRecognizer(taxlongGesture)
+        
         
         // tap, Long tap control for memory button
         //3

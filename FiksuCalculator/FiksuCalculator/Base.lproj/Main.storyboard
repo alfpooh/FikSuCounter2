@@ -647,7 +647,6 @@
                                                                         </variation>
                                                                         <connections>
                                                                             <action selector="taxButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1a-Yu-6hw"/>
-                                                                            <action selector="taxClear:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="yyX-N2-jsn"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-gT-os9" userLabel="SetTip" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
@@ -670,7 +669,6 @@
                                                                         </variation>
                                                                         <connections>
                                                                             <action selector="tipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCF-cd-xxi"/>
-                                                                            <action selector="tipClear:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="IPv-FL-OZV"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
