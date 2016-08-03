@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     private var userIsInTheMiddleOfTyping = false
     private var brain = CalculatorBrain()
     private var memory:[String:String] = ["M1":"", "M2":"", "M3":""]
-    
+    private var mkey: String?
     
     var displayValue: Double {
         
@@ -70,12 +70,47 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func memoryDelete(sender: AnyObject) {
-        let key = "M\(sender.tag+1)"
+    // memory button controls
+    
+    @IBOutlet weak var mem3: FtkToolBtn!
+    @IBOutlet weak var mem1: FtkToolBtn!
+    @IBOutlet weak var mem2: FtkToolBtn!
+    
+
+    
+    func memory1clear() {
+        let key = "M1"
         SoundOut(2)
-        sender.setTitle(key, forState: .Normal)
+        mem1.setTitle(key, forState: .Normal)
         memory[key] = ""
     }
+    func memory2clear() {
+        let key = "M2"
+        SoundOut(2)
+        mem2.setTitle(key, forState: .Normal)
+        memory[key] = ""
+    }
+    func memory3clear() {
+        let key = "M3"
+        SoundOut(2)
+        mem3.setTitle(key, forState: .Normal)
+        memory[key] = ""
+    }
+    
+    func allmemoryclear() {
+
+        SoundOut(2)
+        var key = "M1"
+        mem1.setTitle(key, forState: .Normal)
+        memory[key] = ""
+        key = "M2"
+        mem2.setTitle(key, forState: .Normal)
+        memory[key] = ""
+        key = "M3"
+        mem3.setTitle(key, forState: .Normal)
+        memory[key] = ""
+    }
+    
     
     
     @IBAction func memoryButton(sender: UIButton) {
@@ -322,6 +357,38 @@ class ViewController: UIViewController {
         let xxx =  "x\u{B2}"
         XxX.setTitle(xxx, forState: .Normal)
         
+        // tap, Long tap control for memory button
+        //3
+        let m3tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.memory3clear))  //Tap function will call when user tap on button
+        let m3longGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.allmemoryclear)) //Long function will call when user long press on button.
+        
+        m3tapGesture.numberOfTapsRequired = 2
+        mem3.addGestureRecognizer(m3tapGesture)
+        mem3.addGestureRecognizer(m3longGesture)
+        
+        //2
+        let m2tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.memory2clear))  //Tap function will call when user tap on button
+        let m2longGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.allmemoryclear)) //Long function will call when user long press on button.
+        
+        m2tapGesture.numberOfTapsRequired = 2
+        mem2.addGestureRecognizer(m2tapGesture)
+        mem2.addGestureRecognizer(m2longGesture)
+        
+        //1
+        let m1tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.memory1clear))  //Tap function will call when user tap on button
+        let m1longGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.allmemoryclear)) //Long function will call when user long press on button.
+        
+        m1tapGesture.numberOfTapsRequired = 2
+        mem1.addGestureRecognizer(m1tapGesture)
+        mem1.addGestureRecognizer(m1longGesture)
+        
+        
+        
+        
+        
+        
+        
+        // tap, long tap control for clear button
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.Tap))  //Tap function will call when user tap on button
         let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.Long)) //Long function will call when user long press on button.
         tapGesture.numberOfTapsRequired = 2

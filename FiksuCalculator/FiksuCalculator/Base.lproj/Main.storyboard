@@ -84,7 +84,6 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="memoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFi-rB-Ypb"/>
-                                                                            <action selector="memoryDelete:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="ObF-tn-3yS"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVy-yH-P7H" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
@@ -213,7 +212,6 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="memoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mS3-5y-TU7"/>
-                                                                            <action selector="memoryDelete:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="hFP-gs-onW"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgT-oc-ag2" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
@@ -341,7 +339,6 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="memoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqn-gg-eVj"/>
-                                                                            <action selector="memoryDelete:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Olw-DK-PfD"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czy-hl-2G1" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
@@ -979,6 +976,9 @@
                         <outlet property="clearall" destination="X7r-8a-tYU" id="Ra8-e2-PTd"/>
                         <outlet property="display" destination="Nz3-dk-WI0" id="Je3-JV-omc"/>
                         <outlet property="funcDigits" destination="N3Y-Fk-584" id="NqG-gP-jAc"/>
+                        <outlet property="mem1" destination="soj-De-MEw" id="ddy-b0-B4n"/>
+                        <outlet property="mem2" destination="ruS-DE-XC4" id="zX5-FI-hdn"/>
+                        <outlet property="mem3" destination="H4V-qL-RBM" id="Bdb-jC-36P"/>
                         <outlet property="setTax" destination="6My-vL-z5B" id="3ir-Kb-8KQ"/>
                         <outlet property="setTip" destination="nO7-gT-os9" id="ys5-Dm-6Qz"/>
                     </connections>
