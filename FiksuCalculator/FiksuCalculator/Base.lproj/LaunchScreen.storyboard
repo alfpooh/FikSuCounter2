@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,7 +16,76 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbf-ep-898">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipadcover01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="foz-je-gWR">
+                                        <rect key="frame" x="-468" y="-734" width="1536" height="2048"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIKSU CALC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxN-3T-YXg">
+                                        <rect key="frame" x="50" y="150" width="218" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="Nsd-oo-9Of"/>
+                                            <constraint firstAttribute="width" constant="218" id="s3b-AP-Vsc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created by Dr. Alf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KP-JX-pvE">
+                                        <rect key="frame" x="50" y="210" width="218" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="9TG-T0-ptv"/>
+                                            <constraint firstAttribute="width" constant="218" id="GjF-or-OB1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Forethink. 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASI-DG-9hz">
+                                        <rect key="frame" x="50" y="264" width="218" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="218" id="9bk-U8-AAx"/>
+                                            <constraint firstAttribute="height" constant="46" id="ZjO-iu-L6U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Made in Finland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl9-D7-vHh">
+                                        <rect key="frame" x="55" y="326" width="218" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="5e9-95-tXN"/>
+                                            <constraint firstAttribute="width" constant="218" id="Uo4-CN-DYr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4KP-JX-pvE" firstAttribute="leading" secondItem="Tbf-ep-898" secondAttribute="leading" constant="50" id="0cb-J7-feS"/>
+                                    <constraint firstItem="ASI-DG-9hz" firstAttribute="leading" secondItem="Tbf-ep-898" secondAttribute="leading" constant="50" id="7JJ-PU-X3y"/>
+                                    <constraint firstItem="4KP-JX-pvE" firstAttribute="top" secondItem="cxN-3T-YXg" secondAttribute="bottom" constant="15" id="BkD-iJ-USc"/>
+                                    <constraint firstItem="ASI-DG-9hz" firstAttribute="top" secondItem="4KP-JX-pvE" secondAttribute="bottom" constant="15" id="MpW-dC-gg0"/>
+                                    <constraint firstItem="cxN-3T-YXg" firstAttribute="top" secondItem="Tbf-ep-898" secondAttribute="top" constant="150" id="bOp-4L-YqX"/>
+                                    <constraint firstItem="foz-je-gWR" firstAttribute="centerX" secondItem="Tbf-ep-898" secondAttribute="centerX" id="ii8-bc-lOp"/>
+                                    <constraint firstItem="bl9-D7-vHh" firstAttribute="leading" secondItem="Tbf-ep-898" secondAttribute="leading" constant="50" id="nz5-pU-Tn9"/>
+                                    <constraint firstItem="foz-je-gWR" firstAttribute="centerY" secondItem="Tbf-ep-898" secondAttribute="centerY" id="t7g-Xj-pZv"/>
+                                    <constraint firstItem="bl9-D7-vHh" firstAttribute="top" secondItem="ASI-DG-9hz" secondAttribute="bottom" constant="15" id="uG9-Zn-53e"/>
+                                    <constraint firstItem="cxN-3T-YXg" firstAttribute="leading" secondItem="Tbf-ep-898" secondAttribute="leading" constant="50" id="wQ9-xl-TK6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tbf-ep-898" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="hCK-3v-1pA"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Tbf-ep-898" secondAttribute="bottom" id="keq-d9-QpI"/>
+                            <constraint firstAttribute="trailing" secondItem="Tbf-ep-898" secondAttribute="trailing" id="syg-ht-J2B"/>
+                            <constraint firstItem="Tbf-ep-898" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="tTG-89-UqJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +93,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ipadcover01.jpg" width="1536" height="2048"/>
+    </resources>
 </document>

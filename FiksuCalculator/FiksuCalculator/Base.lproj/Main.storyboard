@@ -22,7 +22,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdF-cs-5Y5" userLabel="TopPad">
                                 <rect key="frame" x="150" y="50" width="300" height="500"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-bM-YnP" userLabel="BasicPad">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-bM-YnP" userLabel="BasicPad">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="El5-FM-2zX">
