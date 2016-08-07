@@ -153,11 +153,11 @@ class ZCarousel: UIScrollView, UIScrollViewDelegate {
     
     func imageTapped(image: AnyObject) {
         NSNotificationCenter.defaultCenter().postNotificationName("starttimer", object: nil)
-        print ("tapped!")
+        print ("image tapped!")
     }
     func buttonTapped(image: AnyObject) {
         NSNotificationCenter.defaultCenter().postNotificationName("starttimer", object: nil)
-        print ("tapped!")
+        print ("button tapped!")
     }
     
     
