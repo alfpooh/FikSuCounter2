@@ -20,28 +20,23 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var currentIndex: Int!
     var currentMenu: Int!
     var isImageAdded = false
+    var lasttag = 2
 
     //Recipes
     let boilingRecipe: [String] = ["Egg","Potatoes","rusinO"]
     let noodleRecipe: [String] = ["eggnoodleinO","InstantRamen","Somen"]
     let pastaRecipe: [String] = [ "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti"]
-    let brineRecipe: [String] = ["cabbageinO"]
+    let brineRecipe: [String] = ["cabbageinO","1","2"]
 
     var recipesonCarousel:[String] = [""]
     
     let MenuArray: [String] = ["PASTA","BRINE","ALL","BOILING","NOODLE"]
     let TestArray: [String] = ["1", "2", "3", "4","5"]
     let ReplacingArray: [String]! = nil
+    let allrecipe: [String] = [ "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti","cabbageinO","Egg","Potatoes","rusinO","eggnoodleinO","InstantRamen","Somen"]
+
     
-    func makeallrecipes () -> [String] {
-        recipesonCarousel.removeAll()
-        recipesonCarousel.appendContentsOf(pastaRecipe)
-        recipesonCarousel.appendContentsOf(brineRecipe)
-        recipesonCarousel.appendContentsOf(boilingRecipe)
-        recipesonCarousel.appendContentsOf(noodleRecipe)
-        
-        return recipesonCarousel
-    }
+
 //    func setnewRecipesonCarousel (setarray: String) {
 //        
 //        recipesonCarousel.removeAll()
@@ -89,12 +84,14 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         menu.tag = 0
         self.view.addSubview(menu!)
         
-        //creating recipes
-        ClearandAddimages(menu.tag)
+        //creating recipes all
+        ClearandAddimages(2)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GotoTimer), name: "starttimer", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
     }
+    
+
     
     func ClearandAddimages(ImageArray: Int) {
         
@@ -109,7 +106,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         }
             // case of false, initialiation
         else {
-            let imageArray: [String] = makeallrecipes()
+            let imageArray: [String] = allrecipe
             imageAdding(imageArray,indextag: ImageArray)
             isImageAdded = true
         }
@@ -121,33 +118,33 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
             width: ((self.view.frame.size.width/5)*3),
             height: (self.view.frame.size.width/5)*3))
         images.ZCdelegate = self
-        images.addImages(toaddarray)
         images.tag = indextag
+        images.addImages(toaddarray)
+
         self.view.addSubview(images)
     }
     
-    func imageReplacing (toaddarray: AnyObject) {
-        for v in self.view.subviews{
-            v.removeFromSuperview()
-        }
-        
+    func imageReplacing (toaddarray: [String], indextag: Int) {
+        images.viewWithTag(lasttag)!.removeFromSuperview()
+        lasttag = indextag
         images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,
             y: 200,
             width: ((self.view.frame.size.width/5)*3),
             height: (self.view.frame.size.width/5)*3))
         images.ZCdelegate = self
-        images.addImages(toaddarray as! [String])
-        images.tag = 1
+        images.tag = indextag
+        images.addImages(toaddarray)
         self.view.addSubview(images)
     }
+    
     
     func GotoTimer(sender: AnyObject) {
 
                 if currentIndex == nil {currentIndex = 0}
                 let str = "\(currentIndex)"
                 performSegueWithIdentifier("GoTimer", sender: str)
-
     }
+    
     
     func ChangeMenu (sender: AnyObject) {
         ClearandAddimages(1)
@@ -170,23 +167,21 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     func ZCarouselTitleShowingIndex(scrollview: ZCarouselTitle, index: Int) {
         
         print("Showing Title index \(index)")
-
-        currentIndex = index
         
-//        switch  currentIndex {
-//        case 1 :
-//            setnewRecipesonCarousel("PASTA")
-//        case 2 :
-//            setnewRecipesonCarousel("BRINE")
-//        case 3 :
-//            setnewRecipesonCarousel("ALL")
-//        case 4 :
-//            setnewRecipesonCarousel("BOILING")
-//        case 5 :
-//            setnewRecipesonCarousel("NOODLE")
-//        default: break
-//        
-//        }
+        switch index {
+        
+        case 0:
+            imageReplacing(pastaRecipe, indextag: 0)
+        case 1:
+            imageReplacing(brineRecipe, indextag: 1)
+        case 3:
+            imageReplacing(boilingRecipe, indextag: 3)
+        case 4:
+            imageReplacing(noodleRecipe, indextag: 4)
+        default:
+            imageReplacing(allrecipe, indextag: 2)
+        }
+
     }
     
 
