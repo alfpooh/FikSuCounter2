@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     var timerShortRingplayer: AVAudioPlayer!
     var timerRewindplayer: AVAudioPlayer!
     var sayCount = AVSpeechUtterance(string: "")
-    let targetTime = [60,15,5,15,8,5,10,12,20,10,10,4,9]
+    // "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti","cabbageinO","Egg","Potatoes","rusinO","eggnoodleinO","InstantRamen","Somen"
+    let targetTime = [15,10,9,10,9,60,15,20,10,9,10,5,4]
     var isPaused = false
     var isTimerOn = false
     var pausedTime: NSTimeInterval!
@@ -141,13 +142,6 @@ class ViewController: UIViewController {
     
     }
 
-    //    @IBAction func MinusMinute(sender: AnyObject) {
-    //        let timenow = watch.elapsedTime
-    //        if timer.valid {
-    //            if  timenow > 60 {
-    //                watch.minusOneMinute()
-    //                VoiceOut(6)} else {VoiceOut(7)} }
-    //    }
     
     
     @IBAction func startButtonTapped(sender: UIButton) {
@@ -158,8 +152,6 @@ class ViewController: UIViewController {
                                                                             selector: #selector(ViewController.updateElapsedTimeLabel(_:)), userInfo: nil, repeats: true)
                  timerEffectplayer.play()
                 
-                //swap to pause
-                //playorpauseLbl.text = "❙❙"
                 
                 BaseButtonToggle()
                 

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MenuCarousel.swift
 //  Fiksu Kitchen Timer
 //
 //  Created by donghoon bae on 2016. 7. 1..
@@ -27,52 +27,13 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     let noodleRecipe: [String] = ["eggnoodleinO","InstantRamen","Somen"]
     let pastaRecipe: [String] = [ "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti"]
     let brineRecipe: [String] = ["cabbageinO","1","2"]
-
-    var recipesonCarousel:[String] = [""]
-    
     let MenuArray: [String] = ["PASTA","BRINE","ALL","BOILING","NOODLE"]
     let TestArray: [String] = ["1", "2", "3", "4","5"]
     let ReplacingArray: [String]! = nil
     let allrecipe: [String] = [ "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti","cabbageinO","Egg","Potatoes","rusinO","eggnoodleinO","InstantRamen","Somen"]
-
-    
-
-//    func setnewRecipesonCarousel (setarray: String) {
-//        
-//        recipesonCarousel.removeAll()
-//        
-//        switch setarray {
-//        case "PASTA":
-//            menu.tag = 1
-//            recipesonCarousel.appendContentsOf(pastaRecipe)
-//        case "BRINE":
-//            menu.tag = 2
-//            recipesonCarousel.appendContentsOf(brineRecipe)
-//        case "BOILING":
-//            menu.tag = 3
-//            recipesonCarousel.appendContentsOf(boilingRecipe)
-//        case "NOODLE":
-//            menu.tag = 4
-//            recipesonCarousel.appendContentsOf(noodleRecipe)
-//        default:
-//            menu.tag = 0
-//            recipesonCarousel.appendContentsOf(pastaRecipe)
-//            recipesonCarousel.appendContentsOf(brineRecipe)
-//            recipesonCarousel.appendContentsOf(boilingRecipe)
-//            recipesonCarousel.appendContentsOf(noodleRecipe)
-//        }
-//        isImageAdded = true
-//        ClearandAddimages(menu.tag)
-//        imageAdding(recipesonCarousel, indextag: menu.tag)
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //menu buttons
-        
-        // set recipe array to all
-//        setnewRecipesonCarousel("all")
         
         //creating menu buttons
         menu = ZCarouselTitle(frame: CGRect( x: (self.view.frame.size.width/5),
@@ -153,13 +114,10 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     }
     
     func ZCarouselShowingIndex(scrollview: ZCarousel, index: Int) {
-        //if scrollview == menu {
-        //    print("Showing Button at index \(index)")
-        //}
-        //else if scrollview == images {
-            print("Showing Image at index \(index)")
+        
+        print("Showing Image at index \(index)")
         currentIndex = index
-       // }
+        
     }
     
     

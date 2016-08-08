@@ -21,8 +21,4 @@ class Ktimer : NSObject {
         timer.invalidate()
     }
     
-    func startOrResumeTimer() {
-       // timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(ViewController.updateElapsedTimeLabel(_:)), userInfo: nil, repeats: true)
-        print("OK")
-    }
 }
