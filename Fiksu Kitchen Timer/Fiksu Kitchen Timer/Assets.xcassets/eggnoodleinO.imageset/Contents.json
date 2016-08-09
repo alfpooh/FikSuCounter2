@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "eggnoodleinO.png",
+      "filename" : "eggnoodleinO1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "eggnoodleinO.png",
       "scale" : "2x"
     },
     {

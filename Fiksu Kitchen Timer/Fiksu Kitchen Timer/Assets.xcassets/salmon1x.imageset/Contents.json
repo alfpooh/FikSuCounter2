@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "MacaroniinO1x.png",
+      "filename" : "salmon1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "MacaroniinO.png",
+      "filename" : "salmon.png",
       "scale" : "2x"
     },
     {

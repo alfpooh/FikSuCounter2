@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "eggs_inO.png",
+      "filename" : "eggs_inO1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "eggs_inO.png",
       "scale" : "2x"
     },
     {

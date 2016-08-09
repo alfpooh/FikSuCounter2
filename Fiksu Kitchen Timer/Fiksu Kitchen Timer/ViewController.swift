@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     var timer = NSTimer()
     var transferText: String! = "0"
     var isBaseButtonSWpaused: Bool = false
+    var selectedrecipeindex: Int = 0
     
     @IBOutlet weak var targetTimeLabel: UILabel!
     
@@ -66,7 +67,11 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         //target time should be decided from selecting menu later!
-        let timerindex = Int(transferText)!
+        // transferText is trasfered from MenuCarousel through Segue
+        
+        parseTransferedindex(transferText)
+        let timerindex = Int(selectedrecipeindex)
+        
         // set target.
         currentTargetmin = Double(targetTime[timerindex])
         if targetTime[timerindex] < 10 {
@@ -74,6 +79,16 @@ class ViewController: UIViewController {
         } else {
             targetTimeLabel.text = "\(targetTime[timerindex]):00"}
         
+    }
+    
+    func parseTransferedindex (transfered: String) {
+        //need to analyze transfered here
+        let strSplit = transfered.characters.split(":")
+        let menuX = String(strSplit.first!)
+        let contentX = String(strSplit.last!)
+        print (transfered)
+        print ("menu:\(menuX), content:\(contentX)")
+        selectedrecipeindex = 1 // test
     }
     
     @IBAction func PlusMinute(sender: AnyObject) {

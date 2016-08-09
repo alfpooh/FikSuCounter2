@@ -11,11 +11,12 @@ import UIKit
 
 // Code for making universal button design
 
+
 class FtkSquareBtn: UIButton {
     
-    @IBInspectable var fillColor: UIColor = UIColor.grayColor()
+    @IBInspectable var fillColor: UIColor = UIColor(red: 50/255, green: 65/255, blue: 140/255, alpha: 0.7)
     @IBInspectable var strokeColor: UIColor = UIColor.whiteColor()
-    @IBInspectable var radius: CGSize = CGSizeMake(5, 5)
+    @IBInspectable var radius: CGSize = CGSizeMake(8, 8)
     
     override func drawRect(rect: CGRect) {
         

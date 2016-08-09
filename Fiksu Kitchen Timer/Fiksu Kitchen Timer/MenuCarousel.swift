@@ -14,14 +14,14 @@ import AVFoundation
 
 class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDelegate {
     
-   // var menu: ZCarousel!
+    // var menu: ZCarousel!
     var images: ZCarousel!
     var menu: ZCarouselTitle!
     var currentIndex: Int!
-    var currentMenu: Int!
+    var currentMenuIndex: Int!
     var isImageAdded = false
     var lasttag = 2
-
+    
     //Recipes
     let boilingRecipe: [String] = ["Egg","Potatoes","rusinO"]
     let noodleRecipe: [String] = ["eggnoodleinO","InstantRamen","Somen"]
@@ -52,7 +52,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
     }
     
-
+    
     
     func ClearandAddimages(ImageArray: Int) {
         
@@ -81,7 +81,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         images.ZCdelegate = self
         images.tag = indextag
         images.addImages(toaddarray)
-
+        
         self.view.addSubview(images)
     }
     
@@ -100,17 +100,18 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     
     
     func GotoTimer(sender: AnyObject) {
-
-                if currentIndex == nil {currentIndex = 0}
-                let str = "\(currentIndex)"
-                performSegueWithIdentifier("GoTimer", sender: str)
+        
+        if currentIndex == nil {currentIndex = 0}
+        if currentMenuIndex == nil { currentMenuIndex = 2}
+        let str = "\(currentMenuIndex):\(currentIndex)"
+        performSegueWithIdentifier("GoTimer", sender: str)
     }
     
     
     func ChangeMenu (sender: AnyObject) {
         ClearandAddimages(1)
         print("Testing change added images")
-    
+        
     }
     
     func ZCarouselShowingIndex(scrollview: ZCarousel, index: Int) {
@@ -124,10 +125,12 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     
     func ZCarouselTitleShowingIndex(scrollview: ZCarouselTitle, index: Int) {
         
+        
         print("Showing Title index \(index)")
+        currentMenuIndex = index
         
-        switch index {
-        
+        switch currentMenuIndex {
+            
         case 0:
             imageReplacing(pastaRecipe, indextag: 0)
         case 1:
@@ -139,10 +142,10 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         default:
             imageReplacing(allrecipe, indextag: 2)
         }
-
+        
     }
     
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         //This is where you do work right before the view loads
@@ -157,6 +160,6 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         }
         
     }
- 
+    
 }
 

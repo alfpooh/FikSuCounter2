@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "fusili_inO.png",
+      "filename" : "pasta_inO1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "fusili_inO.png",
       "scale" : "2x"
     },
     {

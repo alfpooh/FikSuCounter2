@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "rusinO.png",
+      "filename" : "rusinO 2 1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "rusinO.png",
       "scale" : "2x"
     },
     {

@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "potatoes_inO.png",
+      "filename" : "potatoes_inO1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "potatoes_inO.png",
       "scale" : "2x"
     },
     {

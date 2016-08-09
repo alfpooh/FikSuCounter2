@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "cabbageinO.png",
+      "filename" : "cabbageinO1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "cabbageinO.png",
       "scale" : "2x"
     },
     {
