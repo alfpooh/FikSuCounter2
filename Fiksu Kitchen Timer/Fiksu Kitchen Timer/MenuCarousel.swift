@@ -23,18 +23,19 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var lasttag = 2
     
     //Recipes
-    let boilingRecipe: [String] = ["Egg","Potatoes","rusinO"]
-    let noodleRecipe: [String] = ["eggnoodleinO","InstantRamen","Somen"]
-    let pastaRecipe: [String] = [ "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti"]
-    let brineRecipe: [String] = ["cabbageinO","1","2"]
-    let MenuArray: [String] = ["PASTA","BRINE","ALL","BOILING","NOODLE"]
+    let boilingRecipe: [String] = ["egg","potatoes","buckWheat"]
+    let noodleRecipe: [String] = ["eggNoodle","instantRamen","somen"]
+    let pastaRecipe: [String] = [ "farfalle","fusili","macaroni","conci","spagehtti"]
+    let roastRecipe: [String] = ["roastBeef","roastChicken","roastSalmon"]
+    let MenuArray: [String] = ["PASTA","ROAST","ALL","BOILING","NOODLE"]
     let TestArray: [String] = ["1", "2", "3", "4","5"]
+    let recipeGroup: [String] = ["boilingRecipe","noodleRecipe","pastaRecipe","roastRecipe"]
     let ReplacingArray: [String]! = nil
-    let allrecipe: [String] = [ "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti","cabbageinO","Egg","Potatoes","rusinO","eggnoodleinO","InstantRamen","Somen"]
+    var allrecipe: [String] = ["egg","potatoes","buckWheat","eggNoodle","instantRamen","somen","farfalle","fusili","macaroni","conci","spagehtti","roastBeef","roastChicken","roastSalmon"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //creating menu buttons
         menu = ZCarouselTitle(frame: CGRect( x: (self.view.frame.size.width/5),
             y: 100,
@@ -52,7 +53,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
     }
     
-    
+
     
     func ClearandAddimages(ImageArray: Int) {
         
@@ -134,7 +135,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         case 0:
             imageReplacing(pastaRecipe, indextag: 0)
         case 1:
-            imageReplacing(brineRecipe, indextag: 1)
+            imageReplacing(roastRecipe, indextag: 1)
         case 3:
             imageReplacing(boilingRecipe, indextag: 3)
         case 4:

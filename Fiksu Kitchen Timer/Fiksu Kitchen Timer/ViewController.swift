@@ -19,8 +19,8 @@ class ViewController: UIViewController {
     var timerShortRingplayer: AVAudioPlayer!
     var timerRewindplayer: AVAudioPlayer!
     var sayCount = AVSpeechUtterance(string: "")
-    // "FarFalle13-15","fusili_inO","MacaroniinO","shellinO8-10","Spagehtti","cabbageinO","Egg","Potatoes","rusinO","eggnoodleinO","InstantRamen","Somen"
-    let targetTime = [15,10,9,10,9,60,15,20,10,9,10,5,4]
+    //
+    let targetTime = [15,20,10,5,5,4,13,9,10,10,9,40,60,45]
     var isPaused = false
     var isTimerOn = false
     var pausedTime: NSTimeInterval!
@@ -69,8 +69,8 @@ class ViewController: UIViewController {
         //target time should be decided from selecting menu later!
         // transferText is trasfered from MenuCarousel through Segue
         
-        parseTransferedindex(transferText)
-        let timerindex = Int(selectedrecipeindex)
+        selectedrecipeindex = parseTransferedindex(transferText)
+        let timerindex = selectedrecipeindex
         
         // set target.
         currentTargetmin = Double(targetTime[timerindex])
@@ -81,14 +81,22 @@ class ViewController: UIViewController {
         
     }
     
-    func parseTransferedindex (transfered: String) {
+    func parseTransferedindex (transfered: String) -> Int{
         //need to analyze transfered here
         let strSplit = transfered.characters.split(":")
         let menuX = String(strSplit.first!)
         let contentX = String(strSplit.last!)
         print (transfered)
         print ("menu:\(menuX), content:\(contentX)")
-        selectedrecipeindex = 1 // test
+        //["egg","potatoes","buckWheat","eggNoodle","instantRamen","somen","farfalle","fusili","macaroni","conci","spagehtti","roastBeef","roastChicken","roastSalmon"]
+        switch menuX {
+        case "0": return (Int(contentX)! + 6)
+        case "1": return (Int(contentX)! + 11)
+        case "3": return Int(contentX)!
+        case "4": return (Int(contentX)! + 3)
+        default:  return Int(contentX)!
+        
+        }
     }
     
     @IBAction func PlusMinute(sender: AnyObject) {
