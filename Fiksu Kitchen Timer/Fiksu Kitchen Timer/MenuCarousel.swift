@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SwiftyJSON
 
 @IBDesignable
 
@@ -162,5 +163,13 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         
     }
     
+    @IBAction func showPopUp(sender: AnyObject) {
+        let popupVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("popuprecipe") as! popUpViewC
+        self.addChildViewController(popupVC)
+        popupVC.view.frame = self.view.frame
+        self.view.addSubview(popupVC.view)
+        popupVC.didMoveToParentViewController(self)
+        
+    }
 }
 

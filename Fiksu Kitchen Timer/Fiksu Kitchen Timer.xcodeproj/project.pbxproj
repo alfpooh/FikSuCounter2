@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DF99809E4EBD494B637236E /* Pods_Fiksu_Kitchen_TimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7E11B3348A8EE03B281109 /* Pods_Fiksu_Kitchen_TimerTests.framework */; };
+		5AB6FE11C0ED95BA50B2F4E6 /* Pods_Fiksu_Kitchen_TimerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA92873678194625CE4000B /* Pods_Fiksu_Kitchen_TimerUITests.framework */; };
+		67F06A3D4977D836D39EEA40 /* Pods_Fiksu_Kitchen_Timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A88CF3D1E11FB794D13A6 /* Pods_Fiksu_Kitchen_Timer.framework */; };
+		FD12F3C81D60C9C100B4E010 /* popUpViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD12F3C71D60C9C100B4E010 /* popUpViewC.swift */; };
 		FDAB66CF1D33DC6600F7CEC5 /* TallyCounter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD47846D1D33D9C700FE0D0B /* TallyCounter-Regular.ttf */; };
 		FDAB66D41D33E00C00F7CEC5 /* TimerLoudRing.wav in Resources */ = {isa = PBXBuildFile; fileRef = FDAB66D01D33E00C00F7CEC5 /* TimerLoudRing.wav */; };
 		FDAB66D51D33E00C00F7CEC5 /* TimerRewind.wav in Resources */ = {isa = PBXBuildFile; fileRef = FDAB66D11D33E00C00F7CEC5 /* TimerRewind.wav */; };
@@ -53,6 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA92873678194625CE4000B /* Pods_Fiksu_Kitchen_TimerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_Kitchen_TimerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1914A682AE8A3840322B8A8C /* Pods-Fiksu Kitchen Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fiksu Kitchen Timer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fiksu Kitchen Timer/Pods-Fiksu Kitchen Timer.debug.xcconfig"; sourceTree = "<group>"; };
+		1B7E11B3348A8EE03B281109 /* Pods_Fiksu_Kitchen_TimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_Kitchen_TimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE94648C66ADD10FB83B170 /* Pods-Fiksu Kitchen TimerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fiksu Kitchen TimerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fiksu Kitchen TimerUITests/Pods-Fiksu Kitchen TimerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A0A88CF3D1E11FB794D13A6 /* Pods_Fiksu_Kitchen_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_Kitchen_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03E3C3267BF1E0671BCEA39 /* Pods-Fiksu Kitchen TimerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fiksu Kitchen TimerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fiksu Kitchen TimerUITests/Pods-Fiksu Kitchen TimerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAF7990410658FDDF4124869 /* Pods-Fiksu Kitchen Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fiksu Kitchen Timer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fiksu Kitchen Timer/Pods-Fiksu Kitchen Timer.release.xcconfig"; sourceTree = "<group>"; };
+		DCD575F56EBC1196C70C2053 /* Pods-Fiksu Kitchen TimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fiksu Kitchen TimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fiksu Kitchen TimerTests/Pods-Fiksu Kitchen TimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E35FB745762D5BE18BE877C2 /* Pods-Fiksu Kitchen TimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fiksu Kitchen TimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fiksu Kitchen TimerTests/Pods-Fiksu Kitchen TimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD12F3C71D60C9C100B4E010 /* popUpViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = popUpViewC.swift; path = ../../../../../Users/AlfBae/Downloads/testpopup/testpopup/popUpViewC.swift; sourceTree = "<group>"; };
 		FD47846D1D33D9C700FE0D0B /* TallyCounter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TallyCounter-Regular.ttf"; sourceTree = "<group>"; };
 		FDAB66D01D33E00C00F7CEC5 /* TimerLoudRing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TimerLoudRing.wav; sourceTree = "<group>"; };
 		FDAB66D11D33E00C00F7CEC5 /* TimerRewind.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TimerRewind.wav; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F06A3D4977D836D39EEA40 /* Pods_Fiksu_Kitchen_Timer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF99809E4EBD494B637236E /* Pods_Fiksu_Kitchen_TimerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +122,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB6FE11C0ED95BA50B2F4E6 /* Pods_Fiksu_Kitchen_TimerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5379BF4B28DB6F07525B097D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1914A682AE8A3840322B8A8C /* Pods-Fiksu Kitchen Timer.debug.xcconfig */,
+				CAF7990410658FDDF4124869 /* Pods-Fiksu Kitchen Timer.release.xcconfig */,
+				DCD575F56EBC1196C70C2053 /* Pods-Fiksu Kitchen TimerTests.debug.xcconfig */,
+				E35FB745762D5BE18BE877C2 /* Pods-Fiksu Kitchen TimerTests.release.xcconfig */,
+				A03E3C3267BF1E0671BCEA39 /* Pods-Fiksu Kitchen TimerUITests.debug.xcconfig */,
+				1CE94648C66ADD10FB83B170 /* Pods-Fiksu Kitchen TimerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D5C8EAE6F9F166567537914 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A88CF3D1E11FB794D13A6 /* Pods_Fiksu_Kitchen_Timer.framework */,
+				1B7E11B3348A8EE03B281109 /* Pods_Fiksu_Kitchen_TimerTests.framework */,
+				0AA92873678194625CE4000B /* Pods_Fiksu_Kitchen_TimerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD9532AD1D453D250010C9F4 /* Gloss */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +166,8 @@
 				FDF2FDC11D26697100F0CEC5 /* Fiksu Kitchen TimerTests */,
 				FDF2FDCC1D26697100F0CEC5 /* Fiksu Kitchen TimerUITests */,
 				FDF2FDAB1D26697100F0CEC5 /* Products */,
+				5379BF4B28DB6F07525B097D /* Pods */,
+				7D5C8EAE6F9F166567537914 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +201,7 @@
 				FDE625081D608D1100B0AEB3 /* Askchef.swift */,
 				FDE625021D60866300B0AEB3 /* askChefbutton.swift */,
 				FDF2FDE11D266BE500F0CEC5 /* UniLense.swift */,
+				FD12F3C71D60C9C100B4E010 /* popUpViewC.swift */,
 				FDEE1A011D2BC18000EE7F96 /* RecipeButton.swift */,
 				FDF2FDDD1D266A0600F0CEC5 /* BackgroundPattern.swift */,
 				FDF2FDB41D26697100F0CEC5 /* Assets.xcassets */,
@@ -197,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF2FDD21D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen Timer" */;
 			buildPhases = (
+				A23A274EA560AB5B3C41820C /* [CP] Check Pods Manifest.lock */,
 				FDF2FDA61D26697100F0CEC5 /* Sources */,
 				FDF2FDA71D26697100F0CEC5 /* Frameworks */,
 				FDF2FDA81D26697100F0CEC5 /* Resources */,
+				0FE21915A5B3D3E7F5BA40DB /* [CP] Embed Pods Frameworks */,
+				BC1176288832EADFA4A4B68B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF2FDD51D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen TimerTests" */;
 			buildPhases = (
+				E0DFE128338AB1085DA570A4 /* [CP] Check Pods Manifest.lock */,
 				FDF2FDBA1D26697100F0CEC5 /* Sources */,
 				FDF2FDBB1D26697100F0CEC5 /* Frameworks */,
 				FDF2FDBC1D26697100F0CEC5 /* Resources */,
+				2C67307B562C4CB6DCC84F6B /* [CP] Embed Pods Frameworks */,
+				2EDD44160F8977941C758460 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +281,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF2FDD81D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen TimerUITests" */;
 			buildPhases = (
+				E0BFA666DC09C2C19EEBFFE7 /* [CP] Check Pods Manifest.lock */,
 				FDF2FDC51D26697100F0CEC5 /* Sources */,
 				FDF2FDC61D26697100F0CEC5 /* Frameworks */,
 				FDF2FDC71D26697100F0CEC5 /* Resources */,
+				AD4EC0678396596D174919BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,6 +374,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FE21915A5B3D3E7F5BA40DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fiksu Kitchen Timer/Pods-Fiksu Kitchen Timer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C67307B562C4CB6DCC84F6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fiksu Kitchen TimerTests/Pods-Fiksu Kitchen TimerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EDD44160F8977941C758460 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fiksu Kitchen TimerTests/Pods-Fiksu Kitchen TimerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23A274EA560AB5B3C41820C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4EC0678396596D174919BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fiksu Kitchen TimerUITests/Pods-Fiksu Kitchen TimerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC1176288832EADFA4A4B68B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fiksu Kitchen Timer/Pods-Fiksu Kitchen Timer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0BFA666DC09C2C19EEBFFE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0DFE128338AB1085DA570A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDF2FDA61D26697100F0CEC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -335,6 +509,7 @@
 				FDEE1A021D2BC18000EE7F96 /* RecipeButton.swift in Sources */,
 				FDF44C6E1D42605700EFEC48 /* FTK_RoundedRectangle.swift in Sources */,
 				FDEE19E21D2A709000EE7F96 /* MenuCarousel.swift in Sources */,
+				FD12F3C81D60C9C100B4E010 /* popUpViewC.swift in Sources */,
 				FDF2FDE61D267E9B00F0CEC5 /* Ktimer.swift in Sources */,
 				FDEE19FE1D2B078C00EE7F96 /* ZCarousel.swift in Sources */,
 				FDE625031D60866300B0AEB3 /* askChefbutton.swift in Sources */,
@@ -483,6 +658,7 @@
 		};
 		FDF2FDD31D26697100F0CEC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1914A682AE8A3840322B8A8C /* Pods-Fiksu Kitchen Timer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -497,6 +673,7 @@
 		};
 		FDF2FDD41D26697100F0CEC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF7990410658FDDF4124869 /* Pods-Fiksu Kitchen Timer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -510,6 +687,7 @@
 		};
 		FDF2FDD61D26697100F0CEC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD575F56EBC1196C70C2053 /* Pods-Fiksu Kitchen TimerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Fiksu Kitchen TimerTests/Info.plist";
@@ -522,6 +700,7 @@
 		};
 		FDF2FDD71D26697100F0CEC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E35FB745762D5BE18BE877C2 /* Pods-Fiksu Kitchen TimerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Fiksu Kitchen TimerTests/Info.plist";
@@ -534,6 +713,7 @@
 		};
 		FDF2FDD91D26697100F0CEC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03E3C3267BF1E0671BCEA39 /* Pods-Fiksu Kitchen TimerUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Fiksu Kitchen TimerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -545,6 +725,7 @@
 		};
 		FDF2FDDA1D26697100F0CEC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE94648C66ADD10FB83B170 /* Pods-Fiksu Kitchen TimerUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Fiksu Kitchen TimerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
