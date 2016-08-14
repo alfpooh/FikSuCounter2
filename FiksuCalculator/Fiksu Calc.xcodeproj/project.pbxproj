@@ -52,6 +52,7 @@
 		FD4AC41D1D522C5F002AFAA9 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		FD4AC4221D5320E0002AFAA9 /* ipadcover01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipadcover01.jpg; sourceTree = "<group>"; };
 		FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTK_RoundedSquare.swift; sourceTree = "<group>"; };
+		FDA4329C1D5B46B0004CA7DA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		FDBE19DE1D4B776E00F5F75C /* Fiksu Calc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fiksu Calc-Bridging-Header.h"; sourceTree = "<group>"; };
 		FDBE19DF1D4B776F00F5F75C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FDBE19E01D4B776F00F5F75C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		FDD9225A1D37836F00CE5AE5 = {
 			isa = PBXGroup;
 			children = (
+				FDA4329C1D5B46B0004CA7DA /* iAd.framework */,
 				FDD922651D37836F00CE5AE5 /* FiksuCalculator */,
 				FDD9227A1D37836F00CE5AE5 /* FiksuCalculatorTests */,
 				FDD922851D37836F00CE5AE5 /* FiksuCalculatorUITests */,

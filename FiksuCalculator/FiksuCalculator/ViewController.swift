@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iAd
 import AVFoundation
 
 extension Double {
@@ -14,7 +15,7 @@ extension Double {
 }
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ADBannerViewDelegate {
     
     private var isBasicShowing = true
     private let synth = AVSpeechSynthesizer()
@@ -53,6 +54,32 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var setTip: FtkToolBtn!
     @IBOutlet weak var setTax: FtkToolBtn!
+    
+    //iAD setting
+    @IBOutlet var iADBannerforCalc: ADBannerView?
+    
+   func bannerViewWillLoadAd(banner: ADBannerView!) {
+       self.iADBannerforCalc?.hidden = false
+   }
+    
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        self.iADBannerforCalc?.hidden = false
+    }
+    
+//    func bannerViewActionDidFinish(banner: ADBannerView!) {
+//        <#code#>
+//    }
+    
+    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+        return true
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        self.iADBannerforCalc?.hidden = true
+        print("ADBanner is not loaded.")
+    }
+    
+    //iAD Setting end
     
     
     
@@ -319,6 +346,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //for iAD setting
+        
+        self.canDisplayBannerAds = true
+        self.iADBannerforCalc?.delegate = self
+        self.iADBannerforCalc?.hidden = true
         
         //for setting menu
         

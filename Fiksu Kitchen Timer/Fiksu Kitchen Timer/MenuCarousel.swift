@@ -23,15 +23,15 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var lasttag = 2
     
     //Recipes
-    let boilingRecipe: [String] = ["egg","potatoes","buckWheat"]
-    let noodleRecipe: [String] = ["eggNoodle","instantRamen","somen"]
-    let pastaRecipe: [String] = [ "farfalle","fusili","macaroni","conci","spagehtti"]
-    let roastRecipe: [String] = ["roastBeef","roastChicken","roastSalmon"]
+    let boilingRecipe: [String] = ["Egg","Potatoes","Buckwheat"]
+    let noodleRecipe: [String] = ["Egg noodle","Instant ramen","Somen"]
+    let pastaRecipe: [String] = [ "Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle"]
+    let roastRecipe: [String] = ["Beef","Chicken","Salmon"]
     let MenuArray: [String] = ["PASTA","ROAST","ALL","BOILING","NOODLE"]
     let TestArray: [String] = ["1", "2", "3", "4","5"]
     let recipeGroup: [String] = ["boilingRecipe","noodleRecipe","pastaRecipe","roastRecipe"]
     let ReplacingArray: [String]! = nil
-    var allrecipe: [String] = ["egg","potatoes","buckWheat","eggNoodle","instantRamen","somen","farfalle","fusili","macaroni","conci","spagehtti","roastBeef","roastChicken","roastSalmon"]
+    var allrecipe: [String] = ["Egg","Potatoes","Buckwheat","Egg noodle","Instant ramen","Somen","Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle","Beef","Chicken","Salmon"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

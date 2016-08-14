@@ -12,6 +12,8 @@
 		FDAB66D51D33E00C00F7CEC5 /* TimerRewind.wav in Resources */ = {isa = PBXBuildFile; fileRef = FDAB66D11D33E00C00F7CEC5 /* TimerRewind.wav */; };
 		FDAB66D61D33E00C00F7CEC5 /* TimerShortRing.wav in Resources */ = {isa = PBXBuildFile; fileRef = FDAB66D21D33E00C00F7CEC5 /* TimerShortRing.wav */; };
 		FDAB66D71D33E00C00F7CEC5 /* Timer.wav in Resources */ = {isa = PBXBuildFile; fileRef = FDAB66D31D33E00C00F7CEC5 /* Timer.wav */; };
+		FDE625001D60746900B0AEB3 /* FiksuRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = FDE624FE1D60746900B0AEB3 /* FiksuRecipes.json */; };
+		FDE625011D60746900B0AEB3 /* FiksuRecipesTips.json in Resources */ = {isa = PBXBuildFile; fileRef = FDE624FF1D60746900B0AEB3 /* FiksuRecipesTips.json */; };
 		FDEE19E21D2A709000EE7F96 /* MenuCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE19E11D2A709000EE7F96 /* MenuCarousel.swift */; };
 		FDEE19FE1D2B078C00EE7F96 /* ZCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE19FD1D2B078C00EE7F96 /* ZCarousel.swift */; };
 		FDEE1A021D2BC18000EE7F96 /* RecipeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE1A011D2BC18000EE7F96 /* RecipeButton.swift */; };
@@ -54,6 +56,8 @@
 		FDAB66D11D33E00C00F7CEC5 /* TimerRewind.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TimerRewind.wav; sourceTree = "<group>"; };
 		FDAB66D21D33E00C00F7CEC5 /* TimerShortRing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TimerShortRing.wav; sourceTree = "<group>"; };
 		FDAB66D31D33E00C00F7CEC5 /* Timer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Timer.wav; sourceTree = "<group>"; };
+		FDE624FE1D60746900B0AEB3 /* FiksuRecipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FiksuRecipes.json; path = ../../../../../Users/AlfBae/Downloads/FiksuRecipes.json; sourceTree = "<group>"; };
+		FDE624FF1D60746900B0AEB3 /* FiksuRecipesTips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FiksuRecipesTips.json; path = ../../../../../Users/AlfBae/Downloads/FiksuRecipesTips.json; sourceTree = "<group>"; };
 		FDEE19E11D2A709000EE7F96 /* MenuCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCarousel.swift; sourceTree = "<group>"; };
 		FDEE19FD1D2B078C00EE7F96 /* ZCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCarousel.swift; sourceTree = "<group>"; };
 		FDEE1A011D2BC18000EE7F96 /* RecipeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeButton.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				FD9532AD1D453D250010C9F4 /* Gloss */,
 				FDAB66D11D33E00C00F7CEC5 /* TimerRewind.wav */,
 				FDAB66D21D33E00C00F7CEC5 /* TimerShortRing.wav */,
+				FDE624FE1D60746900B0AEB3 /* FiksuRecipes.json */,
+				FDE624FF1D60746900B0AEB3 /* FiksuRecipesTips.json */,
 				FDAB66D31D33E00C00F7CEC5 /* Timer.wav */,
 				FD47846D1D33D9C700FE0D0B /* TallyCounter-Regular.ttf */,
 				FDF2FDAD1D26697100F0CEC5 /* AppDelegate.swift */,
@@ -282,7 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE625001D60746900B0AEB3 /* FiksuRecipes.json in Resources */,
 				FDAB66CF1D33DC6600F7CEC5 /* TallyCounter-Regular.ttf in Resources */,
+				FDE625011D60746900B0AEB3 /* FiksuRecipesTips.json in Resources */,
 				FDF2FDB81D26697100F0CEC5 /* LaunchScreen.storyboard in Resources */,
 				FDF2FDB51D26697100F0CEC5 /* Assets.xcassets in Resources */,
 				FDAB66D51D33E00C00F7CEC5 /* TimerRewind.wav in Resources */,

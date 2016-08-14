@@ -938,15 +938,28 @@
                                     <outletCollection property="gestureRecognizers" destination="tbY-md-jin" appends="YES" id="zoq-Vl-SBE"/>
                                 </connections>
                             </view>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cP-tp-G6D">
+                                <rect key="frame" x="0.0" y="534" width="600" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="HY8-dh-fhb"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Lkt-eY-34e"/>
+                                </connections>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YdF-cs-5Y5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Cl-VU-2hA"/>
+                            <constraint firstItem="YdF-cs-5Y5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="1Cl-VU-2hA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YdF-cs-5Y5" secondAttribute="bottom" id="AFv-63-ydj"/>
                             <constraint firstAttribute="trailing" secondItem="YdF-cs-5Y5" secondAttribute="trailing" id="EDT-XY-eoe"/>
+                            <constraint firstItem="3cP-tp-G6D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HIr-DG-mt4"/>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCb-XC-IaW"/>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q19-Rs-BH2"/>
+                            <constraint firstAttribute="bottom" secondItem="3cP-tp-G6D" secondAttribute="bottom" id="Uyj-Wr-ECN"/>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bxv-u2-fM0"/>
+                            <constraint firstAttribute="trailing" secondItem="3cP-tp-G6D" secondAttribute="trailing" id="utc-b7-KeJ"/>
+                            <constraint firstItem="3cP-tp-G6D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xVY-pY-EXp"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
@@ -973,6 +986,7 @@
                         <outlet property="clearall" destination="X7r-8a-tYU" id="Ra8-e2-PTd"/>
                         <outlet property="display" destination="Nz3-dk-WI0" id="Je3-JV-omc"/>
                         <outlet property="funcDigits" destination="N3Y-Fk-584" id="NqG-gP-jAc"/>
+                        <outlet property="iADBannerforCalc" destination="3cP-tp-G6D" id="iaA-lC-WWQ"/>
                         <outlet property="mem1" destination="soj-De-MEw" id="ddy-b0-B4n"/>
                         <outlet property="mem2" destination="ruS-DE-XC4" id="zX5-FI-hdn"/>
                         <outlet property="mem3" destination="H4V-qL-RBM" id="Bdb-jC-36P"/>
@@ -1019,7 +1033,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="bottom" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="uV2-XK-b3e">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="bottom" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="uV2-XK-b3e">
                                         <rect key="frame" x="0.0" y="41" width="260" height="456"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="BXb-Ru-XS0" userLabel="help">
@@ -1028,7 +1042,7 @@
                                                     <constraint firstAttribute="width" constant="240" id="4r3-eg-ZgM"/>
                                                     <constraint firstAttribute="height" constant="350" id="tCi-MZ-jLi"/>
                                                 </constraints>
-                                                <mutableString key="text">Fiksu calc is a calculator app for everyday use. Fiksu means "Smart" in Finnish. 
+                                                <string key="text">Fiksu calc is a calculator app for everyday use. Fiksu means "Smart" in Finnish. 
 
 1. Smart memory buttons. : You can keep calculation result on smart memory button "M1","M2", and "M3". Simply press button to remember and press it to use it. To clear, double tap. To clear all buttons, long tap.
 
@@ -1038,7 +1052,7 @@
 
 4. Tip and tax tool: Set a tax (or tip) and make a quick tax(tip) calculation with tax or without tax from result. You can set a new rate after clearing by double tapping.
 
-5. Result in voice: tap result and you can hear result in voice.</mutableString>
+5. Result in voice: tap result and you can hear result in voice.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                                 <color key="textColor" red="0.30220352564102559" green="0.30220352564102559" blue="0.30220352564102559" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
