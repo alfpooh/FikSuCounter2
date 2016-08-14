@@ -24,8 +24,8 @@ class FtkSquareBtn: UIButton {
         
         let squarePath : UIBezierPath = UIBezierPath(roundedRect: rect, byRoundingCorners: UIRectCorner.AllCorners, cornerRadii: radius)
         
-        strokeColor.setStroke()
-        squarePath.stroke()
+        //strokeColor.setStroke()
+        //squarePath.stroke()
         fillColor.setFill()
         squarePath.fill()
     }

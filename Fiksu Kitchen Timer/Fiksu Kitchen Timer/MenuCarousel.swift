@@ -30,7 +30,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     let MenuArray: [String] = ["PASTA","ROAST","ALL","BOILING","NOODLE"]
     let TestArray: [String] = ["1", "2", "3", "4","5"]
     let recipeGroup: [String] = ["boilingRecipe","noodleRecipe","pastaRecipe","roastRecipe"]
-    let ReplacingArray: [String]! = nil
+    let ReplacingArray: [String]! =  nil
     var allrecipe: [String] = ["Egg","Potatoes","Buckwheat","Egg noodle","Instant ramen","Somen","Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle","Beef","Chicken","Salmon"]
     
     override func viewDidLoad() {
@@ -47,7 +47,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         self.view.addSubview(menu!)
         
         //creating recipes all
-        ClearandAddimages(2)
+        ClearandAddimages(2) // 2 is All as default
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GotoTimer), name: "starttimer", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
@@ -63,8 +63,8 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                 viewWithTag.removeFromSuperview()
             }
             
-            let imageArray = ReplacingArray
-            imageAdding(imageArray,indextag: ImageArray)
+            if let imageArray = ReplacingArray {
+                imageAdding(imageArray,indextag: ImageArray)}
         }
             // case of false, initialiation
         else {
@@ -110,7 +110,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     
     
     func ChangeMenu (sender: AnyObject) {
-        ClearandAddimages(1)
+        ClearandAddimages(2)
         print("Testing change added images")
         
     }

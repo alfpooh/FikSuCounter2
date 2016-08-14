@@ -156,7 +156,7 @@
 //        print ("tapped!")
 //    }
     func buttonTapped(image: AnyObject) {
-        NSNotificationCenter.defaultCenter().postNotificationName("title", object: nil)
+        //NSNotificationCenter.defaultCenter().postNotificationName("title", object: nil)
         print ("Title tapped!")
     }
     

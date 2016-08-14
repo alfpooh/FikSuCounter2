@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var timerRewindplayer: AVAudioPlayer!
     var sayCount = AVSpeechUtterance(string: "")
     //
-    let targetTime = [15,20,10,5,5,4,13,9,10,10,9,40,60,45]
+    let targetTime = [15,20,10,5,5,4,13,9,10,10,9,40,60,45,90]
     var isPaused = false
     var isTimerOn = false
     var pausedTime: NSTimeInterval!
