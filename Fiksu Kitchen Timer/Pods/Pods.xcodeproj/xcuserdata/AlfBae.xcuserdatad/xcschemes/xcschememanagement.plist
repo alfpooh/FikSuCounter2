@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Fiksu Kitchen Timer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Fiksu Kitchen TimerTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Fiksu Kitchen TimerUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6D2AAE7247C9851041A96082743F6586</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85F7C0E5BF29515511BCDD66157F85D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3323FC59A075FC603C60E82157654ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F43CAFAE929AFF3B22F73758E8EC6111</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

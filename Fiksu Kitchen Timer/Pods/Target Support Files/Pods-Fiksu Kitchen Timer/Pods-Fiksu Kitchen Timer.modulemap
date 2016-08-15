@@ -1,0 +1,6 @@
+framework module Pods_Fiksu_Kitchen_Timer {
+  umbrella header "Pods-Fiksu Kitchen Timer-umbrella.h"
+
+  export *
+  module * { export * }
+}
