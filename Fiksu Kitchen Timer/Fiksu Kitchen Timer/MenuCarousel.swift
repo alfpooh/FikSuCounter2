@@ -75,16 +75,41 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                         print("errr")
                     }
                     
-                    
                     //Taking each recipes from Jason!
                     pastaRecipe.removeAll()
                     for j in 0...(totalrecipenumber - 1){
                     if jsonObj["Recipes"][j]["cooktype"] == "Pasta" {
-                        print ("\(jsonObj["Recipes"][j]["title"].stringValue)")
                         pastaRecipe.append(jsonObj["Recipes"][j]["title"].stringValue)
-                        print("\(pastaRecipe)")
                         }
                     }//Taking each recipes from Jason!
+                    
+                    //Taking each recipes from Jason!
+                    boilingRecipe.removeAll()
+                    for j in 0...(totalrecipenumber - 1){
+                        if jsonObj["Recipes"][j]["cooktype"] == "Boiling" {
+                            print ("\(jsonObj["Recipes"][j]["title"].stringValue)")
+                            boilingRecipe.append(jsonObj["Recipes"][j]["title"].stringValue)
+                            print("\(boilingRecipe)")
+                        }
+                    }//Taking each recipes from Jason!
+                    
+                    //Taking each recipes from Jason!
+                    roastRecipe.removeAll()
+                    for j in 0...(totalrecipenumber - 1){
+                        if jsonObj["Recipes"][j]["cooktype"] == "Roast" {
+                            roastRecipe.append(jsonObj["Recipes"][j]["title"].stringValue)
+                        }
+                    }//Taking each recipes from Jason!
+                    
+                    //Taking each recipes from Jason!
+                    noodleRecipe.removeAll()
+                    for j in 0...(totalrecipenumber - 1){
+                        if jsonObj["Recipes"][j]["cooktype"] == "Noodle" {
+                            noodleRecipe.append(jsonObj["Recipes"][j]["title"].stringValue)
+                        }
+                    }//Taking each recipes from Jason!
+                    
+                    
 
                 }
                 else {
