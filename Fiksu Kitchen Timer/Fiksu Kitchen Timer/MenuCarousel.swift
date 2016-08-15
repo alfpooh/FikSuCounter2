@@ -46,13 +46,33 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                     
                     //print("jsonData:\(jsonObj)")
                     // playing with json
-              print("test: \(jsonObj["cooktype"])")
+                    //print("test: \(jsonObj["cooktype"])")
+                    
+                    //Cooktype from Jason!
                     MenuArray.removeAll()
                     let count = jsonObj["cooktype"].count - 1
                     for i in 0...count {
                     MenuArray.append(jsonObj["cooktype"][i].string!)
                     }
-                } else {
+                    
+                    //All recipes from Jason!
+                    
+                    if let number: Int = jsonObj["Recipes"].count {
+                        print("Total recipes number are \(number)")
+                        allrecipe.removeAll()
+                        for i in 0...(number - 1) {
+                        
+                        print("\(jsonObj["Recipes"][i]["title"])")
+                         allrecipe.append(jsonObj["Recipes"][i]["title"].stringValue)
+                        }
+                        
+                        
+                    } else {
+                        //Print the error
+                        print("errr")
+                    }
+                }
+                    else {
                     print("could not get json from file, make sure that file contains valid json.")
                 }
             } catch let error as NSError {
