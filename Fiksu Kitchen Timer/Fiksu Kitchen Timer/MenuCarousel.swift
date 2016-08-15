@@ -24,15 +24,17 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var lasttag = 2
     
     //Recipes
-    let boilingRecipe: [String] = ["Egg","Potatoes","Buckwheat"]
-    let noodleRecipe: [String] = ["Egg noodle","Instant ramen","Somen"]
-    let pastaRecipe: [String] = [ "Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle"]
-    let roastRecipe: [String] = ["Beef","Chicken","Salmon"]
+    var boilingRecipe: [String] = ["Egg","Potatoes","Buckwheat"]
+    var noodleRecipe: [String] = ["Egg noodle","Instant ramen","Somen"]
+    var pastaRecipe: [String] = [ "Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle"]
+    var roastRecipe: [String] = ["Beef","Chicken","Salmon"]
     var MenuArray: [String] = ["PASTA","ROAST","ALL","BOILING","NOODLE"]
     let TestArray: [String] = ["1", "2", "3", "4","5"]
     let recipeGroup: [String] = ["boilingRecipe","noodleRecipe","pastaRecipe","roastRecipe"]
     let ReplacingArray: [String]! =  nil
     var allrecipe: [String] = ["Egg","Potatoes","Buckwheat","Egg noodle","Instant ramen","Somen","Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle","Beef","Chicken","Salmon"]
+    var totalrecipenumber: Int = 16
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,18 +54,19 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                     MenuArray.removeAll()
                     let count = jsonObj["cooktype"].count - 1
                     for i in 0...count {
-                    MenuArray.append(jsonObj["cooktype"][i].string!)
+                        MenuArray.append(jsonObj["cooktype"][i].string!)
                     }
                     
-                    //All recipes from Jason!
+                    //Taking all recipes from Jason!
                     
                     if let number: Int = jsonObj["Recipes"].count {
                         print("Total recipes number are \(number)")
+                        totalrecipenumber = number
                         allrecipe.removeAll()
                         for i in 0...(number - 1) {
-                        
-                        print("\(jsonObj["Recipes"][i]["title"])")
-                         allrecipe.append(jsonObj["Recipes"][i]["title"].stringValue)
+                            
+                            //print("\(jsonObj["Recipes"][i]["title"])")
+                            allrecipe.append(jsonObj["Recipes"][i]["title"].stringValue)
                         }
                         
                         
@@ -71,8 +74,20 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                         //Print the error
                         print("errr")
                     }
+                    
+                    
+                    //Taking each recipes from Jason!
+                    pastaRecipe.removeAll()
+                    for j in 0...(totalrecipenumber - 1){
+                    if jsonObj["Recipes"][j]["cooktype"] == "Pasta" {
+                        print ("\(jsonObj["Recipes"][j]["title"].stringValue)")
+                        pastaRecipe.append(jsonObj["Recipes"][j]["title"].stringValue)
+                        print("\(pastaRecipe)")
+                        }
+                    }//Taking each recipes from Jason!
+
                 }
-                    else {
+                else {
                     print("could not get json from file, make sure that file contains valid json.")
                 }
             } catch let error as NSError {
@@ -81,7 +96,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         } else {
             print("Invalid filename/path.")
         }
-
+        
         //creating menu buttons
         menu = ZCarouselTitle(frame: CGRect( x: (self.view.frame.size.width/5),
             y: 100,
@@ -99,7 +114,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChangeMenu), name: "title", object: nil)
     }
     
-
+    
     
     func ClearandAddimages(ImageArray: Int) {
         
