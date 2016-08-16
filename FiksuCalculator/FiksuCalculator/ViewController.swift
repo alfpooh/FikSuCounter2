@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 import AVFoundation
 
 extension Double {
