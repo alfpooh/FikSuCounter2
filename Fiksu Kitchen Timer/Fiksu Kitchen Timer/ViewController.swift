@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var timerRewindplayer: AVAudioPlayer!
     var sayCount = AVSpeechUtterance(string: "")
     //
-    let targetTime = [15,20,10,5,5,4,13,9,10,10,9,40,60,45,90]
+    let targetTime = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
     var isPaused = false
     var isTimerOn = false
     var pausedTime: NSTimeInterval!
@@ -90,8 +90,8 @@ class ViewController: UIViewController {
         print ("menu:\(menuX), content:\(contentX)")
         //["egg","potatoes","buckWheat","eggNoodle","instantRamen","somen","farfalle","fusili","macaroni","conci","spagehtti","roastBeef","roastChicken","roastSalmon"]
         switch menuX {
-        case "0": return (Int(contentX)! + 6)
-        case "1": return (Int(contentX)! + 11)
+        case "0": return (Int(contentX)! + 10)
+        case "1": return (Int(contentX)! + 7)
         case "3": return Int(contentX)!
         case "4": return (Int(contentX)! + 3)
         default:  return Int(contentX)!

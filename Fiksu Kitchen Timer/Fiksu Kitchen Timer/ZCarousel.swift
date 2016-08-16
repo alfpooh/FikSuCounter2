@@ -136,6 +136,7 @@ class ZCarousel: UIScrollView, UIScrollViewDelegate {
             
             //
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ZCarousel.imageTapped(_:)))
+
             imageView.userInteractionEnabled = true
             imageView.addGestureRecognizer(tapGestureRecognizer)
             

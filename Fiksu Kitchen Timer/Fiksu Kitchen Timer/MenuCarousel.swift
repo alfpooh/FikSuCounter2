@@ -24,21 +24,18 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var lasttag = 2
     
     //Recipes
-    var boilingRecipe: [String] = ["Egg","Potatoes","Buckwheat"]
-    var noodleRecipe: [String] = ["Egg noodle","Instant ramen","Somen"]
-    var pastaRecipe: [String] = [ "Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle"]
-    var roastRecipe: [String] = ["Beef","Chicken","Salmon"]
-    var MenuArray: [String] = ["PASTA","ROAST","ALL","BOILING","NOODLE"]
+    var boilingRecipe: [String] = [""]
+    var noodleRecipe: [String] = [""]
+    var pastaRecipe: [String] = [""]
+    var roastRecipe: [String] = [""]
+    var MenuArray: [String] = [""]
     let TestArray: [String] = ["1", "2", "3", "4","5"]
     let recipeGroup: [String] = ["boilingRecipe","noodleRecipe","pastaRecipe","roastRecipe"]
     let ReplacingArray: [String]! =  nil
-    var allrecipe: [String] = ["Egg","Potatoes","Buckwheat","Egg noodle","Instant ramen","Somen","Farfalle","Fusili","Macaroni","Conchiglie","Spagehtti","Tagliatelle","Beef","Chicken","Salmon"]
-    var totalrecipenumber: Int = 16
+    var allrecipe: [String] = [""]
+    var totalrecipenumber: Int = 15
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    func loadArraysJson () {
         //json
         if let path = NSBundle.mainBundle().pathForResource("FiksuTimerRecipes", ofType: "json") {
             do {
@@ -78,8 +75,8 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                     //Taking each recipes from Jason!
                     pastaRecipe.removeAll()
                     for j in 0...(totalrecipenumber - 1){
-                    if jsonObj["Recipes"][j]["cooktype"] == "Pasta" {
-                        pastaRecipe.append(jsonObj["Recipes"][j]["title"].stringValue)
+                        if jsonObj["Recipes"][j]["cooktype"] == "Pasta" {
+                            pastaRecipe.append(jsonObj["Recipes"][j]["title"].stringValue)
                         }
                     }//Taking each recipes from Jason!
                     
@@ -110,7 +107,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                     }//Taking each recipes from Jason!
                     
                     
-
+                    
                 }
                 else {
                     print("could not get json from file, make sure that file contains valid json.")
@@ -121,6 +118,13 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         } else {
             print("Invalid filename/path.")
         }
+
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if allrecipe.count == 1 {loadArraysJson ()}
         
         //creating menu buttons
         menu = ZCarouselTitle(frame: CGRect( x: (self.view.frame.size.width/5),
@@ -188,7 +192,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     
     func GotoTimer(sender: AnyObject) {
         
-        if currentIndex == nil {currentIndex = 0}
+        if currentIndex == nil {currentIndex = 8}
         if currentMenuIndex == nil { currentMenuIndex = 2}
         let str = "\(currentMenuIndex):\(currentIndex)"
         performSegueWithIdentifier("GoTimer", sender: str)
