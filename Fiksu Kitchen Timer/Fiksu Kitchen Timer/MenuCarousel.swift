@@ -35,6 +35,17 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     var allrecipe: [String] = [""]
     var totalrecipenumber: Int = 15
     
+    var recipeIndexNo: Int {
+        get {
+            if currentIndex == nil {currentIndex = 8}
+            if currentMenuIndex == nil { currentMenuIndex = 2}
+        return recipeIndex(currentMenuIndex, recipeNo: currentIndex)
+        }
+    }
+
+    
+    
+    
     func loadArraysJson () {
         //json
         if let path = NSBundle.mainBundle().pathForResource("FiksuTimerRecipes", ofType: "json") {
@@ -209,7 +220,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         
         print("Showing Image at index \(index)")
         currentIndex = index
-        
+
     }
     
     
@@ -219,7 +230,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         
         print("Showing Title index \(index)")
         currentMenuIndex = index
-        
+
         switch currentMenuIndex {
             
         case 0:
@@ -236,9 +247,10 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         
     }
     
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+ 
         //This is where you do work right before the view loads
         //keep in mind - the next View controller has already been initialized
         if segue.identifier == "GoTimer" {
@@ -249,15 +261,33 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                 }
             }
         }
-        
+        else if segue.identifier == "popupTip" {
+            if let popupVC = segue.destinationViewController as? popUpViewC {
+                    popupVC.transferIndex = String(recipeIndexNo)
+                //print("transfer the string: \(sender?.values)")
+
+            }
+        }
+    }
+    
+    func recipeIndex (menu: Int, recipeNo: Int) -> Int {
+        if currentMenuIndex == nil {currentMenuIndex=2}
+        if currentIndex == nil {currentIndex=8}
+    
+        switch menu {
+        case 0: return (recipeNo + 10)
+        case 1: return (recipeNo + 7)
+        case 3: return recipeNo
+        case 4: return (recipeNo + 3)
+        default:  return recipeNo
+            
+        }
     }
     
     @IBAction func showPopUp(sender: AnyObject) {
-        let popupVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("popuprecipe") as! popUpViewC
-        self.addChildViewController(popupVC)
-        popupVC.view.frame = self.view.frame
-        self.view.addSubview(popupVC.view)
-        popupVC.didMoveToParentViewController(self)
+        let str = Int(recipeIndexNo)
+        //print("transfering: \(str)")
+        performSegueWithIdentifier("popupTip", sender: str)
         
     }
 }
