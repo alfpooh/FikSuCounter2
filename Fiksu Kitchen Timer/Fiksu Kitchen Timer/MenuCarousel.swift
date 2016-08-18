@@ -54,10 +54,7 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
                 let jsonObj = JSON(data: data)
                 if jsonObj != JSON.null {
                     
-                    //print("jsonData:\(jsonObj)")
-                    // playing with json
-                    //print("test: \(jsonObj["cooktype"])")
-                    
+                     
                     //Cooktype from Jason!
                     MenuArray.removeAll()
                     let count = jsonObj["cooktype"].count - 1
@@ -187,7 +184,28 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
         self.view.addSubview(images)
     }
     
+    func setCurrentIndex (indextag: Int) {
+        var count: Double!
+        switch indextag {
+        case 0 :
+            count = 5
+        case 1 :
+            count = 2
+        case 2 :
+            count = 15
+        case 3 :
+            count = 2
+        case 4 :
+            count = 3
+        default:
+            count = 2
+        }
+        currentIndex = Int(round(count/2))
+    }
+    
+    
     func imageReplacing (toaddarray: [String], indextag: Int) {
+        setCurrentIndex (indextag)
         images.viewWithTag(lasttag)!.removeFromSuperview()
         lasttag = indextag
         images = ZCarousel(frame: CGRect( x: self.view.frame.size.width/5-10,

@@ -14,22 +14,23 @@ import SwiftyJSON
 class ViewController: UIViewController {
     
     
-    let synth = AVSpeechSynthesizer()
-    var timerEffectplayer: AVAudioPlayer!
-    var timerLoudRingplayer: AVAudioPlayer!
-    var timerShortRingplayer: AVAudioPlayer!
-    var timerRewindplayer: AVAudioPlayer!
-    var sayCount = AVSpeechUtterance(string: "")
+     private let synth = AVSpeechSynthesizer()
+     private var timerEffectplayer: AVAudioPlayer!
+     private var timerLoudRingplayer: AVAudioPlayer!
+     private var timerShortRingplayer: AVAudioPlayer!
+     private var timerRewindplayer: AVAudioPlayer!
+     private var sayCount = AVSpeechUtterance(string: "")
     //
-    var targetTimes: Array = [0]
-    var isPaused = false
-    var isTimerOn = false
-    var pausedTime: NSTimeInterval!
-    var currentTargetmin:Double = 0
-    var timer = NSTimer()
+    private var targetTimes: Array = [0]
+    private var isPaused = false
+    private var isTimerOn = false
+    private var pausedTime: NSTimeInterval!
+    private var currentTargetmin:Double = 0
+    private var timer = NSTimer()
     var transferText: String! = "0"
-    var isBaseButtonSWpaused: Bool = false
-    var selectedrecipeindex: Int = 0
+    private var isBaseButtonSWpaused: Bool = false
+    private var selectedrecipeindex: Int = 0
+    private let watch = Watch()
     
     @IBOutlet weak var targetTimeLabel: UILabel!
     
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var BaseButton: FtkToolBtn!
     
-    let watch = Watch()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,8 +59,6 @@ class ViewController: UIViewController {
             timerShortRingplayer.prepareToPlay()
             timerRewindplayer.prepareToPlay()
             
-            
-            
         } catch let err as NSError {
             print (err.debugDescription)
         }
@@ -67,6 +66,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
         //target time should be decided from selecting menu later!
         // transferText is trasfered from MenuCarousel through Segue
         
@@ -118,9 +118,8 @@ class ViewController: UIViewController {
         let strSplit = transfered.characters.split(":")
         let menuX = String(strSplit.first!)
         let contentX = String(strSplit.last!)
-        print (transfered)
-        print ("menu:\(menuX), content:\(contentX)")
-        //["egg","potatoes","buckWheat","eggNoodle","instantRamen","somen","farfalle","fusili","macaroni","conci","spagehtti","roastBeef","roastChicken","roastSalmon"]
+
+        //offset index by current menu
         switch menuX {
         case "0": return (Int(contentX)! + 10)
         case "1": return (Int(contentX)! + 7)
@@ -135,7 +134,6 @@ class ViewController: UIViewController {
         if isTimerOn == true {
             let timenowplusonemin = Double(watch.elapsedTime) + 60.0
             if timer.valid {
-                print ("timenowplusone: \(timenowplusonemin), currentTargetmin: \(currentTargetmin) ")
                 if timenowplusonemin <= (currentTargetmin*60) {
                     watch.addOneMinute()
                     VoiceOut(5)} else {VoiceOut(7)}
@@ -183,6 +181,7 @@ class ViewController: UIViewController {
     targetTimeLabel.text = "\(Int(currentTargetmin)):00"}
 
 }
+    
     private var elapsedTimeMin: Double {
     
         get {
@@ -248,13 +247,10 @@ class ViewController: UIViewController {
     
     func resumeTimer(lastTime: NSTimeInterval) {
         
-        
         VoiceOut(4)
         if !timer.valid {NSTimer.scheduledTimerWithTimeInterval(0.1, target: self,
                                                                 selector: #selector(ViewController.updateElapsedTimeLabel(_:)), userInfo: nil, repeats: true)
         }
-        
-        
         watch.start()
     }
     
