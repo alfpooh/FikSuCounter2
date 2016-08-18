@@ -18,22 +18,22 @@ class MenuViewController: UIViewController, ZCarouselDelegate, ZCarouselTitleDel
     // var menu: ZCarousel!
     var images: ZCarousel!
     var menu: ZCarouselTitle!
-    var currentIndex: Int!
-    var currentMenuIndex: Int!
-    var isImageAdded = false
-    var lasttag = 2
+    private var currentIndex: Int!
+    private var currentMenuIndex: Int!
+    private var isImageAdded = false
+    private var lasttag = 2
     
     //Recipes
-    var boilingRecipe: [String] = [""]
-    var noodleRecipe: [String] = [""]
-    var pastaRecipe: [String] = [""]
-    var roastRecipe: [String] = [""]
-    var MenuArray: [String] = [""]
-    let TestArray: [String] = ["1", "2", "3", "4","5"]
-    let recipeGroup: [String] = ["boilingRecipe","noodleRecipe","pastaRecipe","roastRecipe"]
-    let ReplacingArray: [String]! =  nil
-    var allrecipe: [String] = [""]
-    var totalrecipenumber: Int = 15
+    private var boilingRecipe: [String] = [""]
+    private var noodleRecipe: [String] = [""]
+    private var pastaRecipe: [String] = [""]
+    private var roastRecipe: [String] = [""]
+    private var MenuArray: [String] = [""]
+    private let TestArray: [String] = ["1", "2", "3", "4","5"]
+    private let recipeGroup: [String] = ["boilingRecipe","noodleRecipe","pastaRecipe","roastRecipe"]
+    private let ReplacingArray: [String]! =  nil
+    private var allrecipe: [String] = [""]
+    private var totalrecipenumber: Int = 15
     
     var recipeIndexNo: Int {
         get {

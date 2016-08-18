@@ -77,17 +77,17 @@
 		FDEE19E11D2A709000EE7F96 /* MenuCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCarousel.swift; sourceTree = "<group>"; };
 		FDEE19FD1D2B078C00EE7F96 /* ZCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCarousel.swift; sourceTree = "<group>"; };
 		FDEE1A011D2BC18000EE7F96 /* RecipeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeButton.swift; sourceTree = "<group>"; };
-		FDF2FDAA1D26697100F0CEC5 /* Fiksu Kitchen Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fiksu Kitchen Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF2FDAA1D26697100F0CEC5 /* Fiksu Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fiksu Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF2FDAD1D26697100F0CEC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF2FDAF1D26697100F0CEC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDF2FDB21D26697100F0CEC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDF2FDB41D26697100F0CEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF2FDB71D26697100F0CEC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDF2FDB91D26697100F0CEC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDF2FDBE1D26697100F0CEC5 /* Fiksu Kitchen TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fiksu Kitchen TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF2FDBE1D26697100F0CEC5 /* Fiksu Timer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fiksu Timer.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF2FDC21D26697100F0CEC5 /* Fiksu_Kitchen_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fiksu_Kitchen_TimerTests.swift; sourceTree = "<group>"; };
 		FDF2FDC41D26697100F0CEC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDF2FDC91D26697100F0CEC5 /* Fiksu Kitchen TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fiksu Kitchen TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF2FDC91D26697100F0CEC5 /* Fiksu Timer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fiksu Timer.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF2FDCD1D26697100F0CEC5 /* Fiksu_Kitchen_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fiksu_Kitchen_TimerUITests.swift; sourceTree = "<group>"; };
 		FDF2FDCF1D26697100F0CEC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDF2FDDD1D266A0600F0CEC5 /* BackgroundPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundPattern.swift; sourceTree = "<group>"; };
@@ -172,9 +172,9 @@
 		FDF2FDAB1D26697100F0CEC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDF2FDAA1D26697100F0CEC5 /* Fiksu Kitchen Timer.app */,
-				FDF2FDBE1D26697100F0CEC5 /* Fiksu Kitchen TimerTests.xctest */,
-				FDF2FDC91D26697100F0CEC5 /* Fiksu Kitchen TimerUITests.xctest */,
+				FDF2FDAA1D26697100F0CEC5 /* Fiksu Timer.app */,
+				FDF2FDBE1D26697100F0CEC5 /* Fiksu Timer.xctest */,
+				FDF2FDC91D26697100F0CEC5 /* Fiksu Timer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,9 +233,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDF2FDA91D26697100F0CEC5 /* Fiksu Kitchen Timer */ = {
+		FDF2FDA91D26697100F0CEC5 /* Fiksu Timer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDF2FDD21D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen Timer" */;
+			buildConfigurationList = FDF2FDD21D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Timer" */;
 			buildPhases = (
 				A23A274EA560AB5B3C41820C /* [CP] Check Pods Manifest.lock */,
 				FDF2FDA61D26697100F0CEC5 /* Sources */,
@@ -248,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = "Fiksu Kitchen Timer";
+			name = "Fiksu Timer";
 			productName = "Fiksu Kitchen Timer";
-			productReference = FDF2FDAA1D26697100F0CEC5 /* Fiksu Kitchen Timer.app */;
+			productReference = FDF2FDAA1D26697100F0CEC5 /* Fiksu Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FDF2FDBD1D26697100F0CEC5 /* Fiksu Kitchen TimerTests */ = {
+		FDF2FDBD1D26697100F0CEC5 /* Fiksu TimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDF2FDD51D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen TimerTests" */;
+			buildConfigurationList = FDF2FDD51D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu TimerTests" */;
 			buildPhases = (
 				E0DFE128338AB1085DA570A4 /* [CP] Check Pods Manifest.lock */,
 				FDF2FDBA1D26697100F0CEC5 /* Sources */,
@@ -269,14 +269,14 @@
 			dependencies = (
 				FDF2FDC01D26697100F0CEC5 /* PBXTargetDependency */,
 			);
-			name = "Fiksu Kitchen TimerTests";
+			name = "Fiksu TimerTests";
 			productName = "Fiksu Kitchen TimerTests";
-			productReference = FDF2FDBE1D26697100F0CEC5 /* Fiksu Kitchen TimerTests.xctest */;
+			productReference = FDF2FDBE1D26697100F0CEC5 /* Fiksu Timer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FDF2FDC81D26697100F0CEC5 /* Fiksu Kitchen TimerUITests */ = {
+		FDF2FDC81D26697100F0CEC5 /* Fiksu TimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDF2FDD81D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen TimerUITests" */;
+			buildConfigurationList = FDF2FDD81D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu TimerUITests" */;
 			buildPhases = (
 				E0BFA666DC09C2C19EEBFFE7 /* [CP] Check Pods Manifest.lock */,
 				FDF2FDC51D26697100F0CEC5 /* Sources */,
@@ -289,9 +289,9 @@
 			dependencies = (
 				FDF2FDCB1D26697100F0CEC5 /* PBXTargetDependency */,
 			);
-			name = "Fiksu Kitchen TimerUITests";
+			name = "Fiksu TimerUITests";
 			productName = "Fiksu Kitchen TimerUITests";
-			productReference = FDF2FDC91D26697100F0CEC5 /* Fiksu Kitchen TimerUITests.xctest */;
+			productReference = FDF2FDC91D26697100F0CEC5 /* Fiksu Timer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -317,7 +317,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FDF2FDA51D26697100F0CEC5 /* Build configuration list for PBXProject "Fiksu Kitchen Timer" */;
+			buildConfigurationList = FDF2FDA51D26697100F0CEC5 /* Build configuration list for PBXProject "Fiksu Timer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -330,9 +330,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDF2FDA91D26697100F0CEC5 /* Fiksu Kitchen Timer */,
-				FDF2FDBD1D26697100F0CEC5 /* Fiksu Kitchen TimerTests */,
-				FDF2FDC81D26697100F0CEC5 /* Fiksu Kitchen TimerUITests */,
+				FDF2FDA91D26697100F0CEC5 /* Fiksu Timer */,
+				FDF2FDBD1D26697100F0CEC5 /* Fiksu TimerTests */,
+				FDF2FDC81D26697100F0CEC5 /* Fiksu TimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -537,12 +537,12 @@
 /* Begin PBXTargetDependency section */
 		FDF2FDC01D26697100F0CEC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDF2FDA91D26697100F0CEC5 /* Fiksu Kitchen Timer */;
+			target = FDF2FDA91D26697100F0CEC5 /* Fiksu Timer */;
 			targetProxy = FDF2FDBF1D26697100F0CEC5 /* PBXContainerItemProxy */;
 		};
 		FDF2FDCB1D26697100F0CEC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDF2FDA91D26697100F0CEC5 /* Fiksu Kitchen Timer */;
+			target = FDF2FDA91D26697100F0CEC5 /* Fiksu Timer */;
 			targetProxy = FDF2FDCA1D26697100F0CEC5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -661,7 +661,7 @@
 				INFOPLIST_FILE = "Fiksu Kitchen Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forethink.nu.fiksukitchentimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fiksu Timer";
 				SWIFT_OBJC_BRIDGING_HEADER = "Fiksu Kitchen Timer/Fiksu Kitchen Timer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -676,7 +676,7 @@
 				INFOPLIST_FILE = "Fiksu Kitchen Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forethink.nu.fiksukitchentimer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fiksu Timer";
 				SWIFT_OBJC_BRIDGING_HEADER = "Fiksu Kitchen Timer/Fiksu Kitchen Timer-Bridging-Header.h";
 			};
 			name = Release;
@@ -689,8 +689,8 @@
 				INFOPLIST_FILE = "Fiksu Kitchen TimerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Fiksu-Kitchen-TimerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fiksu Kitchen Timer.app/Fiksu Kitchen Timer";
+				PRODUCT_NAME = "Fiksu Timer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fiksu Timer.app/Fiksu Timer";
 			};
 			name = Debug;
 		};
@@ -702,8 +702,8 @@
 				INFOPLIST_FILE = "Fiksu Kitchen TimerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Fiksu-Kitchen-TimerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fiksu Kitchen Timer.app/Fiksu Kitchen Timer";
+				PRODUCT_NAME = "Fiksu Timer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fiksu Timer.app/Fiksu Timer";
 			};
 			name = Release;
 		};
@@ -714,7 +714,7 @@
 				INFOPLIST_FILE = "Fiksu Kitchen TimerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Fiksu-Kitchen-TimerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fiksu Timer";
 				TEST_TARGET_NAME = "Fiksu Kitchen Timer";
 			};
 			name = Debug;
@@ -726,7 +726,7 @@
 				INFOPLIST_FILE = "Fiksu Kitchen TimerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.forethink.nu.Fiksu-Kitchen-TimerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fiksu Timer";
 				TEST_TARGET_NAME = "Fiksu Kitchen Timer";
 			};
 			name = Release;
@@ -734,7 +734,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDF2FDA51D26697100F0CEC5 /* Build configuration list for PBXProject "Fiksu Kitchen Timer" */ = {
+		FDF2FDA51D26697100F0CEC5 /* Build configuration list for PBXProject "Fiksu Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDF2FDD01D26697100F0CEC5 /* Debug */,
@@ -743,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDF2FDD21D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen Timer" */ = {
+		FDF2FDD21D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDF2FDD31D26697100F0CEC5 /* Debug */,
@@ -752,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDF2FDD51D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen TimerTests" */ = {
+		FDF2FDD51D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu TimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDF2FDD61D26697100F0CEC5 /* Debug */,
@@ -761,7 +761,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDF2FDD81D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu Kitchen TimerUITests" */ = {
+		FDF2FDD81D26697100F0CEC5 /* Build configuration list for PBXNativeTarget "Fiksu TimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDF2FDD91D26697100F0CEC5 /* Debug */,
