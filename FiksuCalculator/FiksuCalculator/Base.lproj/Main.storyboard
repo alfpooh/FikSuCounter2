@@ -31,7 +31,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="265" height="53"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="headTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz3-dk-WI0">
-                                                                <rect key="frame" x="5" y="10" width="255" height="32.5"/>
+                                                                <rect key="frame" x="5" y="10" width="255" height="33"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="28"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -568,7 +568,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="265" height="53"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="right" lineBreakMode="headTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3Y-Fk-584" userLabel="FuncDigits">
-                                                                <rect key="frame" x="5" y="10" width="255" height="32.5"/>
+                                                                <rect key="frame" x="5" y="10" width="255" height="33"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="28"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -938,28 +938,15 @@
                                     <outletCollection property="gestureRecognizers" destination="tbY-md-jin" appends="YES" id="zoq-Vl-SBE"/>
                                 </connections>
                             </view>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cP-tp-G6D">
-                                <rect key="frame" x="0.0" y="534" width="600" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="HY8-dh-fhb"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Lkt-eY-34e"/>
-                                </connections>
-                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="1Cl-VU-2hA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YdF-cs-5Y5" secondAttribute="bottom" id="AFv-63-ydj"/>
                             <constraint firstAttribute="trailing" secondItem="YdF-cs-5Y5" secondAttribute="trailing" id="EDT-XY-eoe"/>
-                            <constraint firstItem="3cP-tp-G6D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HIr-DG-mt4"/>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LCb-XC-IaW"/>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q19-Rs-BH2"/>
-                            <constraint firstAttribute="bottom" secondItem="3cP-tp-G6D" secondAttribute="bottom" id="Uyj-Wr-ECN"/>
                             <constraint firstItem="YdF-cs-5Y5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bxv-u2-fM0"/>
-                            <constraint firstAttribute="trailing" secondItem="3cP-tp-G6D" secondAttribute="trailing" id="utc-b7-KeJ"/>
-                            <constraint firstItem="3cP-tp-G6D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xVY-pY-EXp"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
@@ -986,7 +973,6 @@
                         <outlet property="clearall" destination="X7r-8a-tYU" id="Ra8-e2-PTd"/>
                         <outlet property="display" destination="Nz3-dk-WI0" id="Je3-JV-omc"/>
                         <outlet property="funcDigits" destination="N3Y-Fk-584" id="NqG-gP-jAc"/>
-                        <outlet property="iADBannerforCalc" destination="3cP-tp-G6D" id="iaA-lC-WWQ"/>
                         <outlet property="mem1" destination="soj-De-MEw" id="ddy-b0-B4n"/>
                         <outlet property="mem2" destination="ruS-DE-XC4" id="zX5-FI-hdn"/>
                         <outlet property="mem3" destination="H4V-qL-RBM" id="Bdb-jC-36P"/>
@@ -1021,9 +1007,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VUX-0x-Jm0">
-                                <rect key="frame" x="30" y="11" width="260" height="497"/>
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="497"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fiksu Calc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iws-8J-PiX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Calculation History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iws-8J-PiX">
                                         <rect key="frame" x="30" y="0.0" width="200" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="6V2-ud-uG2"/>
@@ -1036,23 +1022,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="bottom" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="uV2-XK-b3e">
                                         <rect key="frame" x="0.0" y="41" width="260" height="456"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="BXb-Ru-XS0" userLabel="help">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History will be here." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="BXb-Ru-XS0" userLabel="log">
                                                 <rect key="frame" x="20" y="0.0" width="240" height="350"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="4r3-eg-ZgM"/>
                                                     <constraint firstAttribute="height" constant="350" id="tCi-MZ-jLi"/>
                                                 </constraints>
-                                                <string key="text">Fiksu calc is a calculator app for everyday use. Fiksu means "Smart" in Finnish. 
-
-1. Smart memory buttons. : You can keep calculation result on smart memory button "M1","M2", and "M3". Simply press button to remember and press it to use it. To clear, double tap. To clear all buttons, long tap.
-
-2. Copy result: You can copy calculation result and paste it in another applications.
-
-3. Function page: advanced function such as constants, square root are on next page. Just swipe up or down to use these functions. 
-
-4. Tip and tax tool: Set a tax (or tip) and make a quick tax(tip) calculation with tax or without tax from result. You can set a new rate after clearing by double tapping.
-
-5. Result in voice: tap result and you can hear result in voice.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                                 <color key="textColor" red="0.30220352564102559" green="0.30220352564102559" blue="0.30220352564102559" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1112,10 +1087,13 @@ Made in Finland.</string>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="logTextBox" destination="BXb-Ru-XS0" id="BmE-Cf-60K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0g3-YN-rOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="839"/>
+            <point key="canvasLocation" x="707" y="852"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="DaP-wp-j8M">

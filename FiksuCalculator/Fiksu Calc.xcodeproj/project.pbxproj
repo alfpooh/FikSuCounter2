@@ -24,6 +24,10 @@
 		FDD9227C1D37836F00CE5AE5 /* FiksuCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD9227B1D37836F00CE5AE5 /* FiksuCalculatorTests.swift */; };
 		FDD922871D37836F00CE5AE5 /* FiksuCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD922861D37836F00CE5AE5 /* FiksuCalculatorUITests.swift */; };
 		FDD922951D378C2000CE5AE5 /* FTK_unibutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD922941D378C2000CE5AE5 /* FTK_unibutton.swift */; };
+		FDEBB87D1D678B5300F21238 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEBB87C1D678B5300F21238 /* DataService.swift */; };
+		FDEBB87F1D678B9800F21238 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEBB87E1D678B9800F21238 /* AddPostVC.swift */; };
+		FDEBB8811D678BBC00F21238 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEBB8801D678BBC00F21238 /* PostCell.swift */; };
+		FDEBB8831D678BCA00F21238 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEBB8821D678BCA00F21238 /* Post.swift */; };
 		FDFAB6EF1D37ADF1003D0E60 /* CalcBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAB6EE1D37ADF1003D0E60 /* CalcBrain.swift */; };
 		FDFAB6F11D37FC6E003D0E60 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAB6F01D37FC6E003D0E60 /* Background.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +56,6 @@
 		FD4AC41D1D522C5F002AFAA9 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		FD4AC4221D5320E0002AFAA9 /* ipadcover01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipadcover01.jpg; sourceTree = "<group>"; };
 		FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTK_RoundedSquare.swift; sourceTree = "<group>"; };
-		FDA4329C1D5B46B0004CA7DA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		FDBE19DE1D4B776E00F5F75C /* Fiksu Calc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fiksu Calc-Bridging-Header.h"; sourceTree = "<group>"; };
 		FDBE19DF1D4B776F00F5F75C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FDBE19E01D4B776F00F5F75C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -72,6 +75,10 @@
 		FDD922861D37836F00CE5AE5 /* FiksuCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiksuCalculatorUITests.swift; sourceTree = "<group>"; };
 		FDD922881D37836F00CE5AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD922941D378C2000CE5AE5 /* FTK_unibutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTK_unibutton.swift; sourceTree = "<group>"; };
+		FDEBB87C1D678B5300F21238 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FDEBB87E1D678B9800F21238 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPostVC.swift; path = /Users/AlfBae/Downloads/Test_bon/AddPostVC.swift; sourceTree = "<absolute>"; };
+		FDEBB8801D678BBC00F21238 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = /Users/AlfBae/Downloads/Test_bon/Test_bon/PostCell.swift; sourceTree = "<absolute>"; };
+		FDEBB8821D678BCA00F21238 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = /Users/AlfBae/Downloads/Test_bon/Test_bon/Post.swift; sourceTree = "<absolute>"; };
 		FDFAB6EE1D37ADF1003D0E60 /* CalcBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcBrain.swift; sourceTree = "<group>"; };
 		FDFAB6F01D37FC6E003D0E60 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +121,6 @@
 		FDD9225A1D37836F00CE5AE5 = {
 			isa = PBXGroup;
 			children = (
-				FDA4329C1D5B46B0004CA7DA /* iAd.framework */,
 				FDD922651D37836F00CE5AE5 /* FiksuCalculator */,
 				FDD9227A1D37836F00CE5AE5 /* FiksuCalculatorTests */,
 				FDD922851D37836F00CE5AE5 /* FiksuCalculatorUITests */,
@@ -135,10 +141,12 @@
 		FDD922651D37836F00CE5AE5 /* FiksuCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				FDEBB8871D678C7A00F21238 /* Control */,
+				FDEBB8861D678C4900F21238 /* Model */,
 				FDBE19DD1D4B775B00F5F75C /* SWRevealViewController */,
 				FDD922661D37836F00CE5AE5 /* AppDelegate.swift */,
 				FDD922681D37836F00CE5AE5 /* ViewController.swift */,
-				FD4AC41D1D522C5F002AFAA9 /* SideMenu.swift */,
+				FDEBB8841D678C1C00F21238 /* View */,
 				FDD9226A1D37836F00CE5AE5 /* Main.storyboard */,
 				FDD9226D1D37836F00CE5AE5 /* Assets.xcassets */,
 				FD1A68E31D46B9A100FF5A38 /* Flip.wav */,
@@ -147,12 +155,6 @@
 				FDD9226F1D37836F00CE5AE5 /* LaunchScreen.storyboard */,
 				FD4AC4221D5320E0002AFAA9 /* ipadcover01.jpg */,
 				FDD922721D37836F00CE5AE5 /* Info.plist */,
-				FDD922941D378C2000CE5AE5 /* FTK_unibutton.swift */,
-				FDFAB6EE1D37ADF1003D0E60 /* CalcBrain.swift */,
-				FDFAB6F01D37FC6E003D0E60 /* Background.swift */,
-				FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */,
-				FDBE19E41D4B792300F5F75C /* FiksuCalcTableCell.swift */,
-				FDBE19E21D4B785A00F5F75C /* FiksuCalcSettings.swift */,
 			);
 			path = FiksuCalculator;
 			sourceTree = "<group>";
@@ -173,6 +175,38 @@
 				FDD922881D37836F00CE5AE5 /* Info.plist */,
 			);
 			path = FiksuCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		FDEBB8841D678C1C00F21238 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE19E41D4B792300F5F75C /* FiksuCalcTableCell.swift */,
+				FDFAB6F01D37FC6E003D0E60 /* Background.swift */,
+				FDD922941D378C2000CE5AE5 /* FTK_unibutton.swift */,
+				FD4AC41D1D522C5F002AFAA9 /* SideMenu.swift */,
+				FDEBB8801D678BBC00F21238 /* PostCell.swift */,
+				FD52BF1D1D3A08870033BB46 /* FTK_RoundedSquare.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FDEBB8861D678C4900F21238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDEBB8821D678BCA00F21238 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FDEBB8871D678C7A00F21238 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				FDFAB6EE1D37ADF1003D0E60 /* CalcBrain.swift */,
+				FDEBB87E1D678B9800F21238 /* AddPostVC.swift */,
+				FDEBB87C1D678B5300F21238 /* DataService.swift */,
+				FDBE19E21D4B785A00F5F75C /* FiksuCalcSettings.swift */,
+			);
+			name = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,13 +347,17 @@
 			files = (
 				FDBE19E31D4B785A00F5F75C /* FiksuCalcSettings.swift in Sources */,
 				FDBE19E11D4B776F00F5F75C /* SWRevealViewController.m in Sources */,
+				FDEBB8811D678BBC00F21238 /* PostCell.swift in Sources */,
 				FDD922691D37836F00CE5AE5 /* ViewController.swift in Sources */,
 				FDFAB6EF1D37ADF1003D0E60 /* CalcBrain.swift in Sources */,
+				FDEBB8831D678BCA00F21238 /* Post.swift in Sources */,
 				FDBE19E51D4B792300F5F75C /* FiksuCalcTableCell.swift in Sources */,
+				FDEBB87D1D678B5300F21238 /* DataService.swift in Sources */,
 				FDD922671D37836F00CE5AE5 /* AppDelegate.swift in Sources */,
 				FDD922951D378C2000CE5AE5 /* FTK_unibutton.swift in Sources */,
 				FD4AC41E1D522C5F002AFAA9 /* SideMenu.swift in Sources */,
 				FD52BF1E1D3A08870033BB46 /* FTK_RoundedSquare.swift in Sources */,
+				FDEBB87F1D678B9800F21238 /* AddPostVC.swift in Sources */,
 				FDFAB6F11D37FC6E003D0E60 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
