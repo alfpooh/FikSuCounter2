@@ -30,6 +30,7 @@ class ViewController: UIViewController{
     private var brain = CalculatorBrain()
     private var memory:[String:String] = ["M1":"", "M2":"", "M3":""]
     private var mkey: String?
+    private var lastMathSymbol: String = ""
     
     var displayValue: Double {
         
@@ -69,6 +70,7 @@ class ViewController: UIViewController{
     
     @IBAction func copytoClipboard(sender: AnyObject) {
         UIPasteboard.generalPasteboard().string = display.text
+                SoundOut(2) // later it should be a better feedback
     }
     
     //displaying digits
@@ -236,27 +238,35 @@ class ViewController: UIViewController{
     
     
     @IBAction func clearCalc(sender: UIButton) {
+        clearCalculator ()
+    }
+    
+    func clearCalculator() {
         if userIsInTheMiddleOfTyping {
             let textInTheCurrentDisplay = display.text!
             display.text = String(textInTheCurrentDisplay.characters.dropLast())
             if display.text == "" {
                 display.text="0"
                 SoundOut(2)
+                lastMathSymbol = ""
                 userIsInTheMiddleOfTyping = false
             }
             
         } else {
             display.text = "0"
+            lastMathSymbol = ""
             brain.clear()
             brain.setOperand(displayValue)
             SoundOut(2)
             userIsInTheMiddleOfTyping = false
         }
+    
     }
     
     
     @IBAction private func touchDigit (sender: UIButton) {
         SoundOut(1)
+        lastMathSymbol = ""
         let digit = sender.currentTitle!
         let textInTheCurrentDisplay = display.text!
         if userIsInTheMiddleOfTyping {
@@ -305,20 +315,74 @@ class ViewController: UIViewController{
     
     @IBAction private func performOperation (sender: UIButton) {
         SoundOut(1)
+        
+        //what if operation is requested in the middle of typing
         if userIsInTheMiddleOfTyping {
             brain.setOperand(displayValue)
             userIsInTheMiddleOfTyping = false
         }
         
+        //what if entered mathsymbol is same as last mathematicalsybol then ignore.
         if let mathematicalSymbol = sender.currentTitle {
+            if lastMathSymbol == mathematicalSymbol {
+                userIsInTheMiddleOfTyping = false
+                return
+            }
+        
+        if lastMathSymbol == "" {
             brain.performOperation(mathematicalSymbol)
+                lastMathSymbol = mathematicalSymbol } else
+            //what if there is lastmathsymbol and it is different from current symbol, then clean it up and try new.
+        {
+            brain.performOperation("=")
+                        brain.setOperand(displayValue)
+                        brain.performOperation(mathematicalSymbol)
+            }
+            
+            
+
         }
+        
+//        if let mathematicalSymbol = sender.currentTitle {
+//            if lastMathSymbol == mathematicalSymbol {
+//                userIsInTheMiddleOfTyping = false
+//                brain.performOperation("Del")
+//                print ("entered symbol is same as before. do nothing")
+//                return
+//            } else {
+//                if lastMathSymbol == "" {
+//                    brain.performOperation(mathematicalSymbol)
+//                    return
+//                }
+//                else {
+//                if mathematicalSymbol == "=" {
+//                    brain.performOperation(mathematicalSymbol)
+//                    userIsInTheMiddleOfTyping = false
+//                    lastMathSymbol = ""
+//                    return
+//                } else {
+//                    print("symbol is not equal, lastmathsymbol is not empty")
+//                    userIsInTheMiddleOfTyping = true
+//                    brain.performOperation(mathematicalSymbol)
+//                    lastMathSymbol = mathematicalSymbol
+//                    userIsInTheMiddleOfTyping = false
+//                    return
+//                    }
+//                }
+//                
+//            }
+//            
+//        }
+        
+        
         //strange case of -0.0
         if brain.result == -0.0 {brain.result = 0.0}
         displayValue = brain.result
-        print ("\(brain.result)")
-        
-        
+        print ("brain result:\(brain.result)")
+        if let symbol = sender.currentTitle {
+            lastMathSymbol = symbol
+        } 
+        print ("LastMathSybol is: \(lastMathSymbol)")
     }
     
     override func viewDidLoad() {
@@ -403,10 +467,7 @@ class ViewController: UIViewController{
         mem1.addGestureRecognizer(m1tapGesture)
         mem1.addGestureRecognizer(m1longGesture)
         
-        
-        
-        
-        
+
         
         
         // tap, long tap control for clear button

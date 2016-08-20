@@ -12,9 +12,13 @@ class CalculatorBrain {
     
     private var accumulator = 0.0
     private var internalProgram = [AnyObject]()
+    private var operationEntered:Bool = false
+    private var lastoperation: String = ""
     
     func setOperand (operand: Double) {
+        operationEntered = false
         accumulator = operand
+        print ("accumulator:\(accumulator)")
         internalProgram.append(operand)
     }
     
@@ -30,7 +34,8 @@ class CalculatorBrain {
         "x\u{B2}": Operation.UnaryOperation({$0*$0}),
         "=": Operation.Equals,
         "π": Operation.Constant(M_PI),
-        "e": Operation.Constant(M_E)
+        "e": Operation.Constant(M_E),
+        "Del": Operation.UnaryOperation({$0})
         
         
     ]
@@ -42,12 +47,15 @@ class CalculatorBrain {
         case UnaryOperation((Double) -> Double)
         case BinaryOperation((Double, Double) -> Double)
         case Equals
+        case Delete((Double) -> Double)
         case Rounding((Double) -> Double)
     }
     
     func  performOperation(symbol: String) {
         
+
         internalProgram.append(symbol)
+        print("operation:\(symbol),internalProgram[symbol] :\(internalProgram[0]),\(internalProgram[1])")
         if let operation = operations[symbol] {
             
             switch operation {
@@ -66,13 +74,17 @@ class CalculatorBrain {
             case .BinaryOperation(let function):
                 executePendingBinaryOperation()
                 pending = PendingBinaryOperationInfo(binaryFunction:function, firstOperand:accumulator)
+                
             case .Equals:
                 executePendingBinaryOperation()
                 
+            case .Delete(let function):
+                accumulator = function(accumulator)
             }
-            
+                
         }
     }
+    
     
     private func executePendingBinaryOperation () {
         if pending != nil {
@@ -90,23 +102,23 @@ class CalculatorBrain {
     
     typealias PropertyList = AnyObject
     
-    private var program: PropertyList {
-        get {
-            return internalProgram
-        }
-        set {
-            clear()
-            if let arryOfOps = newValue as? [AnyObject] {
-                for op in arryOfOps {
-                    if let operand = op as? Double {
-                    setOperand (operand)
-                    } else if let operand = op as? String {
-                    performOperation (operand)
-                    }
-                }
-            }
-        }
-    }
+//    private var program: PropertyList {
+//        get {
+//            return internalProgram
+//        }
+//        set {
+//            clear()
+//            if let arryOfOps = newValue as? [AnyObject] {
+//                for op in arryOfOps {
+//                    if let operand = op as? Double {
+//                    setOperand (operand)
+//                    } else if let operand = op as? String {
+//                    performOperation (operand)
+//                    }
+//                }
+//            }
+//        }
+//    }
     
     func clear () {
         accumulator = 0.0

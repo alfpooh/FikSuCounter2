@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FiksuCalculator/ViewController.swift"
-            timestampString = "493325043.759307"
+            timestampString = "493369477.305582"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "538"
-            endingLineNumber = "538">
+            startingLineNumber = "599"
+            endingLineNumber = "599">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
