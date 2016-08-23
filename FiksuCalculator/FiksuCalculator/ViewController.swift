@@ -174,6 +174,7 @@ class ViewController: UIViewController{
             let net = Double(display.text!)!
             displayValue = net+(net*taxrate)
             brain.result = displayValue
+            history.append(String(displayValue))
             userIsInTheMiddleOfTyping = false
         }
     }
@@ -186,6 +187,7 @@ class ViewController: UIViewController{
             let net = Double(display.text!)!
             displayValue = net-(net*taxrate)
             brain.result = displayValue
+            history.append(String(displayValue))
             userIsInTheMiddleOfTyping = false
         }
     }
@@ -226,6 +228,7 @@ class ViewController: UIViewController{
             let net = Double(display.text!)!
             displayValue = net+(net*tiprate)
             brain.result = displayValue
+            history.append(String(displayValue))
             userIsInTheMiddleOfTyping = false
         }
     }
@@ -238,6 +241,7 @@ class ViewController: UIViewController{
             let net = Double(display.text!)!
             displayValue = net-(net*tiprate)
             brain.result = displayValue
+            history.append(String(displayValue))
             userIsInTheMiddleOfTyping = false
         }
     }
