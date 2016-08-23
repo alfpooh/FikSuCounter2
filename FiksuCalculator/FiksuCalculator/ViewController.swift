@@ -31,6 +31,9 @@ class ViewController: UIViewController{
     private var memory:[String:String] = ["M1":"", "M2":"", "M3":""]
     private var mkey: String?
     private var lastMathSymbol: String = ""
+    var history:[String] = [""]
+    var resultFlag: Bool = false
+
     
     var displayValue: Double {
         
@@ -41,7 +44,10 @@ class ViewController: UIViewController{
         set {
             display.text = String(newValue)
             funcDigits.text = String(newValue)
-        }
+            if resultFlag {
+            history.append("Result:\(newValue)")
+            }
+            }
     }
     
     
@@ -260,6 +266,8 @@ class ViewController: UIViewController{
             SoundOut(2)
             userIsInTheMiddleOfTyping = false
         }
+        //justfortemp
+                    history.removeAll()
     
     }
     
@@ -267,6 +275,7 @@ class ViewController: UIViewController{
     @IBAction private func touchDigit (sender: UIButton) {
         SoundOut(1)
         lastMathSymbol = ""
+        resultFlag = false
         let digit = sender.currentTitle!
         let textInTheCurrentDisplay = display.text!
         if userIsInTheMiddleOfTyping {
@@ -299,7 +308,7 @@ class ViewController: UIViewController{
         }
         else
         {
-            // userIsInTheMiddleOfTyping = false
+
             if digit == "." {
                 display.text = "0."
             } else {
@@ -318,71 +327,52 @@ class ViewController: UIViewController{
         
         //what if operation is requested in the middle of typing
         if userIsInTheMiddleOfTyping {
+            //history.append(String(displayValue))
             brain.setOperand(displayValue)
+ 
             userIsInTheMiddleOfTyping = false
         }
         
-        //what if entered mathsymbol is same as last mathematicalsybol then ignore.
+        
+
         if let mathematicalSymbol = sender.currentTitle {
+            resultFlag = true
+            //history.append(String(mathematicalSymbol))
+                    //what if entered mathsymbol is same as last mathematicalsybol then ignore.
             if lastMathSymbol == mathematicalSymbol {
                 userIsInTheMiddleOfTyping = false
-                return
-            }
-        
-        if lastMathSymbol == "" {
-            brain.performOperation(mathematicalSymbol)
-                lastMathSymbol = mathematicalSymbol } else
-            //what if there is lastmathsymbol and it is different from current symbol, then clean it up and try new.
-        {
-            brain.performOperation("=")
-                        brain.setOperand(displayValue)
-                        brain.performOperation(mathematicalSymbol)
+                 return
             }
             
-            
+            if lastMathSymbol == "" {
+                brain.performOperation(mathematicalSymbol)
+                lastMathSymbol = mathematicalSymbol
+              } else
+                //what if there is lastmathsymbol and it is different from current symbol, then clean it up and try new.
+            {
+                 brain.performOperation("=")
+                brain.setOperand(displayValue)
+                brain.performOperation(mathematicalSymbol)
+                let lastBefore = history.count - 2
+                history.removeAtIndex(lastBefore)
 
+
+            }
+            
+            
+            
         }
-        
-//        if let mathematicalSymbol = sender.currentTitle {
-//            if lastMathSymbol == mathematicalSymbol {
-//                userIsInTheMiddleOfTyping = false
-//                brain.performOperation("Del")
-//                print ("entered symbol is same as before. do nothing")
-//                return
-//            } else {
-//                if lastMathSymbol == "" {
-//                    brain.performOperation(mathematicalSymbol)
-//                    return
-//                }
-//                else {
-//                if mathematicalSymbol == "=" {
-//                    brain.performOperation(mathematicalSymbol)
-//                    userIsInTheMiddleOfTyping = false
-//                    lastMathSymbol = ""
-//                    return
-//                } else {
-//                    print("symbol is not equal, lastmathsymbol is not empty")
-//                    userIsInTheMiddleOfTyping = true
-//                    brain.performOperation(mathematicalSymbol)
-//                    lastMathSymbol = mathematicalSymbol
-//                    userIsInTheMiddleOfTyping = false
-//                    return
-//                    }
-//                }
-//                
-//            }
-//            
-//        }
-        
+  
         
         //strange case of -0.0
-        if brain.result == -0.0 {brain.result = 0.0}
+        if brain.result == -0.0 {
+            brain.result = 0.0
+        }
+
         displayValue = brain.result
-        print ("brain result:\(brain.result)")
-        if let symbol = sender.currentTitle {
-            lastMathSymbol = symbol
-        } 
-        print ("LastMathSybol is: \(lastMathSymbol)")
+        
+        print ("whole history:\(history)")
+
     }
     
     override func viewDidLoad() {

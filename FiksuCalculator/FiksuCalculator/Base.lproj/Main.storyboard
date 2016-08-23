@@ -627,7 +627,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6My-vL-z5B" userLabel="SetTax" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="71" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="71" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="6My-vL-z5B" secondAttribute="height" multiplier="1:1" id="WiK-FX-fbt"/>
@@ -649,7 +649,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-gT-os9" userLabel="SetTip" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="141" width="55" height="56"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="nO7-gT-os9" secondAttribute="height" multiplier="1:1" id="gM8-tZ-7Yp"/>
@@ -703,7 +703,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcK-WU-WRt" userLabel="Tax+" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="71" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="71" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="jcK-WU-WRt" secondAttribute="height" multiplier="1:1" id="vum-6L-3Ea"/>
@@ -725,7 +725,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNx-Yq-xXh" userLabel="Tip+" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="141" width="55" height="56"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="UNx-Yq-xXh" secondAttribute="height" multiplier="1:1" id="QPh-0W-uoa"/>
@@ -778,7 +778,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx9-xA-ex2" userLabel="Tax-" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="71" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="71" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="Rx9-xA-ex2" secondAttribute="height" multiplier="1:1" id="u0u-wJ-154"/>
@@ -800,7 +800,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1m-uZ-q5p" userLabel="Tip-" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="141" width="55" height="56"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="55" id="H9R-ez-6yq"/>
@@ -859,7 +859,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1e-OW-fCa" userLabel="Round" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="71" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="71" width="55" height="55"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="a1e-OW-fCa" secondAttribute="height" multiplier="1:1" id="E69-RR-ko1"/>
@@ -881,7 +881,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fI-0g-3x4" userLabel="x*x" customClass="FtkToolBtn" customModule="Fiksu_Calc" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="142" width="55" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="141" width="55" height="56"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="5fI-0g-3x4" secondAttribute="height" multiplier="1:1" id="XVx-W9-ALq"/>
@@ -1009,7 +1009,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VUX-0x-Jm0">
                                 <rect key="frame" x="0.0" y="0.0" width="260" height="497"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Fiksu Calc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iws-8J-PiX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Fiksu Calc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iws-8J-PiX" userLabel="SideMenuTitle">
                                         <rect key="frame" x="30" y="0.0" width="200" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="6V2-ud-uG2"/>
@@ -1028,7 +1028,7 @@
                                                     <constraint firstAttribute="width" constant="240" id="4r3-eg-ZgM"/>
                                                     <constraint firstAttribute="height" constant="350" id="tCi-MZ-jLi"/>
                                                 </constraints>
-                                                <mutableString key="text">Fiksu calc is a calculator app for everyday use. Fiksu means "Smart" in Finnish. 
+                                                <string key="text">Fiksu calc is a calculator app for everyday use. Fiksu means "Smart" in Finnish. 
 
 1. Smart memory buttons. : You can keep calculation result on smart memory button "M1","M2", and "M3". Simply press button to remember and press it to use it. To clear, double tap. To clear all buttons, long tap.
 
@@ -1038,7 +1038,7 @@
 
 4. Tip and tax tool: Set a tax (or tip) and make a quick tax(tip) calculation with tax or without tax from result. You can set a new rate after clearing by double tapping.
 
-5. Result in voice: tap result and you can hear result in voice.</mutableString>
+5. Result in voice: tap result and you can hear result in voice.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                                 <color key="textColor" red="0.30220352564102559" green="0.30220352564102559" blue="0.30220352564102559" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1110,6 +1110,8 @@ Made in Finland.</string>
                     </view>
                     <connections>
                         <outlet property="logTextBox" destination="BXb-Ru-XS0" id="BmE-Cf-60K"/>
+                        <outlet property="sideMenuTitle" destination="iws-8J-PiX" id="tMF-w1-oLr"/>
+                        <outlet property="sideTextTitle" destination="iws-8J-PiX" id="h7i-eT-M1R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0g3-YN-rOn" userLabel="First Responder" sceneMemberID="firstResponder"/>

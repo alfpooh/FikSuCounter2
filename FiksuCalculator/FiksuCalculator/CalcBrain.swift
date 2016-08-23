@@ -15,6 +15,8 @@ class CalculatorBrain {
     private var operationEntered:Bool = false
     private var lastoperation: String = ""
     
+
+    
     func setOperand (operand: Double) {
         operationEntered = false
         accumulator = operand
@@ -53,7 +55,7 @@ class CalculatorBrain {
     
     func  performOperation(symbol: String) {
         
-
+        
         internalProgram.append(symbol)
         print("operation:\(symbol),internalProgram[symbol] :\(internalProgram[0]),\(internalProgram[1])")
         if let operation = operations[symbol] {
@@ -67,7 +69,7 @@ class CalculatorBrain {
                 executePendingBinaryOperation()
                 accumulator = function(accumulator)
                 print ("rounding is here")
-
+                
             case .UnaryOperation(let function):
                 accumulator = function(accumulator)
                 
@@ -81,7 +83,7 @@ class CalculatorBrain {
             case .Delete(let function):
                 accumulator = function(accumulator)
             }
-                
+            
         }
     }
     
@@ -102,23 +104,23 @@ class CalculatorBrain {
     
     typealias PropertyList = AnyObject
     
-//    private var program: PropertyList {
-//        get {
-//            return internalProgram
-//        }
-//        set {
-//            clear()
-//            if let arryOfOps = newValue as? [AnyObject] {
-//                for op in arryOfOps {
-//                    if let operand = op as? Double {
-//                    setOperand (operand)
-//                    } else if let operand = op as? String {
-//                    performOperation (operand)
-//                    }
-//                }
-//            }
-//        }
-//    }
+    //    private var program: PropertyList {
+    //        get {
+    //            return internalProgram
+    //        }
+    //        set {
+    //            clear()
+    //            if let arryOfOps = newValue as? [AnyObject] {
+    //                for op in arryOfOps {
+    //                    if let operand = op as? Double {
+    //                    setOperand (operand)
+    //                    } else if let operand = op as? String {
+    //                    performOperation (operand)
+    //                    }
+    //                }
+    //            }
+    //        }
+    //    }
     
     func clear () {
         accumulator = 0.0
@@ -128,6 +130,7 @@ class CalculatorBrain {
     
     var result: Double{
         get {
+            print ("result from brain: \(accumulator)")
             return accumulator
         }
         set {

@@ -19,6 +19,8 @@ class SideMenu: UIViewController {
     
     @IBOutlet weak var logTextBox: UILabel!
     
+    @IBOutlet weak var sideMenuTitle: UILabel!
+
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
