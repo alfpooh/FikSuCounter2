@@ -502,13 +502,13 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="X7r-8a-tYU" secondAttribute="height" multiplier="1:1" id="3oX-sK-vs9"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="10"/>
-                                                                        <state key="normal" title="⌫">
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                                                        <state key="normal" title="AC">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                                                <color key="value" red="0.0" green="0.0028140406469999999" blue="0.56955128209999994" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
+                                                                                <color key="value" red="0.34851762820512822" green="0.20807814543811276" blue="0.09168724457373853" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
