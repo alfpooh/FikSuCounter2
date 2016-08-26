@@ -26,7 +26,6 @@ class ViewController: UIViewController{
     private var tiprate = 0.14
     private var dotornot = false
     private var defaults = NSUserDefaults.standardUserDefaults()
-    private var userIsInTheMiddleOfTyping = false
     private var brain = CalculatorBrain()
     private var memory:[String:String] = ["M1":"", "M2":"", "M3":""]
     private var mkey: String?
@@ -35,7 +34,10 @@ class ViewController: UIViewController{
     var resultFlag: Bool = false
 
     
+    private var userIsInTheMiddleOfTyping = false
+    
     var displayValue: Double {
+
         
         get {
             return Double(display.text!)!
@@ -136,9 +138,25 @@ class ViewController: UIViewController{
         }
         else {
             display.text = memory[key]
-            userIsInTheMiddleOfTyping = true        }
+            inTyping(true)        }
     }
     
+    
+    // userIsInTheMiddleOfTyping
+    
+    private func inTyping(mode: Bool) {
+    
+        userIsInTheMiddleOfTyping = mode
+        if userIsInTheMiddleOfTyping {
+            let label =  "⌫"
+            clearall.setTitle(label, forState: .Normal)
+        
+        } else {
+            let label =  "AC"
+            clearall.setTitle(label, forState: .Normal)
+        
+        }
+    }
     
     //TAX features
     
@@ -153,7 +171,7 @@ class ViewController: UIViewController{
         }
         else {
             displayValue = taxrate
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
     }
     
@@ -175,7 +193,7 @@ class ViewController: UIViewController{
             displayValue = net+(net*taxrate)
             brain.result = displayValue
             history.append(String(displayValue))
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
     }
     
@@ -188,7 +206,7 @@ class ViewController: UIViewController{
             displayValue = net-(net*taxrate)
             brain.result = displayValue
             history.append(String(displayValue))
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
     }
     
@@ -207,7 +225,7 @@ class ViewController: UIViewController{
         }
         else {
             displayValue = tiprate
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
     }
     
@@ -229,7 +247,7 @@ class ViewController: UIViewController{
             displayValue = net+(net*tiprate)
             brain.result = displayValue
             history.append(String(displayValue))
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
     }
     
@@ -242,7 +260,7 @@ class ViewController: UIViewController{
             displayValue = net-(net*tiprate)
             brain.result = displayValue
             history.append(String(displayValue))
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
     }
     
@@ -259,7 +277,7 @@ class ViewController: UIViewController{
                 display.text="0"
                 SoundOut(2)
                 lastMathSymbol = ""
-                userIsInTheMiddleOfTyping = false
+                inTyping(false)
             }
             
         } else {
@@ -268,7 +286,7 @@ class ViewController: UIViewController{
             brain.clear()
             brain.setOperand(displayValue)
             SoundOut(2)
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
         //justfortemp
                     history.removeAll()
@@ -287,10 +305,10 @@ class ViewController: UIViewController{
             case "0" :
                 // check if "00" case
                 if textInTheCurrentDisplay == "0" {display.text = "0"
-                    userIsInTheMiddleOfTyping = true}
+                    inTyping(true)}
                 else {
                     display.text = textInTheCurrentDisplay + digit
-                    userIsInTheMiddleOfTyping = true
+                    inTyping(true)
                 }
             case "." :
                 if displayValue.isInteger == false {
@@ -307,7 +325,7 @@ class ViewController: UIViewController{
                     display.text = digit
                 }
                 else {display.text = textInTheCurrentDisplay + digit}
-                userIsInTheMiddleOfTyping = true
+                inTyping(true)
             }//switchend
         }
         else
@@ -318,7 +336,7 @@ class ViewController: UIViewController{
             } else {
                 display.text = digit
             }
-            userIsInTheMiddleOfTyping = true
+            inTyping(true)
             
         }
     }//func end
@@ -334,7 +352,7 @@ class ViewController: UIViewController{
             //history.append(String(displayValue))
             brain.setOperand(displayValue)
  
-            userIsInTheMiddleOfTyping = false
+            inTyping(false)
         }
         
         
@@ -344,7 +362,8 @@ class ViewController: UIViewController{
             //history.append(String(mathematicalSymbol))
                     //what if entered mathsymbol is same as last mathematicalsybol then ignore.
             if lastMathSymbol == mathematicalSymbol {
-                userIsInTheMiddleOfTyping = false
+                inTyping(false)
+
                  return
             }
             
@@ -512,7 +531,8 @@ class ViewController: UIViewController{
         SoundOut(2)
         brain.setOperand(displayValue)
         funcDigits.text = display.text
-        userIsInTheMiddleOfTyping = false
+        inTyping(false)
+
         
     }
     
