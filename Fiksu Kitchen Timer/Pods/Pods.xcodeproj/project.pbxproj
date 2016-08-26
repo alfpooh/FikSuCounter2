@@ -7,147 +7,147 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E16810982ADE3432B091BA59700D810 /* Pods-Fiksu Kitchen TimerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5216637429C138A8FB720F6CACB06 /* Pods-Fiksu Kitchen TimerTests-dummy.m */; };
-		23A580FD0701F852A16969C910ABE88D /* Pods-Fiksu Kitchen TimerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B57762E8571B874FA4FBFB4943A25D /* Pods-Fiksu Kitchen TimerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F3C52F19925FD9D1B92CFEDD972CD5B /* Pods-Fiksu Kitchen Timer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5526F551D7D432779493AD098F372819 /* Pods-Fiksu Kitchen Timer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47997570EB238D860F5A3209CB63E67B /* Pods-Fiksu Kitchen TimerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11267FFE7D53500FAA3492BA746E6B60 /* Pods-Fiksu Kitchen TimerUITests-dummy.m */; };
-		4E53013C66A290C9A573007CBAA39036 /* Pods-Fiksu Kitchen Timer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA5AAA7EFB097E0F6A93F53585324EE /* Pods-Fiksu Kitchen Timer-dummy.m */; };
-		594D7B08CB2C4A502117BC26429543DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		7AEA60EFE3B7B84CBADF41C134F24A49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		85A6CAE8B3F9E5C8F1AB6AB86375EA0B /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
-		DCB5A8845FE8CDA3E638C95126BEFE6E /* Pods-Fiksu Kitchen TimerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D44DEA7E33F355BF7FE0109BC752A6 /* Pods-Fiksu Kitchen TimerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9A46A5FB7542110A885401501F90419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		EE718018806411861F3A17B038F76DA3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		F50043C3DB720BE442B0BA8630E9CF3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		FF5DB7206EB354DCD499FC080C3BCDF9 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		035FDB549D4E541B46E969322CDFFC72 /* Pods-Fiksu TimerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C400FDD2A93F316AEAD83B909300794 /* Pods-Fiksu TimerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0458FCF27C3E996AA45AF60F653CD78B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		0A670BDC37FD4506F2B5760ED7E52DC4 /* Pods-Fiksu TimerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B42BC8FA78379BFD40D0FCCEABC86 /* Pods-Fiksu TimerTests-dummy.m */; };
+		2B11F1DCCC8416602EC20541DB992D25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3890738701B92239F7A73E70FFF15FBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		685E2BB846AA5CBFA90D5ECD18F83895 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		769EB135653CD8EEB0BEBEDF7E061A3D /* Pods-Fiksu Timer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF013F65758BBDB2FB381B64E256324 /* Pods-Fiksu Timer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8979061640EF242B0DF70D790D07A605 /* Pods-Fiksu Timer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE23369BB54E980B8A8EE53C16DD57 /* Pods-Fiksu Timer-dummy.m */; };
+		A54CA7F8C74A9DA7A661CA88E48A0FD1 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		AF34A167D5F83BB384205BA079E69D55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B730D0EEE711C56737246D5FA1701850 /* Pods-Fiksu TimerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1126BFE1A35986BC271907467E2BA857 /* Pods-Fiksu TimerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4583D636B1C673CFE93FDF13ACDF5C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA3EB1CB0EBE0CA88C8F73D1886C1774 /* Pods-Fiksu TimerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80735106AF42E4907DAEF88DBBD8460F /* Pods-Fiksu TimerUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A2D80CF9D017AE7F71B97B04CD073228 /* PBXContainerItemProxy */ = {
+		5F055A3C51CB37263CDD2C641D20C890 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F43CAFAE929AFF3B22F73758E8EC6111;
+			remoteGlobalIDString = B75FF6295363BCF8E92E14E538938BBD;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015C6DA2FC66116C2597B38BFBC8CB4F /* Pods-Fiksu Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Timer.debug.xcconfig"; sourceTree = "<group>"; };
 		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		0AF278A2947AA65D6584216A6773B9E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11267FFE7D53500FAA3492BA746E6B60 /* Pods-Fiksu Kitchen TimerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fiksu Kitchen TimerUITests-dummy.m"; sourceTree = "<group>"; };
-		1168FE6925DA3C43D5F996932F235963 /* Pods-Fiksu Kitchen Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Kitchen Timer.release.xcconfig"; sourceTree = "<group>"; };
-		1F3DDB3513D1F97CF93AEFADB011EDCB /* Pods-Fiksu Kitchen Timer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Kitchen Timer-frameworks.sh"; sourceTree = "<group>"; };
-		27942A2B3AD354730D48C8D1E5925A55 /* Pods-Fiksu Kitchen Timer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fiksu Kitchen Timer-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DC9EC023BD9357D952E952C0E0517E8 /* Pods_Fiksu_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1126BFE1A35986BC271907467E2BA857 /* Pods-Fiksu TimerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fiksu TimerUITests-umbrella.h"; sourceTree = "<group>"; };
+		1419D88461BDC2694E5478FDC45A6698 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF013F65758BBDB2FB381B64E256324 /* Pods-Fiksu Timer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fiksu Timer-umbrella.h"; sourceTree = "<group>"; };
+		22DB6F066FDEC6BEDFB97AC91A208348 /* Pods-Fiksu TimerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu TimerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C400FDD2A93F316AEAD83B909300794 /* Pods-Fiksu TimerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fiksu TimerTests-umbrella.h"; sourceTree = "<group>"; };
 		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		2EA5AAA7EFB097E0F6A93F53585324EE /* Pods-Fiksu Kitchen Timer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fiksu Kitchen Timer-dummy.m"; sourceTree = "<group>"; };
 		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		36B57762E8571B874FA4FBFB4943A25D /* Pods-Fiksu Kitchen TimerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fiksu Kitchen TimerTests-umbrella.h"; sourceTree = "<group>"; };
-		37F5216637429C138A8FB720F6CACB06 /* Pods-Fiksu Kitchen TimerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fiksu Kitchen TimerTests-dummy.m"; sourceTree = "<group>"; };
-		48CFF2A95C1138CD875153120D08FD63 /* Pods-Fiksu Kitchen Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Kitchen Timer.debug.xcconfig"; sourceTree = "<group>"; };
-		4A17A226E55D8AB4AED970790AD2919B /* Pods_Fiksu_Kitchen_TimerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_Kitchen_TimerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		527B964C22C1672F42EC52157A9BD8C9 /* Pods-Fiksu Kitchen TimerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fiksu Kitchen TimerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5526F551D7D432779493AD098F372819 /* Pods-Fiksu Kitchen Timer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fiksu Kitchen Timer-umbrella.h"; sourceTree = "<group>"; };
-		5A2ED8D7DB319FED8BCF6CE1327A0D48 /* Pods-Fiksu Kitchen TimerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fiksu Kitchen TimerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5D9DDE4BF42F40D7D519E8B35CC0EFB9 /* Pods-Fiksu Kitchen TimerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Kitchen TimerUITests-resources.sh"; sourceTree = "<group>"; };
-		695A0D3AB7CBDF5FE4525D17EE06DAEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B18D23831E6411AA0EC893756E125D1 /* Pods-Fiksu Kitchen TimerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fiksu Kitchen TimerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D28E4852F806490EE959F37ABE8A610 /* Pods-Fiksu Kitchen TimerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Kitchen TimerTests-frameworks.sh"; sourceTree = "<group>"; };
-		6F28CF7973D7A24D1868A45A1ADCBFA4 /* Pods-Fiksu Kitchen Timer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fiksu Kitchen Timer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		735DBCF69AD6CBF8BB455B482674345D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9068F77283AAED1695B89855F2827327 /* Pods-Fiksu Kitchen Timer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Kitchen Timer-resources.sh"; sourceTree = "<group>"; };
+		3EC56F2C58134ED1AE44E07C70B602AD /* Pods-Fiksu TimerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu TimerTests-resources.sh"; sourceTree = "<group>"; };
+		4FB669174E4CD864C04EDD4F8ADB01E1 /* Pods-Fiksu TimerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fiksu TimerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		559909E362BEF1296CDB03E3A5C0C4A1 /* Pods-Fiksu Timer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fiksu Timer.modulemap"; sourceTree = "<group>"; };
+		5866C5727CA32C4749AAA60C3F60BE78 /* Pods-Fiksu Timer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fiksu Timer-acknowledgements.plist"; sourceTree = "<group>"; };
+		59F60EA04B076D041459AB557B682433 /* Pods-Fiksu TimerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fiksu TimerTests.modulemap"; sourceTree = "<group>"; };
+		5C9A80C6998A09440BBBEC2E0CAF6A26 /* Pods-Fiksu TimerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu TimerUITests-resources.sh"; sourceTree = "<group>"; };
+		5EE13208F897A529B4E04C718B41DC3C /* Pods-Fiksu TimerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu TimerTests-frameworks.sh"; sourceTree = "<group>"; };
+		681B42BC8FA78379BFD40D0FCCEABC86 /* Pods-Fiksu TimerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fiksu TimerTests-dummy.m"; sourceTree = "<group>"; };
+		71804D19C0D1DF39A62A983352D51E27 /* Pods-Fiksu TimerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fiksu TimerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7CFE23369BB54E980B8A8EE53C16DD57 /* Pods-Fiksu Timer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fiksu Timer-dummy.m"; sourceTree = "<group>"; };
+		80735106AF42E4907DAEF88DBBD8460F /* Pods-Fiksu TimerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fiksu TimerUITests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97D44DEA7E33F355BF7FE0109BC752A6 /* Pods-Fiksu Kitchen TimerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fiksu Kitchen TimerUITests-umbrella.h"; sourceTree = "<group>"; };
-		A21D148323DC3983E754940F8CE8C3C0 /* Pods-Fiksu Kitchen TimerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fiksu Kitchen TimerTests.modulemap"; sourceTree = "<group>"; };
-		A68F231B88D407DA69E5AA5288D88819 /* Pods-Fiksu Kitchen TimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Kitchen TimerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AA9574A40E0C4905D27726B76CB14539 /* Pods-Fiksu Kitchen TimerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fiksu Kitchen TimerUITests.modulemap"; sourceTree = "<group>"; };
+		991A207A1FA3C85DAE214F0F08CB3943 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99DA8574482A02995500D6C499435D1C /* Pods-Fiksu Timer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Timer-resources.sh"; sourceTree = "<group>"; };
+		A2EA89985AB75DC9167FA9FF457BAEBD /* Pods-Fiksu TimerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu TimerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD9AA6F9F898FBBF3D929EFF36EC189B /* Pods-Fiksu TimerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fiksu TimerUITests.modulemap"; sourceTree = "<group>"; };
+		B84E562C7CCBBC7954970E5C6D6147E3 /* Pods-Fiksu TimerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fiksu TimerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C03D7093DFB28185424D6E685E354862 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36F94B41FEA4D77C2858A13B41A7362 /* Pods-Fiksu TimerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu TimerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C67E693E6A84A680683A4CEB76EFF4B2 /* Pods-Fiksu Kitchen Timer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Fiksu Kitchen Timer.modulemap"; sourceTree = "<group>"; };
+		C95D01ABFC9F1D1EF01F0BB9173C9C7D /* Pods-Fiksu TimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu TimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		D12AA2802DEBCEDDE9749400A514BD98 /* Pods-Fiksu Kitchen TimerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fiksu Kitchen TimerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DB34AD3A5387D0F6D04311FF0B2355BC /* Pods-Fiksu Kitchen TimerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Kitchen TimerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DD31A1A04CFE923D4705D41ABB302B9E /* Pods_Fiksu_Kitchen_TimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_Kitchen_TimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5AEA37D66567EFC0514FFED080766D7 /* Pods-Fiksu Kitchen TimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Kitchen TimerTests.release.xcconfig"; sourceTree = "<group>"; };
-		E7E0E4FB3CBC9A4F0A4A3A692ACE5339 /* Pods-Fiksu Kitchen TimerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Kitchen TimerTests-resources.sh"; sourceTree = "<group>"; };
-		EF94440ABAB40C224E6D4428694B305C /* Pods_Fiksu_Kitchen_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_Kitchen_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1C334C07C1F8624264431373DE449CD /* Pods-Fiksu Kitchen TimerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Kitchen TimerUITests-frameworks.sh"; sourceTree = "<group>"; };
-		F3D99257A9105F1730F919D3BAB8C6DD /* Pods-Fiksu Kitchen TimerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Kitchen TimerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FDC07636C7A4A5B14E979DAEE4213FE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1029FD837F74893178C02F2E76B2D90 /* Pods-Fiksu Timer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fiksu Timer-frameworks.sh"; sourceTree = "<group>"; };
+		D695553F22CDC05BF7EE8DF44731EAB0 /* Pods_Fiksu_TimerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_TimerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB14473AFF6415E286D49CE1AF9B73E5 /* Pods-Fiksu TimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu TimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E121BDC8D1F850E7ABC0048195BD77BF /* Pods-Fiksu Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fiksu Timer.release.xcconfig"; sourceTree = "<group>"; };
+		E35A2823D8BCFD3825BB63C7A88E3C70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED37F152D7D1054A52D12998B8D575BD /* Pods-Fiksu Timer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fiksu Timer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F7ADA5FABEA994CE996ABBB75779661C /* Pods_Fiksu_TimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fiksu_TimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF343EF7964FE05E39BB030D2BB84C6 /* Pods-Fiksu TimerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fiksu TimerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06F6CE550F0A5C70DB4184BACC37FD18 /* Frameworks */ = {
+		483C70FB2D62C17EAAB1DE3F7A38C26F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9A46A5FB7542110A885401501F90419 /* Foundation.framework in Frameworks */,
+				3890738701B92239F7A73E70FFF15FBD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A0BB14186213BB6A3BA67705E9B4E79 /* Frameworks */ = {
+		7B43709C705E87E5684A2D962EFC6CA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AEA60EFE3B7B84CBADF41C134F24A49 /* Foundation.framework in Frameworks */,
+				AF34A167D5F83BB384205BA079E69D55 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DAEF094B3A86C1DF81EB00D0094B811 /* Frameworks */ = {
+		9B93F0E31F7B6952E5F4B5E253A6741C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F50043C3DB720BE442B0BA8630E9CF3E /* Foundation.framework in Frameworks */,
+				2B11F1DCCC8416602EC20541DB992D25 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC002902C89488C70DE3A5E5E24D3D80 /* Frameworks */ = {
+		E78FD550152AF06E1309BA533D026019 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594D7B08CB2C4A502117BC26429543DE /* Foundation.framework in Frameworks */,
+				685E2BB846AA5CBFA90D5ECD18F83895 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A8F25269F971AB064FFA13DEF1F9F4D /* Pods-Fiksu Kitchen TimerTests */ = {
+		1E8611C578F34F857740DAB3D5A439CE /* Pods-Fiksu TimerTests */ = {
 			isa = PBXGroup;
 			children = (
-				695A0D3AB7CBDF5FE4525D17EE06DAEF /* Info.plist */,
-				A21D148323DC3983E754940F8CE8C3C0 /* Pods-Fiksu Kitchen TimerTests.modulemap */,
-				6B18D23831E6411AA0EC893756E125D1 /* Pods-Fiksu Kitchen TimerTests-acknowledgements.markdown */,
-				D12AA2802DEBCEDDE9749400A514BD98 /* Pods-Fiksu Kitchen TimerTests-acknowledgements.plist */,
-				37F5216637429C138A8FB720F6CACB06 /* Pods-Fiksu Kitchen TimerTests-dummy.m */,
-				6D28E4852F806490EE959F37ABE8A610 /* Pods-Fiksu Kitchen TimerTests-frameworks.sh */,
-				E7E0E4FB3CBC9A4F0A4A3A692ACE5339 /* Pods-Fiksu Kitchen TimerTests-resources.sh */,
-				36B57762E8571B874FA4FBFB4943A25D /* Pods-Fiksu Kitchen TimerTests-umbrella.h */,
-				A68F231B88D407DA69E5AA5288D88819 /* Pods-Fiksu Kitchen TimerTests.debug.xcconfig */,
-				E5AEA37D66567EFC0514FFED080766D7 /* Pods-Fiksu Kitchen TimerTests.release.xcconfig */,
+				991A207A1FA3C85DAE214F0F08CB3943 /* Info.plist */,
+				59F60EA04B076D041459AB557B682433 /* Pods-Fiksu TimerTests.modulemap */,
+				4FB669174E4CD864C04EDD4F8ADB01E1 /* Pods-Fiksu TimerTests-acknowledgements.markdown */,
+				B84E562C7CCBBC7954970E5C6D6147E3 /* Pods-Fiksu TimerTests-acknowledgements.plist */,
+				681B42BC8FA78379BFD40D0FCCEABC86 /* Pods-Fiksu TimerTests-dummy.m */,
+				5EE13208F897A529B4E04C718B41DC3C /* Pods-Fiksu TimerTests-frameworks.sh */,
+				3EC56F2C58134ED1AE44E07C70B602AD /* Pods-Fiksu TimerTests-resources.sh */,
+				2C400FDD2A93F316AEAD83B909300794 /* Pods-Fiksu TimerTests-umbrella.h */,
+				C95D01ABFC9F1D1EF01F0BB9173C9C7D /* Pods-Fiksu TimerTests.debug.xcconfig */,
+				DB14473AFF6415E286D49CE1AF9B73E5 /* Pods-Fiksu TimerTests.release.xcconfig */,
 			);
-			name = "Pods-Fiksu Kitchen TimerTests";
-			path = "Target Support Files/Pods-Fiksu Kitchen TimerTests";
+			name = "Pods-Fiksu TimerTests";
+			path = "Target Support Files/Pods-Fiksu TimerTests";
 			sourceTree = "<group>";
 		};
-		2FDA193FED6D12399E2B8075C5CD285E /* Pods-Fiksu Kitchen TimerUITests */ = {
+		30863CCDAC007904AF6F9A1F5D4472D9 /* Pods-Fiksu Timer */ = {
 			isa = PBXGroup;
 			children = (
-				0AF278A2947AA65D6584216A6773B9E6 /* Info.plist */,
-				AA9574A40E0C4905D27726B76CB14539 /* Pods-Fiksu Kitchen TimerUITests.modulemap */,
-				527B964C22C1672F42EC52157A9BD8C9 /* Pods-Fiksu Kitchen TimerUITests-acknowledgements.markdown */,
-				5A2ED8D7DB319FED8BCF6CE1327A0D48 /* Pods-Fiksu Kitchen TimerUITests-acknowledgements.plist */,
-				11267FFE7D53500FAA3492BA746E6B60 /* Pods-Fiksu Kitchen TimerUITests-dummy.m */,
-				F1C334C07C1F8624264431373DE449CD /* Pods-Fiksu Kitchen TimerUITests-frameworks.sh */,
-				5D9DDE4BF42F40D7D519E8B35CC0EFB9 /* Pods-Fiksu Kitchen TimerUITests-resources.sh */,
-				97D44DEA7E33F355BF7FE0109BC752A6 /* Pods-Fiksu Kitchen TimerUITests-umbrella.h */,
-				DB34AD3A5387D0F6D04311FF0B2355BC /* Pods-Fiksu Kitchen TimerUITests.debug.xcconfig */,
-				F3D99257A9105F1730F919D3BAB8C6DD /* Pods-Fiksu Kitchen TimerUITests.release.xcconfig */,
+				E35A2823D8BCFD3825BB63C7A88E3C70 /* Info.plist */,
+				559909E362BEF1296CDB03E3A5C0C4A1 /* Pods-Fiksu Timer.modulemap */,
+				ED37F152D7D1054A52D12998B8D575BD /* Pods-Fiksu Timer-acknowledgements.markdown */,
+				5866C5727CA32C4749AAA60C3F60BE78 /* Pods-Fiksu Timer-acknowledgements.plist */,
+				7CFE23369BB54E980B8A8EE53C16DD57 /* Pods-Fiksu Timer-dummy.m */,
+				D1029FD837F74893178C02F2E76B2D90 /* Pods-Fiksu Timer-frameworks.sh */,
+				99DA8574482A02995500D6C499435D1C /* Pods-Fiksu Timer-resources.sh */,
+				1AF013F65758BBDB2FB381B64E256324 /* Pods-Fiksu Timer-umbrella.h */,
+				015C6DA2FC66116C2597B38BFBC8CB4F /* Pods-Fiksu Timer.debug.xcconfig */,
+				E121BDC8D1F850E7ABC0048195BD77BF /* Pods-Fiksu Timer.release.xcconfig */,
 			);
-			name = "Pods-Fiksu Kitchen TimerUITests";
-			path = "Target Support Files/Pods-Fiksu Kitchen TimerUITests";
+			name = "Pods-Fiksu Timer";
+			path = "Target Support Files/Pods-Fiksu Timer";
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -156,6 +156,35 @@
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		549168E2D96C0B2F9159C406098120DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DC9EC023BD9357D952E952C0E0517E8 /* Pods_Fiksu_Timer.framework */,
+				F7ADA5FABEA994CE996ABBB75779661C /* Pods_Fiksu_TimerTests.framework */,
+				D695553F22CDC05BF7EE8DF44731EAB0 /* Pods_Fiksu_TimerUITests.framework */,
+				C03D7093DFB28185424D6E685E354862 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BEB660834DE9C0D6F64A001A8270146 /* Pods-Fiksu TimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1419D88461BDC2694E5478FDC45A6698 /* Info.plist */,
+				AD9AA6F9F898FBBF3D929EFF36EC189B /* Pods-Fiksu TimerUITests.modulemap */,
+				FBF343EF7964FE05E39BB030D2BB84C6 /* Pods-Fiksu TimerUITests-acknowledgements.markdown */,
+				71804D19C0D1DF39A62A983352D51E27 /* Pods-Fiksu TimerUITests-acknowledgements.plist */,
+				80735106AF42E4907DAEF88DBBD8460F /* Pods-Fiksu TimerUITests-dummy.m */,
+				C36F94B41FEA4D77C2858A13B41A7362 /* Pods-Fiksu TimerUITests-frameworks.sh */,
+				5C9A80C6998A09440BBBEC2E0CAF6A26 /* Pods-Fiksu TimerUITests-resources.sh */,
+				1126BFE1A35986BC271907467E2BA857 /* Pods-Fiksu TimerUITests-umbrella.h */,
+				22DB6F066FDEC6BEDFB97AC91A208348 /* Pods-Fiksu TimerUITests.debug.xcconfig */,
+				A2EA89985AB75DC9167FA9FF457BAEBD /* Pods-Fiksu TimerUITests.release.xcconfig */,
+			);
+			name = "Pods-Fiksu TimerUITests";
+			path = "Target Support Files/Pods-Fiksu TimerUITests";
 			sourceTree = "<group>";
 		};
 		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
@@ -173,8 +202,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				D2702BCCF6DF1D740E92949F24E94738 /* Products */,
-				A61685F3C9ED8ED3952F15F71DFA6CA4 /* Targets Support Files */,
+				549168E2D96C0B2F9159C406098120DE /* Products */,
+				D5CF3C762026C1F0E92F8101E258D306 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,34 +219,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		A61685F3C9ED8ED3952F15F71DFA6CA4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B28B986D52AAE65D2A3919DBAB7A4989 /* Pods-Fiksu Kitchen Timer */,
-				1A8F25269F971AB064FFA13DEF1F9F4D /* Pods-Fiksu Kitchen TimerTests */,
-				2FDA193FED6D12399E2B8075C5CD285E /* Pods-Fiksu Kitchen TimerUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B28B986D52AAE65D2A3919DBAB7A4989 /* Pods-Fiksu Kitchen Timer */ = {
-			isa = PBXGroup;
-			children = (
-				FDC07636C7A4A5B14E979DAEE4213FE0 /* Info.plist */,
-				C67E693E6A84A680683A4CEB76EFF4B2 /* Pods-Fiksu Kitchen Timer.modulemap */,
-				6F28CF7973D7A24D1868A45A1ADCBFA4 /* Pods-Fiksu Kitchen Timer-acknowledgements.markdown */,
-				27942A2B3AD354730D48C8D1E5925A55 /* Pods-Fiksu Kitchen Timer-acknowledgements.plist */,
-				2EA5AAA7EFB097E0F6A93F53585324EE /* Pods-Fiksu Kitchen Timer-dummy.m */,
-				1F3DDB3513D1F97CF93AEFADB011EDCB /* Pods-Fiksu Kitchen Timer-frameworks.sh */,
-				9068F77283AAED1695B89855F2827327 /* Pods-Fiksu Kitchen Timer-resources.sh */,
-				5526F551D7D432779493AD098F372819 /* Pods-Fiksu Kitchen Timer-umbrella.h */,
-				48CFF2A95C1138CD875153120D08FD63 /* Pods-Fiksu Kitchen Timer.debug.xcconfig */,
-				1168FE6925DA3C43D5F996932F235963 /* Pods-Fiksu Kitchen Timer.release.xcconfig */,
-			);
-			name = "Pods-Fiksu Kitchen Timer";
-			path = "Target Support Files/Pods-Fiksu Kitchen Timer";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -236,114 +237,96 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D2702BCCF6DF1D740E92949F24E94738 /* Products */ = {
+		D5CF3C762026C1F0E92F8101E258D306 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EF94440ABAB40C224E6D4428694B305C /* Pods_Fiksu_Kitchen_Timer.framework */,
-				DD31A1A04CFE923D4705D41ABB302B9E /* Pods_Fiksu_Kitchen_TimerTests.framework */,
-				4A17A226E55D8AB4AED970790AD2919B /* Pods_Fiksu_Kitchen_TimerUITests.framework */,
-				735DBCF69AD6CBF8BB455B482674345D /* SwiftyJSON.framework */,
+				30863CCDAC007904AF6F9A1F5D4472D9 /* Pods-Fiksu Timer */,
+				1E8611C578F34F857740DAB3D5A439CE /* Pods-Fiksu TimerTests */,
+				5BEB660834DE9C0D6F64A001A8270146 /* Pods-Fiksu TimerUITests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A6FE2EE3E5480615205077198E40D268 /* Headers */ = {
+		296A8139B65B2B164ED83CFE2EC63255 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5DB7206EB354DCD499FC080C3BCDF9 /* SwiftyJSON-umbrella.h in Headers */,
+				035FDB549D4E541B46E969322CDFFC72 /* Pods-Fiksu TimerTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C21FA256A84E47ABDF5FCC27BDFE89E7 /* Headers */ = {
+		3708AB1D9A9A272AEA6934DF1F4F311A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A580FD0701F852A16969C910ABE88D /* Pods-Fiksu Kitchen TimerTests-umbrella.h in Headers */,
+				B730D0EEE711C56737246D5FA1701850 /* Pods-Fiksu TimerUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC8F0594EF614E4967DB3869139FB6C3 /* Headers */ = {
+		B5B940CE00EACB4B7DDA45053357A49D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3C52F19925FD9D1B92CFEDD972CD5B /* Pods-Fiksu Kitchen Timer-umbrella.h in Headers */,
+				EC4583D636B1C673CFE93FDF13ACDF5C /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4F0FB308732B7A54C4CE6F5C31E775D /* Headers */ = {
+		EEEBE8ED79B021BD157C680599E9D27B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB5A8845FE8CDA3E638C95126BEFE6E /* Pods-Fiksu Kitchen TimerUITests-umbrella.h in Headers */,
+				769EB135653CD8EEB0BEBEDF7E061A3D /* Pods-Fiksu Timer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6D2AAE7247C9851041A96082743F6586 /* Pods-Fiksu Kitchen Timer */ = {
+		086E3DCCDE80908B348F7C4C81D34A7B /* Pods-Fiksu Timer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30CC59E9F9215DF3E12185D903F25CBA /* Build configuration list for PBXNativeTarget "Pods-Fiksu Kitchen Timer" */;
+			buildConfigurationList = AE2295FFA0503CFA70D72003E91E183B /* Build configuration list for PBXNativeTarget "Pods-Fiksu Timer" */;
 			buildPhases = (
-				CD891FACB6AE2907182F8F72F8396E2D /* Sources */,
-				06F6CE550F0A5C70DB4184BACC37FD18 /* Frameworks */,
-				DC8F0594EF614E4967DB3869139FB6C3 /* Headers */,
+				BB9366829F44B6A4AC92B1119C4C4ADE /* Sources */,
+				7B43709C705E87E5684A2D962EFC6CA3 /* Frameworks */,
+				EEEBE8ED79B021BD157C680599E9D27B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9E4C92F825AB4F2BF3B8A23B3CAE352F /* PBXTargetDependency */,
+				468E3248DB62671CE7E696167CB2D7AB /* PBXTargetDependency */,
 			);
-			name = "Pods-Fiksu Kitchen Timer";
-			productName = "Pods-Fiksu Kitchen Timer";
-			productReference = EF94440ABAB40C224E6D4428694B305C /* Pods_Fiksu_Kitchen_Timer.framework */;
+			name = "Pods-Fiksu Timer";
+			productName = "Pods-Fiksu Timer";
+			productReference = 0DC9EC023BD9357D952E952C0E0517E8 /* Pods_Fiksu_Timer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		85F7C0E5BF29515511BCDD66157F85D0 /* Pods-Fiksu Kitchen TimerUITests */ = {
+		12D46CDD05F9D4D5806AAB738A0A1867 /* Pods-Fiksu TimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3434CEE9A5E916AA74A4A79BC975E74B /* Build configuration list for PBXNativeTarget "Pods-Fiksu Kitchen TimerUITests" */;
+			buildConfigurationList = A5A9B95DDA73BC027FECDA67E6633BDF /* Build configuration list for PBXNativeTarget "Pods-Fiksu TimerUITests" */;
 			buildPhases = (
-				8CAB7BFE4BF16007CDF54D12D2C407D3 /* Sources */,
-				0A0BB14186213BB6A3BA67705E9B4E79 /* Frameworks */,
-				E4F0FB308732B7A54C4CE6F5C31E775D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Fiksu Kitchen TimerUITests";
-			productName = "Pods-Fiksu Kitchen TimerUITests";
-			productReference = 4A17A226E55D8AB4AED970790AD2919B /* Pods_Fiksu_Kitchen_TimerUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A3323FC59A075FC603C60E82157654ED /* Pods-Fiksu Kitchen TimerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 41BE82ABC4B2F0DAD1BAB8F67A060C78 /* Build configuration list for PBXNativeTarget "Pods-Fiksu Kitchen TimerTests" */;
-			buildPhases = (
-				1B1A8AB90B1D0875C10837E3D0E06ED1 /* Sources */,
-				6DAEF094B3A86C1DF81EB00D0094B811 /* Frameworks */,
-				C21FA256A84E47ABDF5FCC27BDFE89E7 /* Headers */,
+				F3B988ACB2A4017F3BC883F61AA30556 /* Sources */,
+				E78FD550152AF06E1309BA533D026019 /* Frameworks */,
+				3708AB1D9A9A272AEA6934DF1F4F311A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Fiksu Kitchen TimerTests";
-			productName = "Pods-Fiksu Kitchen TimerTests";
-			productReference = DD31A1A04CFE923D4705D41ABB302B9E /* Pods_Fiksu_Kitchen_TimerTests.framework */;
+			name = "Pods-Fiksu TimerUITests";
+			productName = "Pods-Fiksu TimerUITests";
+			productReference = D695553F22CDC05BF7EE8DF44731EAB0 /* Pods_Fiksu_TimerUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F43CAFAE929AFF3B22F73758E8EC6111 /* SwiftyJSON */ = {
+		B75FF6295363BCF8E92E14E538938BBD /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5122BC741CA91F85589315929F327374 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 3CD4A6F045E27F27A43CE4F05C770AA1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				C092E16FA7A41B175D86F2C56BE7538C /* Sources */,
-				EC002902C89488C70DE3A5E5E24D3D80 /* Frameworks */,
-				A6FE2EE3E5480615205077198E40D268 /* Headers */,
+				A40D32E1AEF48FF7969B3C43A66B91A4 /* Sources */,
+				9B93F0E31F7B6952E5F4B5E253A6741C /* Frameworks */,
+				B5B940CE00EACB4B7DDA45053357A49D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -351,7 +334,24 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 735DBCF69AD6CBF8BB455B482674345D /* SwiftyJSON.framework */;
+			productReference = C03D7093DFB28185424D6E685E354862 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3F70402C8B92D4B8A8F5575932FA144 /* Pods-Fiksu TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7354C9C2073DFFAEB0904B72F4E7417 /* Build configuration list for PBXNativeTarget "Pods-Fiksu TimerTests" */;
+			buildPhases = (
+				B71C7F2BE1D35A5DC4C3A8D069702B9D /* Sources */,
+				483C70FB2D62C17EAAB1DE3F7A38C26F /* Frameworks */,
+				296A8139B65B2B164ED83CFE2EC63255 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Fiksu TimerTests";
+			productName = "Pods-Fiksu TimerTests";
+			productReference = F7ADA5FABEA994CE996ABBB75779661C /* Pods_Fiksu_TimerTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -371,67 +371,67 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D2702BCCF6DF1D740E92949F24E94738 /* Products */;
+			productRefGroup = 549168E2D96C0B2F9159C406098120DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D2AAE7247C9851041A96082743F6586 /* Pods-Fiksu Kitchen Timer */,
-				A3323FC59A075FC603C60E82157654ED /* Pods-Fiksu Kitchen TimerTests */,
-				85F7C0E5BF29515511BCDD66157F85D0 /* Pods-Fiksu Kitchen TimerUITests */,
-				F43CAFAE929AFF3B22F73758E8EC6111 /* SwiftyJSON */,
+				086E3DCCDE80908B348F7C4C81D34A7B /* Pods-Fiksu Timer */,
+				C3F70402C8B92D4B8A8F5575932FA144 /* Pods-Fiksu TimerTests */,
+				12D46CDD05F9D4D5806AAB738A0A1867 /* Pods-Fiksu TimerUITests */,
+				B75FF6295363BCF8E92E14E538938BBD /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1B1A8AB90B1D0875C10837E3D0E06ED1 /* Sources */ = {
+		A40D32E1AEF48FF7969B3C43A66B91A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E16810982ADE3432B091BA59700D810 /* Pods-Fiksu Kitchen TimerTests-dummy.m in Sources */,
+				A54CA7F8C74A9DA7A661CA88E48A0FD1 /* SwiftyJSON-dummy.m in Sources */,
+				0458FCF27C3E996AA45AF60F653CD78B /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CAB7BFE4BF16007CDF54D12D2C407D3 /* Sources */ = {
+		B71C7F2BE1D35A5DC4C3A8D069702B9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47997570EB238D860F5A3209CB63E67B /* Pods-Fiksu Kitchen TimerUITests-dummy.m in Sources */,
+				0A670BDC37FD4506F2B5760ED7E52DC4 /* Pods-Fiksu TimerTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C092E16FA7A41B175D86F2C56BE7538C /* Sources */ = {
+		BB9366829F44B6A4AC92B1119C4C4ADE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A6CAE8B3F9E5C8F1AB6AB86375EA0B /* SwiftyJSON-dummy.m in Sources */,
-				EE718018806411861F3A17B038F76DA3 /* SwiftyJSON.swift in Sources */,
+				8979061640EF242B0DF70D790D07A605 /* Pods-Fiksu Timer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD891FACB6AE2907182F8F72F8396E2D /* Sources */ = {
+		F3B988ACB2A4017F3BC883F61AA30556 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E53013C66A290C9A573007CBAA39036 /* Pods-Fiksu Kitchen Timer-dummy.m in Sources */,
+				FA3EB1CB0EBE0CA88C8F73D1886C1774 /* Pods-Fiksu TimerUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9E4C92F825AB4F2BF3B8A23B3CAE352F /* PBXTargetDependency */ = {
+		468E3248DB62671CE7E696167CB2D7AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = F43CAFAE929AFF3B22F73758E8EC6111 /* SwiftyJSON */;
-			targetProxy = A2D80CF9D017AE7F71B97B04CD073228 /* PBXContainerItemProxy */;
+			target = B75FF6295363BCF8E92E14E538938BBD /* SwiftyJSON */;
+			targetProxy = 5F055A3C51CB37263CDD2C641D20C890 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		249518038DD635A5A0F49E70E2567393 /* Release */ = {
+		1FC5346CFB3825E674B1DCC1D0BC5F23 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = DB14473AFF6415E286D49CE1AF9B73E5 /* Pods-Fiksu TimerTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -442,14 +442,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu TimerTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu TimerTests/Pods-Fiksu TimerTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Fiksu_TimerTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,9 +500,9 @@
 			};
 			name = Release;
 		};
-		47683C01424EE314717D4D869BEA4889 /* Release */ = {
+		50160BE25B8724CE1FDC013538ABF7E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3D99257A9105F1730F919D3BAB8C6DD /* Pods-Fiksu Kitchen TimerUITests.release.xcconfig */;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,18 +513,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerUITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerUITests/Pods-Fiksu Kitchen TimerUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Fiksu_Kitchen_TimerUITests;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,9 +571,9 @@
 			};
 			name = Debug;
 		};
-		9950E24524A4304DC0F60D6F0AB8A7BD /* Debug */ = {
+		631780C0E4A2A615CB200084B09329C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48CFF2A95C1138CD875153120D08FD63 /* Pods-Fiksu Kitchen Timer.debug.xcconfig */;
+			baseConfigurationReference = C95D01ABFC9F1D1EF01F0BB9173C9C7D /* Pods-Fiksu TimerTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -584,52 +584,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Kitchen Timer/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu TimerTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Kitchen Timer/Pods-Fiksu Kitchen Timer.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu TimerTests/Pods-Fiksu TimerTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Fiksu_Kitchen_Timer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A270F568A188BCE69CDBF3057F57104C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB34AD3A5387D0F6D04311FF0B2355BC /* Pods-Fiksu Kitchen TimerUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerUITests/Pods-Fiksu Kitchen TimerUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Fiksu_Kitchen_TimerUITests;
+				PRODUCT_NAME = Pods_Fiksu_TimerTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -638,40 +604,7 @@
 			};
 			name = Debug;
 		};
-		B3C7768BF72CE61935A64228CE47FBA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5AEA37D66567EFC0514FFED080766D7 /* Pods-Fiksu Kitchen TimerTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerTests/Pods-Fiksu Kitchen TimerTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Fiksu_Kitchen_TimerTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BD9E2ADACF90674BFA11FE4238A4D656 /* Debug */ = {
+		8A4F800B2C735E909F6280988A45CD15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
@@ -701,9 +634,9 @@
 			};
 			name = Debug;
 		};
-		C938CD9A537E0B30EB8D5FACF08B390F /* Debug */ = {
+		8CEA04A69E010D5C4CD4040B78F6486B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A68F231B88D407DA69E5AA5288D88819 /* Pods-Fiksu Kitchen TimerTests.debug.xcconfig */;
+			baseConfigurationReference = 015C6DA2FC66116C2597B38BFBC8CB4F /* Pods-Fiksu Timer.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -714,18 +647,52 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Timer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Kitchen TimerTests/Pods-Fiksu Kitchen TimerTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Timer/Pods-Fiksu Timer.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Fiksu_Kitchen_TimerTests;
+				PRODUCT_NAME = Pods_Fiksu_Timer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97BF885A2EEA128C21B829272BC14B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DB6F066FDEC6BEDFB97AC91A208348 /* Pods-Fiksu TimerUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu TimerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu TimerUITests/Pods-Fiksu TimerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Fiksu_TimerUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -734,9 +701,9 @@
 			};
 			name = Debug;
 		};
-		E417A6E03B83A8359F7C7BF75BE76300 /* Release */ = {
+		A9E24F83A1D36655441C255905EFEBD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1168FE6925DA3C43D5F996932F235963 /* Pods-Fiksu Kitchen Timer.release.xcconfig */;
+			baseConfigurationReference = E121BDC8D1F850E7ABC0048195BD77BF /* Pods-Fiksu Timer.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -747,18 +714,51 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Kitchen Timer/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu Timer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Kitchen Timer/Pods-Fiksu Kitchen Timer.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu Timer/Pods-Fiksu Timer.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Fiksu_Kitchen_Timer;
+				PRODUCT_NAME = Pods_Fiksu_Timer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9C499584F6EF8506826477AA2E35910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2EA89985AB75DC9167FA9FF457BAEBD /* Pods-Fiksu TimerUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Fiksu TimerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fiksu TimerUITests/Pods-Fiksu TimerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Fiksu_TimerUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -779,38 +779,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30CC59E9F9215DF3E12185D903F25CBA /* Build configuration list for PBXNativeTarget "Pods-Fiksu Kitchen Timer" */ = {
+		3CD4A6F045E27F27A43CE4F05C770AA1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9950E24524A4304DC0F60D6F0AB8A7BD /* Debug */,
-				E417A6E03B83A8359F7C7BF75BE76300 /* Release */,
+				8A4F800B2C735E909F6280988A45CD15 /* Debug */,
+				50160BE25B8724CE1FDC013538ABF7E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3434CEE9A5E916AA74A4A79BC975E74B /* Build configuration list for PBXNativeTarget "Pods-Fiksu Kitchen TimerUITests" */ = {
+		A5A9B95DDA73BC027FECDA67E6633BDF /* Build configuration list for PBXNativeTarget "Pods-Fiksu TimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A270F568A188BCE69CDBF3057F57104C /* Debug */,
-				47683C01424EE314717D4D869BEA4889 /* Release */,
+				97BF885A2EEA128C21B829272BC14B69 /* Debug */,
+				F9C499584F6EF8506826477AA2E35910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41BE82ABC4B2F0DAD1BAB8F67A060C78 /* Build configuration list for PBXNativeTarget "Pods-Fiksu Kitchen TimerTests" */ = {
+		AE2295FFA0503CFA70D72003E91E183B /* Build configuration list for PBXNativeTarget "Pods-Fiksu Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C938CD9A537E0B30EB8D5FACF08B390F /* Debug */,
-				B3C7768BF72CE61935A64228CE47FBA1 /* Release */,
+				8CEA04A69E010D5C4CD4040B78F6486B /* Debug */,
+				A9E24F83A1D36655441C255905EFEBD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5122BC741CA91F85589315929F327374 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		F7354C9C2073DFFAEB0904B72F4E7417 /* Build configuration list for PBXNativeTarget "Pods-Fiksu TimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD9E2ADACF90674BFA11FE4238A4D656 /* Debug */,
-				249518038DD635A5A0F49E70E2567393 /* Release */,
+				631780C0E4A2A615CB200084B09329C2 /* Debug */,
+				1FC5346CFB3825E674B1DCC1D0BC5F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

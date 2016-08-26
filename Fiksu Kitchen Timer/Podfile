@@ -1,18 +1,19 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Fiksu Kitchen Timer' do
+target 'Fiksu Timer' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 pod 'SwiftyJSON'
-  # Pods for Fiksu Kitchen Timer
 
-  target 'Fiksu Kitchen TimerTests' do
+  # Pods for Fiksu Timer
+
+  target 'Fiksu TimerTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'Fiksu Kitchen TimerUITests' do
+  target 'Fiksu TimerUITests' do
     inherit! :search_paths
     # Pods for testing
   end

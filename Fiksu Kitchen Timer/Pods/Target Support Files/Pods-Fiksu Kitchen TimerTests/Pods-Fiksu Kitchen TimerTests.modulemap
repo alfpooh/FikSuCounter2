@@ -1,6 +1,0 @@
-framework module Pods_Fiksu_Kitchen_TimerTests {
-  umbrella header "Pods-Fiksu Kitchen TimerTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
